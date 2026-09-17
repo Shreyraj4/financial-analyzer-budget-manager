@@ -19,3 +19,11 @@ app.add_middleware(
 @app.get("/health")
 def health() -> dict[str, str]:
     return {"status": "ok"}
+
+
+@app.get("/")
+def root() -> dict[str, str]:
+    return {
+        "name": "Personal Finance Analyzer API",
+        "status": "running",
+    }

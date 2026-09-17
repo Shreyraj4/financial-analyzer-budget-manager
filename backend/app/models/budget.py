@@ -3,12 +3,20 @@ from decimal import Decimal
 
 from sqlalchemy import Date, DateTime, ForeignKey, Numeric, String, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy import CheckConstraint
 
 from app.database.session import Base
 
 
 class Budget(Base):
     __tablename__ = "budgets"
+
+    __table_args__ = (
+        CheckConstraint(
+            "period IN ('weekly','monthly')",
+            name="check_budget_period"
+        ),
+    )
 
     id: Mapped[int] = mapped_column(primary_key=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True)

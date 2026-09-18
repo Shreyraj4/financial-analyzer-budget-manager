@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 from sqlalchemy.orm import Session
 
+from app.ingestion.categorize import categorize, load_rules
 from app.models import Transaction
 from app.schemas.transaction import TransactionIn
 
@@ -18,18 +19,23 @@ def import_transactions(db: Session, user_id: int, transactions: list[Transactio
     if not transactions:
         return ImportResult(submitted_count=0, imported_count=0, duplicate_count=0)
 
-    values = [
-        {
-            "user_id": user_id,
-            "transaction_date": t.transaction_date,
-            "description": t.description,
-            "merchant": t.merchant,
-            "amount": t.amount,
-            "transaction_type": t.transaction_type,
-            "source": t.source,
-        }
-        for t in transactions
-    ]
+    rules = load_rules(db)
+    values = []
+    for t in transactions:
+        category, subcategory = categorize(t.merchant, rules)
+        values.append(
+            {
+                "user_id": user_id,
+                "transaction_date": t.transaction_date,
+                "description": t.description,
+                "merchant": t.merchant,
+                "amount": t.amount,
+                "transaction_type": t.transaction_type,
+                "category": category,
+                "subcategory": subcategory,
+                "source": t.source,
+            }
+        )
 
     stmt = (
         pg_insert(Transaction)

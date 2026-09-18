@@ -11,6 +11,8 @@ class TransactionPreviewRow(BaseModel):
     merchant: str | None
     amount: Decimal | None
     transaction_type: str | None
+    category: str | None = None
+    subcategory: str | None = None
     valid: bool
     errors: list[str]
 

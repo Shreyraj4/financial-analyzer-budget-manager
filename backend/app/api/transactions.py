@@ -4,8 +4,10 @@ from sqlalchemy.orm import Session
 
 from app.api.deps import get_current_user
 from app.database.session import get_db
+from app.ingestion.categorize import categorize, load_rules
 from app.ingestion.cleaning import clean_transactions
 from app.ingestion.csv_parser import parse_csv
+from app.ingestion.pdf_parser import parse_pdf
 from app.models import Transaction, User
 from app.schemas.transaction import (
     ImportRequest,
@@ -25,33 +27,44 @@ MAX_UPLOAD_BYTES = 5 * 1024 * 1024  # 5 MB
 async def upload(
     file: UploadFile,
     current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
 ) -> UploadPreviewResponse:
-    if not file.filename or not file.filename.lower().endswith(".csv"):
-        raise HTTPException(status.HTTP_400_BAD_REQUEST, "Only .csv files are supported")
+    filename = (file.filename or "").lower()
+    if filename.endswith(".csv"):
+        file_kind = "csv"
+    elif filename.endswith(".pdf"):
+        file_kind = "pdf"
+    else:
+        raise HTTPException(status.HTTP_400_BAD_REQUEST, "Only .csv or .pdf files are supported")
 
     content = await file.read()
     if len(content) > MAX_UPLOAD_BYTES:
         raise HTTPException(status.HTTP_413_REQUEST_ENTITY_TOO_LARGE, "File exceeds 5 MB limit")
 
     try:
-        df = parse_csv(content)
+        df = parse_csv(content) if file_kind == "csv" else parse_pdf(content)
     except ValueError as exc:
         raise HTTPException(status.HTTP_400_BAD_REQUEST, str(exc)) from exc
 
     cleaned_rows = clean_transactions(df)
-    preview_rows = [
-        TransactionPreviewRow(
-            row_number=r.row_number,
-            transaction_date=r.transaction_date,
-            description=r.description,
-            merchant=r.merchant,
-            amount=r.amount,
-            transaction_type=r.transaction_type,
-            valid=r.valid,
-            errors=r.errors,
+    rules = load_rules(db)
+    preview_rows = []
+    for r in cleaned_rows:
+        category, subcategory = categorize(r.merchant, rules)
+        preview_rows.append(
+            TransactionPreviewRow(
+                row_number=r.row_number,
+                transaction_date=r.transaction_date,
+                description=r.description,
+                merchant=r.merchant,
+                amount=r.amount,
+                transaction_type=r.transaction_type,
+                category=category,
+                subcategory=subcategory,
+                valid=r.valid,
+                errors=r.errors,
+            )
         )
-        for r in cleaned_rows
-    ]
     valid_count = sum(1 for r in preview_rows if r.valid)
 
     return UploadPreviewResponse(

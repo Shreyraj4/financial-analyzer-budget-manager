@@ -1,16 +1,19 @@
 from fastapi import APIRouter, Depends, HTTPException, Query, UploadFile, status
-from sqlalchemy import select
+from sqlalchemy import or_, select
 from sqlalchemy.orm import Session
 
 from app.api.deps import get_current_user
 from app.database.session import get_db
-from app.ingestion.categorize import categorize, load_rules
 from app.ingestion.cleaning import clean_transactions
 from app.ingestion.csv_parser import parse_csv
 from app.ingestion.pdf_parser import parse_pdf
-from app.models import Transaction, User
+from app.models import CategoryRule, Transaction, User
+from app.preprocessing.text import extract_merchant
+from app.services.categorization import build_categorizer, get_model
 from app.schemas.transaction import (
     ImportRequest,
+    CategoryUpdateRequest,
+    CategoryUpdateResponse,
     ImportResponse,
     TransactionPreviewRow,
     TransactionResponse,
@@ -47,10 +50,10 @@ async def upload(
         raise HTTPException(status.HTTP_400_BAD_REQUEST, str(exc)) from exc
 
     cleaned_rows = clean_transactions(df)
-    rules = load_rules(db)
+    categorizer = build_categorizer(db, current_user.id)
+    guesses = categorizer.categorize_rows([(r.description, r.amount) for r in cleaned_rows])
     preview_rows = []
-    for r in cleaned_rows:
-        category, subcategory = categorize(r.merchant, rules)
+    for r, guess in zip(cleaned_rows, guesses):
         preview_rows.append(
             TransactionPreviewRow(
                 row_number=r.row_number,
@@ -59,8 +62,12 @@ async def upload(
                 merchant=r.merchant,
                 amount=r.amount,
                 transaction_type=r.transaction_type,
-                category=category,
-                subcategory=subcategory,
+                category=guess.category,
+                subcategory=guess.subcategory,
+                category_source=guess.source,
+                confidence=guess.confidence,
+                suggested_category=guess.suggested_category,
+                needs_review=guess.needs_review,
                 valid=r.valid,
                 errors=r.errors,
             )
@@ -105,3 +112,80 @@ def list_transactions(
         .offset(offset)
     )
     return list(db.scalars(stmt).all())
+
+
+@router.get("/review", response_model=list[TransactionResponse])
+def transactions_needing_review(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+    limit: int = Query(default=50, ge=1, le=200),
+    offset: int = Query(default=0, ge=0),
+) -> list[Transaction]:
+    """Transactions the system was not confident enough to categorize."""
+    stmt = (
+        select(Transaction)
+        .where(Transaction.user_id == current_user.id, Transaction.category.is_(None))
+        .order_by(Transaction.transaction_date.desc(), Transaction.id.desc())
+        .limit(limit)
+        .offset(offset)
+    )
+    return list(db.scalars(stmt).all())
+
+
+@router.get("/categories", response_model=list[str])
+def list_categories(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> list[str]:
+    """Categories to offer in the labeling UI: model classes, rule categories,
+    and any custom category this user has already created."""
+    names: set[str] = set()
+    model = get_model()
+    if model is not None:
+        names.update(str(c) for c in model.classes_)
+    names.update(db.scalars(select(CategoryRule.category).distinct()))
+    names.update(
+        db.scalars(select(Transaction.category).where(Transaction.user_id == current_user.id, Transaction.category.is_not(None)).distinct())
+    )
+    return sorted(names)
+
+
+@router.patch("/{transaction_id}/category", response_model=CategoryUpdateResponse)
+def set_transaction_category(
+    transaction_id: int,
+    body: CategoryUpdateRequest,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> CategoryUpdateResponse:
+    """User labels a transaction. By default the label is applied to every other
+    transaction from the same merchant that the user hasn't labeled themselves,
+    and future imports from that merchant are labeled automatically."""
+    txn = db.get(Transaction, transaction_id)
+    if txn is None or txn.user_id != current_user.id:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Transaction not found")
+
+    category = body.category.strip()
+    if not category:
+        raise HTTPException(422, "Category cannot be blank")
+
+    targets = [txn]
+    if body.apply_to_merchant:
+        merchant = extract_merchant(txn.description)
+        if merchant:
+            candidates = db.scalars(
+                select(Transaction).where(
+                    Transaction.user_id == current_user.id,
+                    Transaction.id != txn.id,
+                    or_(Transaction.category_source.is_(None), Transaction.category_source != "user"),
+                )
+            )
+            targets += [t for t in candidates if extract_merchant(t.description) == merchant]
+
+    for t in targets:
+        t.category = category
+        t.subcategory = body.subcategory
+        t.category_source = "user"
+        t.category_confidence = None
+    db.commit()
+    db.refresh(txn)
+    return CategoryUpdateResponse(updated_count=len(targets), transaction=txn)

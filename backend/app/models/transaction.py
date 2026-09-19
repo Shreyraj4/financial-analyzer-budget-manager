@@ -27,6 +27,9 @@ class Transaction(Base):
     category: Mapped[str | None] = mapped_column(String(100), nullable=True, index=True)
     subcategory: Mapped[str | None] = mapped_column(String(100), nullable=True)
     source: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    # How the category was decided: "user" | "rule" | "model" (NULL = uncategorized).
+    category_source: Mapped[str | None] = mapped_column(String(20), nullable=True)
+    category_confidence: Mapped[Decimal | None] = mapped_column(Numeric(4, 3), nullable=True)
 
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 

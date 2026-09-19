@@ -19,7 +19,10 @@ from sklearn.svm import LinearSVC
 from app.features.text_features import build_text_vectorizer
 from app.preprocessing.text import extract_merchant
 
+from app.config import REPO_ROOT
+
 UNKNOWN = "Unknown"
+MODEL_PATH = REPO_ROOT / "backend" / "models" / "categorizer.joblib"
 
 
 def _amount_features(frame: pd.DataFrame) -> np.ndarray:

@@ -3,9 +3,9 @@ from dataclasses import dataclass
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 from sqlalchemy.orm import Session
 
-from app.ingestion.categorize import categorize, load_rules
 from app.models import Transaction
 from app.schemas.transaction import TransactionIn
+from app.services.categorization import build_categorizer
 
 
 @dataclass
@@ -19,10 +19,15 @@ def import_transactions(db: Session, user_id: int, transactions: list[Transactio
     if not transactions:
         return ImportResult(submitted_count=0, imported_count=0, duplicate_count=0)
 
-    rules = load_rules(db)
+    categorizer = build_categorizer(db, user_id)
+    auto = categorizer.categorize_rows([(t.description, t.amount) for t in transactions])
     values = []
-    for t in transactions:
-        category, subcategory = categorize(t.merchant, rules)
+    for t, guess in zip(transactions, auto):
+        if t.category:  # explicit user label wins over any automatic decision
+            category, subcategory, source, confidence = t.category.strip(), t.subcategory, "user", None
+        else:
+            category, subcategory, source = guess.category, guess.subcategory, guess.source
+            confidence = guess.confidence if guess.category else None
         values.append(
             {
                 "user_id": user_id,
@@ -33,6 +38,8 @@ def import_transactions(db: Session, user_id: int, transactions: list[Transactio
                 "transaction_type": t.transaction_type,
                 "category": category,
                 "subcategory": subcategory,
+                "category_source": source,
+                "category_confidence": confidence,
                 "source": t.source,
             }
         )

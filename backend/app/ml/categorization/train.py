@@ -14,12 +14,16 @@ from app.ml.categorization.evaluate import (
     detailed_report,
     evaluate_models,
 )
-from app.ml.categorization.model import MLCategorizer, MerchantLookupBaseline, SubstringRulesBaseline
+from app.ml.categorization.model import (
+    MODEL_PATH,
+    MLCategorizer,
+    MerchantLookupBaseline,
+    SubstringRulesBaseline,
+)
 from app.ml.dataset import load_labeled_transactions
 from app.scripts.seed_category_rules import RULES
 
 METRICS_PATH = REPO_ROOT / "docs" / "metrics" / "categorization.json"
-MODEL_PATH = REPO_ROOT / "backend" / "models" / "categorizer.joblib"
 PRODUCTION = "logreg_text+amount_C10"
 
 

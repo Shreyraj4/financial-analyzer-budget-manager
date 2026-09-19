@@ -1,0 +1,661 @@
+{
+  "dataset_rows": 14585,
+  "n_merchants": 123,
+  "models": {
+    "baseline_seed_rules": {
+      "known_merchants": {
+        "macro_f1": 0.105,
+        "weighted_f1": 0.1389,
+        "accuracy": 0.0804
+      },
+      "unseen_merchants": {
+        "macro_f1": 0.105,
+        "weighted_f1": 0.1389,
+        "accuracy": 0.0804
+      }
+    },
+    "baseline_merchant_lookup": {
+      "known_merchants": {
+        "macro_f1": 0.9082,
+        "weighted_f1": 0.9924,
+        "accuracy": 0.9867
+      },
+      "unseen_merchants": {
+        "macro_f1": 0.0,
+        "weighted_f1": 0.0,
+        "accuracy": 0.0
+      }
+    },
+    "logreg_text_C10": {
+      "known_merchants": {
+        "macro_f1": 0.9981,
+        "weighted_f1": 0.9978,
+        "accuracy": 0.9978
+      },
+      "unseen_merchants": {
+        "macro_f1": 0.2497,
+        "weighted_f1": 0.3141,
+        "accuracy": 0.3286
+      }
+    },
+    "logreg_text+amount_C1": {
+      "known_merchants": {
+        "macro_f1": 0.9982,
+        "weighted_f1": 0.9984,
+        "accuracy": 0.9984
+      },
+      "unseen_merchants": {
+        "macro_f1": 0.3859,
+        "weighted_f1": 0.3882,
+        "accuracy": 0.4062
+      }
+    },
+    "logreg_text+amount_C10": {
+      "known_merchants": {
+        "macro_f1": 0.9987,
+        "weighted_f1": 0.9984,
+        "accuracy": 0.9984
+      },
+      "unseen_merchants": {
+        "macro_f1": 0.3931,
+        "weighted_f1": 0.3859,
+        "accuracy": 0.3932
+      }
+    },
+    "logreg_text+amount_C100": {
+      "known_merchants": {
+        "macro_f1": 0.9989,
+        "weighted_f1": 0.9986,
+        "accuracy": 0.9986
+      },
+      "unseen_merchants": {
+        "macro_f1": 0.3878,
+        "weighted_f1": 0.3907,
+        "accuracy": 0.3879
+      }
+    },
+    "linearsvc_text+amount_C1": {
+      "known_merchants": {
+        "macro_f1": 0.9981,
+        "weighted_f1": 0.9978,
+        "accuracy": 0.9978
+      },
+      "unseen_merchants": {
+        "macro_f1": 0.3158,
+        "weighted_f1": 0.328,
+        "accuracy": 0.3298
+      }
+    }
+  },
+  "production_model": "logreg_text+amount_C10",
+  "production_report": {
+    "known_merchants": {
+      "per_class": {
+        "Education": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 143.0
+        },
+        "Entertainment": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 867.0
+        },
+        "Food & Dining": {
+          "precision": 0.9980119284294234,
+          "recall": 1.0,
+          "f1-score": 0.9990049751243781,
+          "support": 4016.0
+        },
+        "Groceries": {
+          "precision": 0.998936735778841,
+          "recall": 0.9926043317485472,
+          "f1-score": 0.9957604663487016,
+          "support": 1893.0
+        },
+        "Health": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 457.0
+        },
+        "Housing": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 257.0
+        },
+        "Income": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 384.0
+        },
+        "Shopping": {
+          "precision": 0.9910614525139665,
+          "recall": 0.9977502812148481,
+          "f1-score": 0.9943946188340808,
+          "support": 889.0
+        },
+        "Subscriptions": {
+          "precision": 1.0,
+          "recall": 0.998272884283247,
+          "f1-score": 0.9991356957649092,
+          "support": 1158.0
+        },
+        "Transport": {
+          "precision": 0.9991166077738516,
+          "recall": 0.9994108983799705,
+          "f1-score": 0.9992637314092181,
+          "support": 3395.0
+        },
+        "Travel": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 181.0
+        },
+        "Utilities": {
+          "precision": 0.9978813559322034,
+          "recall": 0.9968253968253968,
+          "f1-score": 0.9973530968766543,
+          "support": 945.0
+        },
+        "accuracy": 0.998423037367158,
+        "macro avg": {
+          "precision": 0.9987506733690239,
+          "recall": 0.9987386493710009,
+          "f1-score": 0.998742715363162,
+          "support": 14585.0
+        },
+        "weighted avg": {
+          "precision": 0.9984268454874861,
+          "recall": 0.998423037367158,
+          "f1-score": 0.998422594406554,
+          "support": 14585.0
+        }
+      },
+      "labels": [
+        "Education",
+        "Entertainment",
+        "Food & Dining",
+        "Groceries",
+        "Health",
+        "Housing",
+        "Income",
+        "Shopping",
+        "Subscriptions",
+        "Transport",
+        "Travel",
+        "Utilities"
+      ],
+      "confusion_matrix": [
+        [
+          143,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          867,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4016,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          1879,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          457,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          257,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          384,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          887,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1156,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3393,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          181,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          942
+        ]
+      ]
+    },
+    "unseen_merchants": {
+      "per_class": {
+        "Education": {
+          "precision": 0.29347826086956524,
+          "recall": 0.1888111888111888,
+          "f1-score": 0.2297872340425532,
+          "support": 143.0
+        },
+        "Entertainment": {
+          "precision": 0.0547945205479452,
+          "recall": 0.03690888119953864,
+          "f1-score": 0.04410751206064783,
+          "support": 867.0
+        },
+        "Food & Dining": {
+          "precision": 0.38654213542772237,
+          "recall": 0.45343625498007967,
+          "f1-score": 0.41732554142316947,
+          "support": 4016.0
+        },
+        "Groceries": {
+          "precision": 0.2968617472434266,
+          "recall": 0.369783412572636,
+          "f1-score": 0.32933427428840273,
+          "support": 1893.0
+        },
+        "Health": {
+          "precision": 0.30287648054145516,
+          "recall": 0.3916849015317287,
+          "f1-score": 0.3416030534351145,
+          "support": 457.0
+        },
+        "Housing": {
+          "precision": 0.8541666666666666,
+          "recall": 0.4785992217898833,
+          "f1-score": 0.6134663341645885,
+          "support": 257.0
+        },
+        "Income": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 384.0
+        },
+        "Shopping": {
+          "precision": 0.2186046511627907,
+          "recall": 0.21147356580427445,
+          "f1-score": 0.21497998856489423,
+          "support": 889.0
+        },
+        "Subscriptions": {
+          "precision": 0.09940652818991098,
+          "recall": 0.05785837651122625,
+          "f1-score": 0.07314410480349345,
+          "support": 1158.0
+        },
+        "Transport": {
+          "precision": 0.5581466707579011,
+          "recall": 0.5357879234167894,
+          "f1-score": 0.5467388037270815,
+          "support": 3395.0
+        },
+        "Travel": {
+          "precision": 0.5408163265306123,
+          "recall": 0.585635359116022,
+          "f1-score": 0.5623342175066313,
+          "support": 181.0
+        },
+        "Utilities": {
+          "precision": 0.3948087431693989,
+          "recall": 0.3058201058201058,
+          "f1-score": 0.3446630888491354,
+          "support": 945.0
+        },
+        "accuracy": 0.3932122043195063,
+        "macro avg": {
+          "precision": 0.4167085609256163,
+          "recall": 0.38464993262945607,
+          "f1-score": 0.393123679405476,
+          "support": 14585.0
+        },
+        "weighted avg": {
+          "precision": 0.3854003694286986,
+          "recall": 0.3932122043195063,
+          "f1-score": 0.3858600493993431,
+          "support": 14585.0
+        }
+      },
+      "labels": [
+        "Education",
+        "Entertainment",
+        "Food & Dining",
+        "Groceries",
+        "Health",
+        "Housing",
+        "Income",
+        "Shopping",
+        "Subscriptions",
+        "Transport",
+        "Travel",
+        "Utilities"
+      ],
+      "confusion_matrix": [
+        [
+          27,
+          23,
+          34,
+          0,
+          18,
+          6,
+          0,
+          23,
+          0,
+          3,
+          6,
+          3
+        ],
+        [
+          63,
+          32,
+          203,
+          125,
+          53,
+          0,
+          0,
+          95,
+          39,
+          128,
+          21,
+          108
+        ],
+        [
+          0,
+          216,
+          1821,
+          773,
+          90,
+          1,
+          0,
+          50,
+          346,
+          707,
+          1,
+          11
+        ],
+        [
+          0,
+          85,
+          777,
+          700,
+          0,
+          0,
+          0,
+          185,
+          41,
+          73,
+          2,
+          30
+        ],
+        [
+          0,
+          23,
+          101,
+          11,
+          179,
+          0,
+          0,
+          41,
+          14,
+          75,
+          12,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          123,
+          0,
+          107,
+          0,
+          1,
+          26,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          384,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          61,
+          139,
+          267,
+          73,
+          14,
+          0,
+          188,
+          2,
+          33,
+          15,
+          97
+        ],
+        [
+          0,
+          35,
+          535,
+          139,
+          99,
+          0,
+          0,
+          43,
+          67,
+          224,
+          0,
+          16
+        ],
+        [
+          0,
+          0,
+          911,
+          272,
+          47,
+          0,
+          0,
+          13,
+          160,
+          1819,
+          0,
+          173
+        ],
+        [
+          2,
+          23,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          1,
+          106,
+          4
+        ],
+        [
+          0,
+          86,
+          189,
+          71,
+          32,
+          0,
+          0,
+          71,
+          5,
+          195,
+          7,
+          289
+        ]
+      ]
+    }
+  },
+  "confidence_tradeoff_unseen": [
+    {
+      "threshold": 0.3,
+      "coverage": 0.8445,
+      "accuracy_on_covered": 0.4335
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.5232,
+      "accuracy_on_covered": 0.5522
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.3308,
+      "accuracy_on_covered": 0.6709
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.1938,
+      "accuracy_on_covered": 0.7788
+    }
+  ]
+}

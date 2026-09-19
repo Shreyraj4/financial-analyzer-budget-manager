@@ -27,3 +27,6 @@ node_modules/
 
 # Alembic / DB
 *.sqlite3
+
+# Trained model artifacts (regenerate with python -m app.ml.categorization.train)
+backend/models/

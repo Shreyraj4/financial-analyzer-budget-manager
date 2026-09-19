@@ -1,0 +1,281 @@
+{
+  "protocol": "rolling-origin; settings chosen on validation half, reported on test half",
+  "n_series": 121,
+  "validation_months": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+  ],
+  "test_months": [
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12"
+  ],
+  "validation": {
+    "naive_last_month": {
+      "mae": 9527.02,
+      "rmse": 26953.08,
+      "wape": 0.9544,
+      "mase": 1.5338
+    },
+    "moving_average_3": {
+      "mae": 7450.09,
+      "rmse": 19356.9,
+      "wape": 0.7464,
+      "mase": 1.2294
+    },
+    "seasonal_naive": {
+      "mae": 7716.34,
+      "rmse": 19482.57,
+      "wape": 0.773,
+      "mase": 1.2696
+    },
+    "existing_linear_trend": {
+      "mae": 7879.44,
+      "rmse": 19288.83,
+      "wape": 0.7894,
+      "mase": 1.2232
+    },
+    "ridge_alpha0.1": {
+      "mae": 8569.99,
+      "rmse": 19282.9,
+      "wape": 0.8585,
+      "mase": 1.2184
+    },
+    "ridge_alpha1": {
+      "mae": 8569.92,
+      "rmse": 19245.65,
+      "wape": 0.8585,
+      "mase": 1.2214
+    },
+    "ridge_alpha10": {
+      "mae": 8549.49,
+      "rmse": 19167.3,
+      "wape": 0.8565,
+      "mase": 1.2264
+    },
+    "ridge_alpha100": {
+      "mae": 8432.51,
+      "rmse": 18913.16,
+      "wape": 0.8448,
+      "mase": 1.222
+    },
+    "gbm_depth2": {
+      "mae": 7650.85,
+      "rmse": 18520.88,
+      "wape": 0.7665,
+      "mase": 1.1879
+    },
+    "gbm_depth3": {
+      "mae": 7535.88,
+      "rmse": 18732.34,
+      "wape": 0.7549,
+      "mase": 1.191
+    }
+  },
+  "chosen": {
+    "ridge": "ridge_alpha0.1",
+    "gbm": "gbm_depth2"
+  },
+  "test": {
+    "naive_last_month": {
+      "mae": 8643.0,
+      "rmse": 21623.96,
+      "wape": 0.8197,
+      "mase": 1.7317
+    },
+    "moving_average_3": {
+      "mae": 8045.26,
+      "rmse": 18242.12,
+      "wape": 0.763,
+      "mase": 1.5706
+    },
+    "seasonal_naive": {
+      "mae": 8949.77,
+      "rmse": 23583.61,
+      "wape": 0.8488,
+      "mase": 1.4407
+    },
+    "existing_linear_trend": {
+      "mae": 7755.85,
+      "rmse": 16936.64,
+      "wape": 0.7355,
+      "mase": 1.5037
+    },
+    "ridge_alpha0.1": {
+      "mae": 7290.59,
+      "rmse": 16416.12,
+      "wape": 0.6914,
+      "mase": 1.2573
+    },
+    "gbm_depth2": {
+      "mae": 7255.3,
+      "rmse": 16726.16,
+      "wape": 0.6881,
+      "mase": 1.2848
+    }
+  },
+  "test_per_category": {
+    "Education": {
+      "naive_last_month": {
+        "mae": 3864.12,
+        "rmse": 6915.71,
+        "wape": 0.6937,
+        "mase": 0.9113
+      },
+      "ridge_alpha0.1": {
+        "mae": 3110.25,
+        "rmse": 5434.09,
+        "wape": 0.5584,
+        "mase": 0.8146
+      }
+    },
+    "Entertainment": {
+      "naive_last_month": {
+        "mae": 12945.96,
+        "rmse": 28892.47,
+        "wape": 1.0364,
+        "mase": 3.9078
+      },
+      "ridge_alpha0.1": {
+        "mae": 14697.13,
+        "rmse": 25255.78,
+        "wape": 1.1766,
+        "mase": 2.9914
+      }
+    },
+    "Food & Dining": {
+      "naive_last_month": {
+        "mae": 2824.14,
+        "rmse": 6196.64,
+        "wape": 0.2887,
+        "mase": 0.9725
+      },
+      "ridge_alpha0.1": {
+        "mae": 1962.23,
+        "rmse": 4344.06,
+        "wape": 0.2006,
+        "mase": 0.7124
+      }
+    },
+    "Groceries": {
+      "naive_last_month": {
+        "mae": 2816.57,
+        "rmse": 4207.15,
+        "wape": 0.3209,
+        "mase": 1.0023
+      },
+      "ridge_alpha0.1": {
+        "mae": 2175.68,
+        "rmse": 3004.89,
+        "wape": 0.2478,
+        "mase": 0.8129
+      }
+    },
+    "Health": {
+      "naive_last_month": {
+        "mae": 6339.9,
+        "rmse": 16898.71,
+        "wape": 1.2284,
+        "mase": 1.3386
+      },
+      "ridge_alpha0.1": {
+        "mae": 6225.55,
+        "rmse": 14038.07,
+        "wape": 1.2062,
+        "mase": 0.9645
+      }
+    },
+    "Housing": {
+      "naive_last_month": {
+        "mae": 20607.85,
+        "rmse": 28591.98,
+        "wape": 0.8878,
+        "mase": 1.4591
+      },
+      "ridge_alpha0.1": {
+        "mae": 17883.35,
+        "rmse": 23734.11,
+        "wape": 0.7704,
+        "mase": 1.0729
+      }
+    },
+    "Shopping": {
+      "naive_last_month": {
+        "mae": 27899.17,
+        "rmse": 49572.26,
+        "wape": 1.1655,
+        "mase": 4.605
+      },
+      "ridge_alpha0.1": {
+        "mae": 19447.52,
+        "rmse": 34511.39,
+        "wape": 0.8125,
+        "mase": 3.0409
+      }
+    },
+    "Subscriptions": {
+      "naive_last_month": {
+        "mae": 1118.3,
+        "rmse": 1772.86,
+        "wape": 0.5168,
+        "mase": 1.822
+      },
+      "ridge_alpha0.1": {
+        "mae": 833.27,
+        "rmse": 1398.64,
+        "wape": 0.385,
+        "mase": 1.2415
+      }
+    },
+    "Transport": {
+      "naive_last_month": {
+        "mae": 2084.84,
+        "rmse": 4743.36,
+        "wape": 0.3529,
+        "mase": 1.2116
+      },
+      "ridge_alpha0.1": {
+        "mae": 1332.49,
+        "rmse": 3278.75,
+        "wape": 0.2256,
+        "mase": 0.8145
+      }
+    },
+    "Travel": {
+      "naive_last_month": {
+        "mae": 11519.74,
+        "rmse": 22314.34,
+        "wape": 0.8557,
+        "mase": 0.5582
+      },
+      "ridge_alpha0.1": {
+        "mae": 10945.0,
+        "rmse": 16609.73,
+        "wape": 0.813,
+        "mase": 0.56
+      }
+    },
+    "Utilities": {
+      "naive_last_month": {
+        "mae": 3614.02,
+        "rmse": 5740.98,
+        "wape": 0.6326,
+        "mase": 1.2513
+      },
+      "ridge_alpha0.1": {
+        "mae": 2798.29,
+        "rmse": 4473.42,
+        "wape": 0.4898,
+        "mase": 0.928
+      }
+    }
+  },
+  "production_model": "gbm_depth2"
+}

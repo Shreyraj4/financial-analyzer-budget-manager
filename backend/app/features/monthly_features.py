@@ -53,6 +53,13 @@ def build_forecast_features(panel: pd.DataFrame, lags: tuple[int, ...] = (1, 2, 
     p["roll_mean_3"] = shifted.groupby(grp_keys).transform(lambda s: s.rolling(3, min_periods=1).mean())
     p["roll_std_3"] = shifted.groupby(grp_keys).transform(lambda s: s.rolling(3, min_periods=2).std()).fillna(0.0)
 
+    # Mean of everything before this month (expanding, shifted): a leakage-safe
+    # per-series scale that lets one model serve users with very different budgets.
+    p["hist_mean"] = shifted.groupby(grp_keys).transform(lambda s: s.expanding(min_periods=1).mean())
+    # Same month last year, for the seasonal-naive baseline (NaN in the first year).
+    if 12 not in lags:
+        p["lag_12"] = g.shift(12)
+
     p["month_of_year"] = p["month"].dt.month
     p["month_sin"] = np.sin(2 * np.pi * p["month_of_year"] / 12)
     p["month_cos"] = np.cos(2 * np.pi * p["month_of_year"] / 12)

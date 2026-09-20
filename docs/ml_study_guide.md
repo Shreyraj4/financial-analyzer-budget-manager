@@ -4,6 +4,9 @@ You don't need to learn all of machine learning. You need the ~15 ideas below,
 in this order. Each one is tied to a file in this repo so you can read real code
 right after reading the concept.
 
+> **Interview prep lives in `docs/study/`**: start with `00_project_pitch_and_architecture.md`,
+> then `01_evaluation_concepts.md`, then one file per model.
+
 ## 0. The one-paragraph big picture
 
 A **model** is a function that learns a pattern from examples instead of being

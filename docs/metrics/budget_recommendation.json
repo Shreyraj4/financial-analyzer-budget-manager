@@ -1,0 +1,203 @@
+{
+  "protocol": "12 rolling origins: 3 calibration, 3 validation, 6 test; margins from strictly earlier months only",
+  "target_coverage": 0.8,
+  "validation": {
+    "naive_last_month": {
+      "n": 348,
+      "breach_rate": 0.2184,
+      "slack": 0.8095,
+      "shortfall": 0.3269,
+      "budget_to_spend": 1.4826,
+      "pinball_loss": 5104.46
+    },
+    "moving_average_3": {
+      "n": 348,
+      "breach_rate": 0.2672,
+      "slack": 0.4948,
+      "shortfall": 0.3556,
+      "budget_to_spend": 1.1392,
+      "pinball_loss": 4622.86
+    },
+    "seasonal_naive": {
+      "n": 348,
+      "breach_rate": 0.2241,
+      "slack": 0.6713,
+      "shortfall": 0.2857,
+      "budget_to_spend": 1.3857,
+      "pinball_loss": 4373.79
+    },
+    "existing_linear_trend": {
+      "n": 348,
+      "breach_rate": 0.2471,
+      "slack": 0.4793,
+      "shortfall": 0.3455,
+      "budget_to_spend": 1.1338,
+      "pinball_loss": 4487.43
+    },
+    "ridge": {
+      "n": 348,
+      "breach_rate": 0.2356,
+      "slack": 0.4764,
+      "shortfall": 0.3321,
+      "budget_to_spend": 1.1443,
+      "pinball_loss": 4352.0
+    },
+    "gbm": {
+      "n": 348,
+      "breach_rate": 0.273,
+      "slack": 0.348,
+      "shortfall": 0.3548,
+      "budget_to_spend": 0.9933,
+      "pinball_loss": 4260.86
+    },
+    "ridge_clean_history": {
+      "n": 348,
+      "breach_rate": 0.2701,
+      "slack": 0.3104,
+      "shortfall": 0.3559,
+      "budget_to_spend": 0.9545,
+      "pinball_loss": 4180.98
+    },
+    "gbm_clean_history": {
+      "n": 348,
+      "breach_rate": 0.2471,
+      "slack": 0.3068,
+      "shortfall": 0.3535,
+      "budget_to_spend": 0.9533,
+      "pinball_loss": 4149.64
+    }
+  },
+  "test": {
+    "naive_last_month": {
+      "n": 696,
+      "breach_rate": 0.2198,
+      "slack": 0.7976,
+      "shortfall": 0.2474,
+      "budget_to_spend": 1.5501,
+      "pinball_loss": 3838.66
+    },
+    "moving_average_3": {
+      "n": 696,
+      "breach_rate": 0.2241,
+      "slack": 0.6868,
+      "shortfall": 0.2476,
+      "budget_to_spend": 1.4392,
+      "pinball_loss": 3602.11
+    },
+    "seasonal_naive": {
+      "n": 696,
+      "breach_rate": 0.1882,
+      "slack": 0.7951,
+      "shortfall": 0.2388,
+      "budget_to_spend": 1.5564,
+      "pinball_loss": 3758.82
+    },
+    "existing_linear_trend": {
+      "n": 696,
+      "breach_rate": 0.2026,
+      "slack": 0.6228,
+      "shortfall": 0.2392,
+      "budget_to_spend": 1.3836,
+      "pinball_loss": 3392.64
+    },
+    "ridge": {
+      "n": 696,
+      "breach_rate": 0.2557,
+      "slack": 0.4337,
+      "shortfall": 0.2656,
+      "budget_to_spend": 1.1681,
+      "pinball_loss": 3213.58
+    },
+    "gbm": {
+      "n": 696,
+      "breach_rate": 0.2385,
+      "slack": 0.4219,
+      "shortfall": 0.2728,
+      "budget_to_spend": 1.1491,
+      "pinball_loss": 3249.54
+    },
+    "ridge_clean_history": {
+      "n": 696,
+      "breach_rate": 0.2083,
+      "slack": 0.4622,
+      "shortfall": 0.2475,
+      "budget_to_spend": 1.2147,
+      "pinball_loss": 3118.48
+    },
+    "gbm_clean_history": {
+      "n": 696,
+      "breach_rate": 0.2284,
+      "slack": 0.4496,
+      "shortfall": 0.2513,
+      "budget_to_spend": 1.1983,
+      "pinball_loss": 3124.75
+    }
+  },
+  "test_without_margin": {
+    "ridge": {
+      "n": 696,
+      "breach_rate": 0.3506,
+      "slack": 0.3598,
+      "shortfall": 0.3071,
+      "budget_to_spend": 1.0527,
+      "pinball_loss": 3411.17
+    },
+    "gbm_clean_history": {
+      "n": 696,
+      "breach_rate": 0.4986,
+      "slack": 0.1045,
+      "shortfall": 0.4408,
+      "budget_to_spend": 0.6637,
+      "pinball_loss": 4011.6
+    }
+  },
+  "calibration_sweep_test": {
+    "0.6": {
+      "n": 696,
+      "breach_rate": 0.4425,
+      "slack": 0.2133,
+      "shortfall": 0.3433,
+      "budget_to_spend": 0.87,
+      "pinball_loss": 3128.32
+    },
+    "0.7": {
+      "n": 696,
+      "breach_rate": 0.319,
+      "slack": 0.3105,
+      "shortfall": 0.2916,
+      "budget_to_spend": 1.0188,
+      "pinball_loss": 3192.53
+    },
+    "0.8": {
+      "n": 696,
+      "breach_rate": 0.2083,
+      "slack": 0.4622,
+      "shortfall": 0.2475,
+      "budget_to_spend": 1.2147,
+      "pinball_loss": 3118.48
+    },
+    "0.9": {
+      "n": 696,
+      "breach_rate": 0.0862,
+      "slack": 1.2835,
+      "shortfall": 0.157,
+      "budget_to_spend": 2.1265,
+      "pinball_loss": 2895.24
+    }
+  },
+  "shipped": "gbm_clean_history",
+  "categories_with_own_margin": [
+    "Education",
+    "Entertainment",
+    "Food & Dining",
+    "Groceries",
+    "Health",
+    "Housing",
+    "Shopping",
+    "Subscriptions",
+    "Transport",
+    "Travel",
+    "Utilities"
+  ],
+  "global_margin_ratio": 0.6231
+}

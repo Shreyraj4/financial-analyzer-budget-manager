@@ -57,7 +57,7 @@ def rolling_origin_predictions(features: pd.DataFrame, panel: pd.DataFrame, ml_m
     for origin in origins:
         train = features[features["month"] < origin]
         test = features[features["month"] == origin].copy()
-        keep = ["user_id", "category", "month", "spend"]
+        keep = ["user_id", "category", "month", "spend", "hist_mean"]
         rows = test[keep].rename(columns={"spend": "actual"}).reset_index(drop=True)
         for name, fn in BASELINES.items():
             rows[name] = fn(test)

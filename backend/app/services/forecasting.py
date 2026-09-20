@@ -26,11 +26,15 @@ def get_forecaster() -> GlobalForecaster | None:
         return None
 
 
-def user_spend_panel(db: Session, user_id: int) -> pd.DataFrame:
-    stmt = select(Transaction.transaction_date, Transaction.amount, Transaction.category).where(
+def user_spend_panel(db: Session, user_id: int, exclude_ids: set[int] | None = None) -> pd.DataFrame:
+    """Monthly spend per category for one user; ``exclude_ids`` drops specific transactions
+    (e.g. ones flagged as anomalies) before aggregating."""
+    stmt = select(Transaction.id, Transaction.transaction_date, Transaction.amount, Transaction.category).where(
         Transaction.user_id == user_id, Transaction.transaction_type == "debit", Transaction.category.is_not(None)
     )
-    frame = pd.DataFrame(db.execute(stmt).all(), columns=["date", "amount", "category"])
+    frame = pd.DataFrame(db.execute(stmt).all(), columns=["id", "date", "amount", "category"])
+    if exclude_ids:
+        frame = frame[~frame["id"].isin(exclude_ids)]
     if frame.empty:
         return monthly_category_panel(frame.assign(user_id=user_id))
     frame["amount"] = frame["amount"].astype(float)

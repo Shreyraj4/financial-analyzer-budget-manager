@@ -46,7 +46,7 @@ anomalies in total.
 - **PR-AUC** = quality across *all* possible thresholds. Better than accuracy for rare events.
 - **Macro-F1** (categorization) = F1 averaged over every category equally, so small categories matter as much as big ones.
 - **MAE** (forecasting) = average size of the error, in rupees. Easiest to explain.
-- **MASE** = your error divided by the naive baseline's error. Below 1 means you beat the baseline.
+- **MASE** = your error divided by a naive "repeat last month" forecast's error (measured on each series' first year). Lower is better; use it to compare methods against each other (values above 1 can still be normal if the test period is harder than the first year).
 
 ## 3. Words you will hear
 

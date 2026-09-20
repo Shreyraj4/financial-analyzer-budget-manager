@@ -72,12 +72,23 @@ def build_forecast_features(panel: pd.DataFrame, lags: tuple[int, ...] = (1, 2, 
 FORECAST_FEATURE_COLUMNS = ["roll_mean_3", "roll_std_3", "month_sin", "month_cos", "t"]
 
 
-def monthly_share_vectors(panel: pd.DataFrame) -> pd.DataFrame:
-    """One row per (user, month): each category's share of that month's spend,
-    plus log total spend. Input to spending-behaviour clustering; shares make
-    users comparable regardless of income level, and log total keeps scale
-    as a separate signal."""
-    wide = panel.pivot_table(index=["user_id", "month"], columns="category", values="spend", aggfunc="sum", fill_value=0.0)
+def monthly_share_vectors(panel: pd.DataFrame, window: int = 1) -> pd.DataFrame:
+    """One row per (user, month): each category's share of spend, plus log total
+    monthly spend. Input to spending-behaviour clustering; shares make users
+    comparable regardless of income level, and log total keeps scale as a
+    separate signal.
+
+    ``window`` > 1 first averages each category's spend over the trailing
+    ``window`` months (a row appears only once a full window exists). Spending
+    *behaviour* is a stable trait while single months are noisy (travel is 0%
+    one month and 40% the next), so pooling months gives far cleaner profiles.
+    """
+    p = panel.sort_values(["user_id", "category", "month"])
+    if window > 1:
+        p = p.assign(
+            spend=p.groupby(["user_id", "category"])["spend"].transform(lambda s: s.rolling(window, min_periods=window).mean())
+        ).dropna(subset=["spend"])
+    wide = p.pivot_table(index=["user_id", "month"], columns="category", values="spend", aggfunc="sum", fill_value=0.0)
     total = wide.sum(axis=1)
     shares = wide.div(total.where(total > 0, 1.0), axis=0)
     shares["log_total_spend"] = np.log1p(total)

@@ -1,0 +1,270 @@
+{
+  "n_users": 12,
+  "window_months": 12,
+  "windows_tried": {
+    "1": {
+      "points": 288,
+      "best_silhouette": 0.2571,
+      "k": 6,
+      "ari": 0.3375
+    },
+    "3": {
+      "points": 264,
+      "best_silhouette": 0.3062,
+      "k": 6,
+      "ari": 0.2724
+    },
+    "6": {
+      "points": 228,
+      "best_silhouette": 0.3287,
+      "k": 3,
+      "ari": 0.1593
+    },
+    "12": {
+      "points": 156,
+      "best_silhouette": 0.4479,
+      "k": 6,
+      "ari": 0.7713
+    }
+  },
+  "n_points": 156,
+  "k_range": [
+    2,
+    6
+  ],
+  "by_k": {
+    "2": {
+      "silhouette": 0.3246,
+      "davies_bouldin": 1.0639,
+      "ari_vs_personas": 0.1389,
+      "nmi_vs_personas": 0.4019,
+      "stability": 0.3034
+    },
+    "3": {
+      "silhouette": 0.3567,
+      "davies_bouldin": 1.4026,
+      "ari_vs_personas": 0.3261,
+      "nmi_vs_personas": 0.6525,
+      "stability": 0.409
+    },
+    "4": {
+      "silhouette": 0.3567,
+      "davies_bouldin": 1.2332,
+      "ari_vs_personas": 0.5634,
+      "nmi_vs_personas": 0.819,
+      "stability": 0.5828
+    },
+    "5": {
+      "silhouette": 0.4093,
+      "davies_bouldin": 1.1409,
+      "ari_vs_personas": 0.8187,
+      "nmi_vs_personas": 0.9311,
+      "stability": 0.6486
+    },
+    "6": {
+      "silhouette": 0.4479,
+      "davies_bouldin": 0.9495,
+      "ari_vs_personas": 0.7713,
+      "nmi_vs_personas": 0.9022,
+      "stability": 0.6863
+    }
+  },
+  "chosen_k": 6,
+  "algorithms_at_chosen_k": {
+    "kmeans": {
+      "silhouette": 0.4479,
+      "davies_bouldin": 0.9495,
+      "ari_vs_personas": 0.7713,
+      "nmi_vs_personas": 0.9022
+    },
+    "ward_hierarchical": {
+      "silhouette": 0.4479,
+      "davies_bouldin": 0.9495,
+      "ari_vs_personas": 0.7713,
+      "nmi_vs_personas": 0.9022
+    },
+    "gaussian_mixture": {
+      "silhouette": 0.4479,
+      "davies_bouldin": 0.9495,
+      "ari_vs_personas": 0.7713,
+      "nmi_vs_personas": 0.9022
+    },
+    "baseline_spend_level_bins": {
+      "silhouette": 0.2689,
+      "davies_bouldin": 1.6604,
+      "ari_vs_personas": 0.7249,
+      "nmi_vs_personas": 0.8084
+    }
+  },
+  "leave_one_user_out": {
+    "month_level_persona_accuracy": 0.5064,
+    "user_level_persona_accuracy": 0.5,
+    "n_users": 12
+  },
+  "profiles": [
+    {
+      "cluster": 0,
+      "name": "Lower-spend, Health-heavy",
+      "typical_monthly_spend": 27185.24,
+      "top_categories": [
+        {
+          "category": "Health",
+          "share": 0.415
+        },
+        {
+          "category": "Travel",
+          "share": 0.12
+        },
+        {
+          "category": "Food & Dining",
+          "share": 0.115
+        }
+      ]
+    },
+    {
+      "cluster": 1,
+      "name": "Higher-spend, Housing / Entertainment-heavy",
+      "typical_monthly_spend": 141653.14,
+      "top_categories": [
+        {
+          "category": "Housing",
+          "share": 0.223
+        },
+        {
+          "category": "Travel",
+          "share": 0.16
+        },
+        {
+          "category": "Entertainment",
+          "share": 0.149
+        }
+      ]
+    },
+    {
+      "cluster": 2,
+      "name": "Mid-spend, Housing / Groceries-heavy",
+      "typical_monthly_spend": 34911.44,
+      "top_categories": [
+        {
+          "category": "Housing",
+          "share": 0.318
+        },
+        {
+          "category": "Groceries",
+          "share": 0.255
+        },
+        {
+          "category": "Utilities",
+          "share": 0.12
+        }
+      ]
+    },
+    {
+      "cluster": 3,
+      "name": "Higher-spend, balanced",
+      "typical_monthly_spend": 150552.46,
+      "top_categories": [
+        {
+          "category": "Housing",
+          "share": 0.162
+        },
+        {
+          "category": "Travel",
+          "share": 0.151
+        },
+        {
+          "category": "Shopping",
+          "share": 0.146
+        }
+      ]
+    },
+    {
+      "cluster": 4,
+      "name": "Mid-spend, Housing / Subscriptions-heavy",
+      "typical_monthly_spend": 75213.68,
+      "top_categories": [
+        {
+          "category": "Housing",
+          "share": 0.21
+        },
+        {
+          "category": "Shopping",
+          "share": 0.164
+        },
+        {
+          "category": "Travel",
+          "share": 0.119
+        }
+      ]
+    },
+    {
+      "cluster": 5,
+      "name": "Lower-spend, Entertainment / Shopping-heavy",
+      "typical_monthly_spend": 24937.83,
+      "top_categories": [
+        {
+          "category": "Entertainment",
+          "share": 0.194
+        },
+        {
+          "category": "Shopping",
+          "share": 0.192
+        },
+        {
+          "category": "Travel",
+          "share": 0.187
+        }
+      ]
+    }
+  ],
+  "cluster_vs_persona_counts": {
+    "big_spender": {
+      "0": 0,
+      "1": 26,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "family": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 26,
+      "4": 0,
+      "5": 0
+    },
+    "freelancer": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 26,
+      "5": 0
+    },
+    "frugal_saver": {
+      "0": 0,
+      "1": 0,
+      "2": 26,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "student": {
+      "0": 9,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 17
+    },
+    "young_professional": {
+      "0": 0,
+      "1": 26,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    }
+  }
+}

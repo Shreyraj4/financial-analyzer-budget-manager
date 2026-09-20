@@ -118,7 +118,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 1,student,2024-04-08,STEAM GAMES *88909,-261.69,Entertainment,Gaming,STEAM GAMES,1,burst
 1,student,2024-04-08,STEAM GAMES 244543,-256.58,Entertainment,Gaming,STEAM GAMES,1,burst
 1,student,2024-04-08,UPI-MORE SUPERMARKET-713817719@ybl,-357.58,Groceries,Supermarket,MORE SUPERMARKET,0,
-1,student,2024-04-08,UPI/092179830597/STEAM GAMES/paytm,-207.37,Entertainment,Gaming,STEAM GAMES,0,
+1,student,2024-04-08,UPI/092179830597/STEAM GAMES/paytm,-207.37,Entertainment,Gaming,STEAM GAMES,1,burst
 1,student,2024-04-08,UPI/133753906/STEAM GAMES/ybl,-289.23,Entertainment,Gaming,STEAM GAMES,1,burst
 1,student,2024-04-08,UPI/148146257723/STEAM GAMES/oksbi,-245.44,Entertainment,Gaming,STEAM GAMES,1,burst
 1,student,2024-04-09,STARBUCKS *71132,-183.07,Food & Dining,Cafe,STARBUCKS,0,
@@ -232,7 +232,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 1,student,2024-07-02,BOX8 MUMBAI,-264.54,Food & Dining,Delivery,BOX8,0,
 1,student,2024-07-03,ACH D- DELHI METRO-539963,-168.33,Transport,Public,DELHI METRO,0,
 1,student,2024-07-03,ALLOWANCE FROM PARENTS BANGALORE,15364.32,Income,Other Income,ALLOWANCE FROM PARENTS,0,
-1,student,2024-07-03,SPOTIFY MUMBAI,-259.2,Subscriptions,Streaming,SPOTIFY,0,
+1,student,2024-07-03,SPOTIFY MUMBAI,-259.2,Subscriptions,Streaming,SPOTIFY,1,duplicate_charge
 1,student,2024-07-03,SPOTIFY MUMBAI,-259.2,Subscriptions,Streaming,SPOTIFY,1,duplicate_charge
 1,student,2024-07-04,BLUE TOKAI *67417,-277.53,Food & Dining,Cafe,BLUE TOKAI,0,
 1,student,2024-07-05,POS 1448XXXXXX3317 PRACTO CONSULT BANGALORE,-77022.94,Health,Clinic,PRACTO CONSULT,1,unusual_high_value
@@ -243,7 +243,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 1,student,2024-07-08,POS 2070XXXXXX8787 PLAYSTATION STORE BANGALORE,-430.46,Entertainment,Gaming,PLAYSTATION STORE,0,
 1,student,2024-07-09,ACH D- SAGAR RATNA-697717,-497.4,Food & Dining,Restaurant,SAGAR RATNA,0,
 1,student,2024-07-09,ACH D- SWIGGY-786563,-123.64,Food & Dining,Delivery,SWIGGY,0,
-1,student,2024-07-10,INDIAN OIL PETROL BANGALORE,-48.78,Transport,Fuel,INDIAN OIL PETROL,0,
+1,student,2024-07-10,INDIAN OIL PETROL BANGALORE,-48.78,Transport,Fuel,INDIAN OIL PETROL,1,duplicate_charge
 1,student,2024-07-10,MORE SUPERMARKET *23903,-241.34,Groceries,Supermarket,MORE SUPERMARKET,0,
 1,student,2024-07-11,INDIAN OIL PETROL BANGALORE,-48.78,Transport,Fuel,INDIAN OIL PETROL,1,duplicate_charge
 1,student,2024-07-12,ACH D- UNACADEMY-751034,-1975.32,Education,Courses,UNACADEMY,0,
@@ -295,7 +295,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 1,student,2024-08-19,STARBUCKS HYDERABAD,-273.21,Food & Dining,Cafe,STARBUCKS,0,
 1,student,2024-08-19,STEAM GAMES PUNE,-456.31,Entertainment,Gaming,STEAM GAMES,0,
 1,student,2024-08-19,UPI-BMTC BUS PASS-277235851509@axl,-16.04,Transport,Public,BMTC BUS PASS,0,
-1,student,2024-08-19,UPI-EATSURE-282769979@icici,-208.81,Food & Dining,Delivery,EATSURE,0,
+1,student,2024-08-19,UPI-EATSURE-282769979@icici,-208.81,Food & Dining,Delivery,EATSURE,1,burst
 1,student,2024-08-19,UPI-EATSURE-969232233@ybl,-218.06,Food & Dining,Delivery,EATSURE,1,burst
 1,student,2024-08-19,UPI-THIRD WAVE COFFEE-179974080@icici,-196.64,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 1,student,2024-08-19,UPI/748855156/EATSURE/paytm,-148.06,Food & Dining,Delivery,EATSURE,1,burst
@@ -305,7 +305,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 1,student,2024-08-21,COMEDY CLUB TICKETS CHENNAI,-186.02,Entertainment,Events,COMEDY CLUB TICKETS,0,
 1,student,2024-08-22,INDANE GAS *11954,-856.27,Utilities,Gas & Water,INDANE GAS,0,
 1,student,2024-08-22,KFC *27203,-394.44,Food & Dining,Restaurant,KFC,0,
-1,student,2024-08-22,MORE SUPERMARKET *72074,-347.4,Groceries,Supermarket,MORE SUPERMARKET,0,
+1,student,2024-08-22,MORE SUPERMARKET *72074,-347.4,Groceries,Supermarket,MORE SUPERMARKET,1,duplicate_charge
 1,student,2024-08-23,ACH D- DELHI METRO-587957,-57.99,Transport,Public,DELHI METRO,0,
 1,student,2024-08-23,MORE SUPERMARKET *72074,-347.4,Groceries,Supermarket,MORE SUPERMARKET,1,duplicate_charge
 1,student,2024-08-23,POS 4806XXXXXX9513 MYNTRA BANGALORE,-481.23,Shopping,Online,MYNTRA,0,
@@ -500,7 +500,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 1,student,2025-01-19,UPI-COLLEGE FEE PAYMENT-435566426@icici,-812.77,Education,Fees,COLLEGE FEE PAYMENT,1,burst
 1,student,2025-01-19,UPI-COLLEGE FEE PAYMENT-608416102@icici,-686.72,Education,Fees,COLLEGE FEE PAYMENT,1,burst
 1,student,2025-01-19,UPI/357963470593/COLLEGE FEE PAYMENT/okhdfc,-1054.25,Education,Fees,COLLEGE FEE PAYMENT,1,burst
-1,student,2025-01-19,UPI/403801875/COLLEGE FEE PAYMENT/paytm,-855.3,Education,Fees,COLLEGE FEE PAYMENT,0,
+1,student,2025-01-19,UPI/403801875/COLLEGE FEE PAYMENT/paytm,-855.3,Education,Fees,COLLEGE FEE PAYMENT,1,burst
 1,student,2025-01-20,BLINKI 507967,-358.67,Groceries,Online,BLINKIT,0,
 1,student,2025-01-20,RAPIDO 866453,-102.23,Transport,Rideshare,RAPIDO,0,
 1,student,2025-01-23,OLA CA 207885,-71.51,Transport,Rideshare,OLA CABS,0,
@@ -577,7 +577,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 1,student,2025-03-18,MICROSOFT 365 HYDERABAD,-156.73,Subscriptions,Software,MICROSOFT 365,1,burst
 1,student,2025-03-18,POS 9496XXXXXX6697 MICROSOFT 365 HYDERABAD,-136.4,Subscriptions,Software,MICROSOFT 365,1,burst
 1,student,2025-03-18,UPI-MICROSOFT 365-303403154@axl,-211.78,Subscriptions,Software,MICROSOFT 365,1,burst
-1,student,2025-03-18,UPI/334472662089/MICROSOFT 365/okhdfc,-200.65,Subscriptions,Software,MICROSOFT 365,0,
+1,student,2025-03-18,UPI/334472662089/MICROSOFT 365/okhdfc,-200.65,Subscriptions,Software,MICROSOFT 365,1,burst
 1,student,2025-03-18,UPI/696553394423/MICROSOFT 365/okhdfc,-168.5,Subscriptions,Software,MICROSOFT 365,1,burst
 1,student,2025-03-19,ACH D- EATSURE-439044,-116.84,Food & Dining,Delivery,EATSURE,0,
 1,student,2025-03-19,BIG BAZ 772307,-351.99,Groceries,Supermarket,BIG BAZAAR,0,
@@ -627,7 +627,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 1,student,2025-04-23,UPI/707738948/PUNJABI DHABA/okhdfc,-265.12,Food & Dining,Restaurant,PUNJABI DHABA,0,
 1,student,2025-04-24,OLA CABS DELHI,-148.47,Transport,Rideshare,OLA CABS,0,
 1,student,2025-04-24,POS 6281XXXXXX7998 FRESH VEGETABLES MART PUNE,-224.0,Groceries,Local,FRESH VEGETABLES MART,0,
-1,student,2025-04-26,POS 3364XXXXXX7679 BMTC BUS PASS BANGALORE,-28.4,Transport,Public,BMTC BUS PASS,0,
+1,student,2025-04-26,POS 3364XXXXXX7679 BMTC BUS PASS BANGALORE,-28.4,Transport,Public,BMTC BUS PASS,1,duplicate_charge
 1,student,2025-04-26,POS 3364XXXXXX7679 BMTC BUS PASS BANGALORE,-28.4,Transport,Public,BMTC BUS PASS,1,duplicate_charge
 1,student,2025-04-28,ACH D- BLUSMART-231945,-36.82,Transport,Rideshare,BLUSMART,0,
 1,student,2025-04-28,UPI-EATSURE-651772535136@axl,-241.82,Food & Dining,Delivery,EATSURE,0,
@@ -792,7 +792,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 1,student,2025-09-20,BHARAT 722459,-100.16,Transport,Fuel,BHARAT PETROLEUM,1,burst
 1,student,2025-09-20,BHARAT PE 766819,-81.87,Transport,Fuel,BHARAT PETROLEUM,1,burst
 1,student,2025-09-20,BHARAT PETROL 794769,-89.22,Transport,Fuel,BHARAT PETROLEUM,1,burst
-1,student,2025-09-20,BHARAT PETROLEUM NOIDA,-78.11,Transport,Fuel,BHARAT PETROLEUM,0,
+1,student,2025-09-20,BHARAT PETROLEUM NOIDA,-78.11,Transport,Fuel,BHARAT PETROLEUM,1,burst
 1,student,2025-09-20,UPI-BHARAT PETROLEUM-129261995672@axl,-59.38,Transport,Fuel,BHARAT PETROLEUM,1,burst
 1,student,2025-09-20,UPI-BHARAT PETROLEUM-715183041069@icici,-78.83,Transport,Fuel,BHARAT PETROLEUM,1,burst
 1,student,2025-09-20,UPI/287470652641/BHARAT PETROLEUM/paytm,-70.09,Transport,Fuel,BHARAT PETROLEUM,1,burst
@@ -879,7 +879,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 1,student,2025-12-05,STARBUCKS *13173,-127.61,Food & Dining,Cafe,STARBUCKS,1,burst
 1,student,2025-12-05,STARBUCKS *33370,-171.52,Food & Dining,Cafe,STARBUCKS,1,burst
 1,student,2025-12-05,STARBUCKS CHENNAI,-117.22,Food & Dining,Cafe,STARBUCKS,1,burst
-1,student,2025-12-05,STARBUCKS DELHI,-126.79,Food & Dining,Cafe,STARBUCKS,0,
+1,student,2025-12-05,STARBUCKS DELHI,-126.79,Food & Dining,Cafe,STARBUCKS,1,burst
 1,student,2025-12-05,STARBUCKS DELHI,-89.94,Food & Dining,Cafe,STARBUCKS,1,burst
 1,student,2025-12-05,STARBUCKS GURGAON,-172.13,Food & Dining,Cafe,STARBUCKS,1,burst
 1,student,2025-12-05,STARBUCKS HYDERABAD,-97.23,Food & Dining,Cafe,STARBUCKS,1,burst
@@ -963,7 +963,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2024-01-21,STARBUCKS *20169,-381.96,Food & Dining,Cafe,STARBUCKS,0,
 2,young_professional,2024-01-22,ACH D- FRESH VEGETABLES MART-380838,-1091.57,Groceries,Local,FRESH VEGETABLES MART,1,burst
 2,young_professional,2024-01-22,FRESH VEGETABLES MART *24222,-1088.3,Groceries,Local,FRESH VEGETABLES MART,1,burst
-2,young_professional,2024-01-22,FRESH VEGETABLES MART *33856,-849.25,Groceries,Local,FRESH VEGETABLES MART,0,
+2,young_professional,2024-01-22,FRESH VEGETABLES MART *33856,-849.25,Groceries,Local,FRESH VEGETABLES MART,1,burst
 2,young_professional,2024-01-22,FRESH VEGETABLES MART *42952,-735.17,Groceries,Local,FRESH VEGETABLES MART,1,burst
 2,young_professional,2024-01-22,FRESH VEGETABLES MART *51200,-987.37,Groceries,Local,FRESH VEGETABLES MART,1,burst
 2,young_professional,2024-01-22,UPI/585423178963/FRESH VEGETABLES MART/paytm,-1094.87,Groceries,Local,FRESH VEGETABLES MART,1,burst
@@ -1065,7 +1065,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2024-03-17,UPI-UBER-419432509888@axl,-284.29,Transport,Rideshare,UBER,0,
 2,young_professional,2024-03-20,ACH D- GOOGLE ONE-755329,-219.77,Subscriptions,Software,GOOGLE ONE,1,burst
 2,young_professional,2024-03-20,FLIPKART BANGALORE,-2469.36,Shopping,Online,FLIPKART,0,
-2,young_professional,2024-03-20,GOOGLE O 092468,-179.32,Subscriptions,Software,GOOGLE ONE,0,
+2,young_professional,2024-03-20,GOOGLE O 092468,-179.32,Subscriptions,Software,GOOGLE ONE,1,burst
 2,young_professional,2024-03-20,GOOGLE ONE *71272,-130.23,Subscriptions,Software,GOOGLE ONE,1,burst
 2,young_professional,2024-03-20,POS 6369XXXXXX5260 GOOGLE ONE HYDERABAD,-141.28,Subscriptions,Software,GOOGLE ONE,1,burst
 2,young_professional,2024-03-20,UPI-GOOGLE ONE-497314614@icici,-137.41,Subscriptions,Software,GOOGLE ONE,1,burst
@@ -1131,7 +1131,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2024-04-20,BLUE T 634532,-364.48,Food & Dining,Cafe,BLUE TOKAI,1,burst
 2,young_professional,2024-04-20,BLUE TOKA 225493,-296.5,Food & Dining,Cafe,BLUE TOKAI,1,burst
 2,young_professional,2024-04-20,BLUE TOKAI 279124,-407.54,Food & Dining,Cafe,BLUE TOKAI,1,burst
-2,young_professional,2024-04-20,BLUE TOKAI GURGAON,-327.13,Food & Dining,Cafe,BLUE TOKAI,0,
+2,young_professional,2024-04-20,BLUE TOKAI GURGAON,-327.13,Food & Dining,Cafe,BLUE TOKAI,1,burst
 2,young_professional,2024-04-20,BOX8 GURGAON,-389.48,Food & Dining,Delivery,BOX8,0,
 2,young_professional,2024-04-20,UPI-BLUE TOKAI-200612765297@axl,-401.02,Food & Dining,Cafe,BLUE TOKAI,1,burst
 2,young_professional,2024-04-21,ACH D- BLUE TOKAI-370204,-240.67,Food & Dining,Cafe,BLUE TOKAI,0,
@@ -1233,7 +1233,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2024-06-07,ACH D- CHAAYOS-699425,-267.26,Food & Dining,Cafe,CHAAYOS,0,
 2,young_professional,2024-06-10,ACH D- RAPIDO-663439,-116.53,Transport,Rideshare,RAPIDO,1,burst
 2,young_professional,2024-06-10,ACH D- RAPIDO-984824,-151.94,Transport,Rideshare,RAPIDO,1,burst
-2,young_professional,2024-06-10,POS 7336XXXXXX9568 RAPIDO MUMBAI,-162.04,Transport,Rideshare,RAPIDO,0,
+2,young_professional,2024-06-10,POS 7336XXXXXX9568 RAPIDO MUMBAI,-162.04,Transport,Rideshare,RAPIDO,1,burst
 2,young_professional,2024-06-10,RAPIDO HYDERABAD,-210.52,Transport,Rideshare,RAPIDO,1,burst
 2,young_professional,2024-06-10,UPI-RAPIDO-987946839038@icici,-131.33,Transport,Rideshare,RAPIDO,1,burst
 2,young_professional,2024-06-11,SPOTIFY *18067,-304.81,Subscriptions,Streaming,SPOTIFY,0,
@@ -1299,7 +1299,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2024-07-20,BLUSMART *31685,-137.65,Transport,Rideshare,BLUSMART,0,
 2,young_professional,2024-07-20,POS 4212XXXXXX9730 DELHI METRO BANGALORE,-156.72,Transport,Public,DELHI METRO,0,
 2,young_professional,2024-07-20,UPI-BESCOM-226337748645@icici,-1915.98,Utilities,Electricity,BESCOM,0,
-2,young_professional,2024-07-20,UPI/733635621227/BLINKIT/oksbi,-851.37,Groceries,Online,BLINKIT,0,
+2,young_professional,2024-07-20,UPI/733635621227/BLINKIT/oksbi,-851.37,Groceries,Online,BLINKIT,1,duplicate_charge
 2,young_professional,2024-07-20,UPI/733635621227/BLINKIT/oksbi,-851.37,Groceries,Online,BLINKIT,1,duplicate_charge
 2,young_professional,2024-07-20,ZOMATO NOIDA,-340.54,Food & Dining,Delivery,ZOMATO,0,
 2,young_professional,2024-07-21,UPI/427693001/URBAN COMPANY/oksbi,-16888.75,Housing,Maintenance,URBAN COMPANY,0,
@@ -1314,7 +1314,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2024-07-24,BURGER KI 102052,-414.03,Food & Dining,Restaurant,BURGER KING,1,burst
 2,young_professional,2024-07-24,BURGER KIN 065178,-649.29,Food & Dining,Restaurant,BURGER KING,1,burst
 2,young_professional,2024-07-24,BURGER KIN 537222,-651.43,Food & Dining,Restaurant,BURGER KING,1,burst
-2,young_professional,2024-07-24,BURGER KING BANGALORE,-467.26,Food & Dining,Restaurant,BURGER KING,0,
+2,young_professional,2024-07-24,BURGER KING BANGALORE,-467.26,Food & Dining,Restaurant,BURGER KING,1,burst
 2,young_professional,2024-07-24,OLA CABS NOIDA,-104.66,Transport,Rideshare,OLA CABS,0,
 2,young_professional,2024-07-24,POS 7210XXXXXX1485 BURGER KING NOIDA,-484.9,Food & Dining,Restaurant,BURGER KING,1,burst
 2,young_professional,2024-07-25,CROMA 819797,-2172.81,Shopping,Electronics,CROMA,0,
@@ -1435,7 +1435,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2024-09-23,ACH D- PRACTO CONSULT-902057,-448.5,Health,Clinic,PRACTO CONSULT,1,burst
 2,young_professional,2024-09-23,PLAYSTATION STORE BANGALORE,-393.33,Entertainment,Gaming,PLAYSTATION STORE,0,
 2,young_professional,2024-09-23,POS 6731XXXXXX5440 IRCTC PUNE,-236.45,Transport,Public,IRCTC,0,
-2,young_professional,2024-09-23,PRACTO C 436819,-346.94,Health,Clinic,PRACTO CONSULT,0,
+2,young_professional,2024-09-23,PRACTO C 436819,-346.94,Health,Clinic,PRACTO CONSULT,1,burst
 2,young_professional,2024-09-23,PRACTO C 535759,-452.14,Health,Clinic,PRACTO CONSULT,1,burst
 2,young_professional,2024-09-23,PRACTO CONSULT BANGALORE,-262.42,Health,Clinic,PRACTO CONSULT,1,burst
 2,young_professional,2024-09-23,UPI-PRACTO CONSULT-270229783@axl,-363.97,Health,Clinic,PRACTO CONSULT,1,burst
@@ -1551,7 +1551,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2024-11-16,POS 2391XXXXXX1446 STEAM GAMES MUMBAI,-740.41,Entertainment,Gaming,STEAM GAMES,1,burst
 2,young_professional,2024-11-16,STARBUCKS 589140,-597.37,Food & Dining,Cafe,STARBUCKS,0,
 2,young_professional,2024-11-16,STEAM GAMES 970789,-441.24,Entertainment,Gaming,STEAM GAMES,1,burst
-2,young_professional,2024-11-16,STEAM GAMES DELHI,-578.21,Entertainment,Gaming,STEAM GAMES,0,
+2,young_professional,2024-11-16,STEAM GAMES DELHI,-578.21,Entertainment,Gaming,STEAM GAMES,1,burst
 2,young_professional,2024-11-16,STEAM GAMES GURGAON,-671.76,Entertainment,Gaming,STEAM GAMES,1,burst
 2,young_professional,2024-11-16,STEAM GAMES PUNE,-743.67,Entertainment,Gaming,STEAM GAMES,1,burst
 2,young_professional,2024-11-16,UPI/925235406/STEAM GAMES/oksbi,-598.58,Entertainment,Gaming,STEAM GAMES,1,burst
@@ -1581,7 +1581,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2024-11-30,RAPIDO CHENNAI,-93.31,Transport,Rideshare,RAPIDO,0,
 2,young_professional,2024-12-01,DELHI METR 565990,-201.71,Transport,Public,DELHI METRO,0,
 2,young_professional,2024-12-01,SALARY CREDIT HYDERABAD,56854.04,Income,Salary,SALARY CREDIT,0,
-2,young_professional,2024-12-03,UPI/371018112076/BMTC BUS PASS/ybl,-208.45,Transport,Public,BMTC BUS PASS,0,
+2,young_professional,2024-12-03,UPI/371018112076/BMTC BUS PASS/ybl,-208.45,Transport,Public,BMTC BUS PASS,1,duplicate_charge
 2,young_professional,2024-12-04,UPI/371018112076/BMTC BUS PASS/ybl,-208.45,Transport,Public,BMTC BUS PASS,1,duplicate_charge
 2,young_professional,2024-12-05,POS 5928XXXXXX9533 ZARA NOIDA,-1761.69,Shopping,Fashion,ZARA,0,
 2,young_professional,2024-12-05,UPI-MICROSOFT 365-204430249930@axl,-232.1,Subscriptions,Software,MICROSOFT 365,0,
@@ -1711,7 +1711,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2025-02-02,BLUE TOKA 679794,-258.53,Food & Dining,Cafe,BLUE TOKAI,0,
 2,young_professional,2025-02-02,RAPIDO 416268,-206.76,Transport,Rideshare,RAPIDO,0,
 2,young_professional,2025-02-03,ACH D- PVR CINEMAS-465062,-871.47,Entertainment,Movies,PVR CINEMAS,1,burst
-2,young_professional,2025-02-03,ACH D- PVR CINEMAS-853942,-1171.7,Entertainment,Movies,PVR CINEMAS,0,
+2,young_professional,2025-02-03,ACH D- PVR CINEMAS-853942,-1171.7,Entertainment,Movies,PVR CINEMAS,1,burst
 2,young_professional,2025-02-03,BIG BAZAAR CHENNAI,-548.83,Groceries,Supermarket,BIG BAZAAR,0,
 2,young_professional,2025-02-03,KFC 294103,-231.41,Food & Dining,Restaurant,KFC,0,
 2,young_professional,2025-02-03,PVR CINEMAS HYDERABAD,-934.33,Entertainment,Movies,PVR CINEMAS,1,burst
@@ -1761,7 +1761,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2025-02-23,FRESH VEGETABLES MART *04985,-843.89,Groceries,Local,FRESH VEGETABLES MART,1,burst
 2,young_professional,2025-02-23,FRESH VEGETABLES MART GURGAON,-970.72,Groceries,Local,FRESH VEGETABLES MART,1,burst
 2,young_professional,2025-02-23,UPI/399948628/HALDIRAMS/oksbi,-247.26,Food & Dining,Restaurant,HALDIRAMS,0,
-2,young_professional,2025-02-23,UPI/939088220/FRESH VEGETABLES MART/oksbi,-933.21,Groceries,Local,FRESH VEGETABLES MART,0,
+2,young_professional,2025-02-23,UPI/939088220/FRESH VEGETABLES MART/oksbi,-933.21,Groceries,Local,FRESH VEGETABLES MART,1,burst
 2,young_professional,2025-02-25,PANTALO 933927,-995.0,Shopping,Fashion,PANTALOONS,0,
 2,young_professional,2025-02-26,ACH D- ZOMATO-636300,-453.75,Food & Dining,Delivery,ZOMATO,0,
 2,young_professional,2025-02-26,BOOKMYSHOW *59596,-548.06,Entertainment,Movies,BOOKMYSHOW,0,
@@ -1852,7 +1852,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2025-04-09,UPI/971709933/KFC/paytm,-151.53,Food & Dining,Restaurant,KFC,0,
 2,young_professional,2025-04-10,DOMINOS PIZZA *34853,-386.26,Food & Dining,Delivery,DOMINOS PIZZA,0,
 2,young_professional,2025-04-12,ACH D- PANTALOONS-411020,-1926.9,Shopping,Fashion,PANTALOONS,0,
-2,young_professional,2025-04-12,ACH D- SHELL FUEL-137968,-116.32,Transport,Fuel,SHELL FUEL,0,
+2,young_professional,2025-04-12,ACH D- SHELL FUEL-137968,-116.32,Transport,Fuel,SHELL FUEL,1,duplicate_charge
 2,young_professional,2025-04-12,UPI/159326236585/STARBUCKS/paytm,-140.18,Food & Dining,Cafe,STARBUCKS,0,
 2,young_professional,2025-04-12,UPI/834875334/SWIGGY/oksbi,-949.96,Food & Dining,Delivery,SWIGGY,0,
 2,young_professional,2025-04-13,ACH D- SHELL FUEL-137968,-116.32,Transport,Fuel,SHELL FUEL,1,duplicate_charge
@@ -1876,7 +1876,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2025-04-23,UPI/879868447461/URBAN COMPANY/paytm,-9642.53,Housing,Maintenance,URBAN COMPANY,0,
 2,young_professional,2025-04-24,DOMINOS PIZZA DELHI,-445.99,Food & Dining,Delivery,DOMINOS PIZZA,0,
 2,young_professional,2025-04-24,STARBUC 015855,-244.66,Food & Dining,Cafe,STARBUCKS,1,burst
-2,young_professional,2025-04-24,STARBUCK 368752,-236.75,Food & Dining,Cafe,STARBUCKS,0,
+2,young_professional,2025-04-24,STARBUCK 368752,-236.75,Food & Dining,Cafe,STARBUCKS,1,burst
 2,young_professional,2025-04-24,STARBUCKS *86829,-213.81,Food & Dining,Cafe,STARBUCKS,1,burst
 2,young_professional,2025-04-24,STARBUCKS NOIDA,-173.14,Food & Dining,Cafe,STARBUCKS,1,burst
 2,young_professional,2025-04-24,UPI-STARBUCKS-356449797921@ybl,-184.44,Food & Dining,Cafe,STARBUCKS,1,burst
@@ -1944,7 +1944,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2025-05-25,UPI/129656577292/HOTSTAR/ybl,-175.46,Subscriptions,Streaming,HOTSTAR,0,
 2,young_professional,2025-05-26,ACH D- THIRD WAVE COFFEE-583001,-551.25,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 2,young_professional,2025-05-26,BMTC BUS PASS 048332,-307.93,Transport,Public,BMTC BUS PASS,0,
-2,young_professional,2025-05-26,DELHI METRO 339284,-108.76,Transport,Public,DELHI METRO,0,
+2,young_professional,2025-05-26,DELHI METRO 339284,-108.76,Transport,Public,DELHI METRO,1,duplicate_charge
 2,young_professional,2025-05-26,UPI/438187842/COMEDY CLUB TICKETS/okhdfc,-420.77,Entertainment,Events,COMEDY CLUB TICKETS,0,
 2,young_professional,2025-05-27,DELHI METRO 339284,-108.76,Transport,Public,DELHI METRO,1,duplicate_charge
 2,young_professional,2025-05-27,UBER *18308,-136.08,Transport,Rideshare,UBER,0,
@@ -2009,7 +2009,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2025-06-28,UPI-JIOMART-804226369@ybl,-1555.41,Groceries,Online,JIOMART,0,
 2,young_professional,2025-06-28,UPI-STARBUCKS-439257589109@ybl,-390.85,Food & Dining,Cafe,STARBUCKS,0,
 2,young_professional,2025-06-28,UPI/140760611172/PVR CINEMAS/ybl,-704.53,Entertainment,Movies,PVR CINEMAS,1,burst
-2,young_professional,2025-06-28,UPI/266488968881/PVR CINEMAS/ybl,-600.71,Entertainment,Movies,PVR CINEMAS,0,
+2,young_professional,2025-06-28,UPI/266488968881/PVR CINEMAS/ybl,-600.71,Entertainment,Movies,PVR CINEMAS,1,burst
 2,young_professional,2025-06-28,UPI/402353820/ZOMATO/okhdfc,-370.83,Food & Dining,Delivery,ZOMATO,0,
 2,young_professional,2025-06-30,ACH D- PRACTO CONSULT-633389,-25624.61,Health,Clinic,PRACTO CONSULT,1,unusual_high_value
 2,young_professional,2025-06-30,ACH D- THIRD WAVE COFFEE-221644,-307.86,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
@@ -2191,7 +2191,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2025-10-07,ZEPTO 211495,-770.55,Groceries,Online,ZEPTO,0,
 2,young_professional,2025-10-08,ACH D- RAPIDO-106539,-215.73,Transport,Rideshare,RAPIDO,1,burst
 2,young_professional,2025-10-08,ACH D- RAPIDO-578426,-304.88,Transport,Rideshare,RAPIDO,1,burst
-2,young_professional,2025-10-08,ACH D- RAPIDO-806950,-250.1,Transport,Rideshare,RAPIDO,0,
+2,young_professional,2025-10-08,ACH D- RAPIDO-806950,-250.1,Transport,Rideshare,RAPIDO,1,burst
 2,young_professional,2025-10-08,BOX8 *28103,-427.58,Food & Dining,Delivery,BOX8,0,
 2,young_professional,2025-10-08,DELHI METRO NOIDA,-161.94,Transport,Public,DELHI METRO,0,
 2,young_professional,2025-10-08,INDANE GAS MUMBAI,-611.86,Utilities,Gas & Water,INDANE GAS,0,
@@ -2248,7 +2248,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2025-11-02,POS 7237XXXXXX4772 INDIAN OIL PETROL MUMBAI,-285.36,Transport,Fuel,INDIAN OIL PETROL,1,burst
 2,young_professional,2025-11-02,POS 7354XXXXXX4807 BLUE TOKAI NOIDA,-260.28,Food & Dining,Cafe,BLUE TOKAI,0,
 2,young_professional,2025-11-02,STARBUCKS PUNE,-297.53,Food & Dining,Cafe,STARBUCKS,0,
-2,young_professional,2025-11-02,UPI-INDIAN OIL PETROL-667891052@axl,-340.23,Transport,Fuel,INDIAN OIL PETROL,0,
+2,young_professional,2025-11-02,UPI-INDIAN OIL PETROL-667891052@axl,-340.23,Transport,Fuel,INDIAN OIL PETROL,1,burst
 2,young_professional,2025-11-04,SALARY CREDIT NOIDA,58956.28,Income,Salary,SALARY CREDIT,0,
 2,young_professional,2025-11-04,SHELL  956578,-294.32,Transport,Fuel,SHELL FUEL,0,
 2,young_professional,2025-11-04,UPI-THIRD WAVE COFFEE-048335690353@icici,-658.97,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
@@ -2332,7 +2332,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2025-12-14,PAYTM INSIDER *86371,-877.33,Entertainment,Events,PAYTM INSIDER,1,burst
 2,young_professional,2025-12-14,UPI-PAYTM INSIDER-025474680183@ybl,-1021.28,Entertainment,Events,PAYTM INSIDER,1,burst
 2,young_professional,2025-12-14,UPI-PAYTM INSIDER-765073261@axl,-1456.33,Entertainment,Events,PAYTM INSIDER,1,burst
-2,young_professional,2025-12-14,UPI/421059973791/PAYTM INSIDER/paytm,-1278.13,Entertainment,Events,PAYTM INSIDER,0,
+2,young_professional,2025-12-14,UPI/421059973791/PAYTM INSIDER/paytm,-1278.13,Entertainment,Events,PAYTM INSIDER,1,burst
 2,young_professional,2025-12-14,UPI/778304206932/PAYTM INSIDER/ybl,-1229.74,Entertainment,Events,PAYTM INSIDER,1,burst
 2,young_professional,2025-12-14,UPI/858479329071/PAYTM INSIDER/okhdfc,-1396.6,Entertainment,Events,PAYTM INSIDER,1,burst
 2,young_professional,2025-12-15,ACH D- CHATGPT PLUS-208926,-329.17,Subscriptions,Software,CHATGPT PLUS,0,
@@ -2362,7 +2362,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2025-12-28,POS 9871XXXXXX3776 THIRD WAVE COFFEE NOIDA,-273.45,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 2,young_professional,2025-12-28,UBER 007261,-228.9,Transport,Rideshare,UBER,0,
 2,young_professional,2025-12-29,ACH D- GUPTA PROVISION STORE-701825,-1419.81,Groceries,Local,GUPTA PROVISION STORE,0,
-2,young_professional,2025-12-29,ACH D- STEAM GAMES-939261,-1076.3,Entertainment,Gaming,STEAM GAMES,0,
+2,young_professional,2025-12-29,ACH D- STEAM GAMES-939261,-1076.3,Entertainment,Gaming,STEAM GAMES,1,burst
 2,young_professional,2025-12-29,POS 7963XXXXXX9542 STEAM GAMES BANGALORE,-1008.22,Entertainment,Gaming,STEAM GAMES,1,burst
 2,young_professional,2025-12-29,POS 9778XXXXXX6976 STEAM GAMES CHENNAI,-1202.29,Entertainment,Gaming,STEAM GAMES,1,burst
 2,young_professional,2025-12-29,STEAM GAMES CHENNAI,-935.35,Entertainment,Gaming,STEAM GAMES,1,burst
@@ -2371,7 +2371,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 2,young_professional,2025-12-29,UPI/842397613692/STEAM GAMES/ybl,-1177.55,Entertainment,Gaming,STEAM GAMES,1,burst
 3,family,2024-01-01,SALARY CREDIT DELHI,111080.86,Income,Salary,SALARY CREDIT,0,
 3,family,2024-01-02,MORE SUPERMARKET *94612,-901.56,Groceries,Supermarket,MORE SUPERMARKET,0,
-3,family,2024-01-02,UPI/789757717/SHARMA KIRANA/oksbi,-546.72,Groceries,Local,SHARMA KIRANA,0,
+3,family,2024-01-02,UPI/789757717/SHARMA KIRANA/oksbi,-546.72,Groceries,Local,SHARMA KIRANA,1,duplicate_charge
 3,family,2024-01-03,FRESH VEGETABLES MART *07823,-1268.52,Groceries,Local,FRESH VEGETABLES MART,0,
 3,family,2024-01-03,UPI/789757717/SHARMA KIRANA/oksbi,-546.72,Groceries,Local,SHARMA KIRANA,1,duplicate_charge
 3,family,2024-01-04,APPLE  034631,-2649.01,Shopping,Electronics,APPLE STORE,0,
@@ -2388,7 +2388,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 3,family,2024-01-11,GUPTA PROVISION STOR 969082,-917.84,Groceries,Local,GUPTA PROVISION STORE,0,
 3,family,2024-01-12,ZARA 958164,-2266.51,Shopping,Fashion,ZARA,0,
 3,family,2024-01-13,BWSSB WATER 705873,-1336.69,Utilities,Gas & Water,BWSSB WATER,0,
-3,family,2024-01-13,ZOMATO 194034,-493.47,Food & Dining,Delivery,ZOMATO,0,
+3,family,2024-01-13,ZOMATO 194034,-493.47,Food & Dining,Delivery,ZOMATO,1,duplicate_charge
 3,family,2024-01-13,ZOMATO 194034,-493.47,Food & Dining,Delivery,ZOMATO,1,duplicate_charge
 3,family,2024-01-14,BLUSMART BANGALORE,-2233.14,Transport,Rideshare,BLUSMART,0,
 3,family,2024-01-14,IRCTC DELHI,-1150.61,Transport,Public,IRCTC,0,
@@ -2558,7 +2558,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 3,family,2024-04-19,MORE SUP 300223,-896.29,Groceries,Supermarket,MORE SUPERMARKET,0,
 3,family,2024-04-20,ACH D- BHARAT GAS-572417,-1599.98,Utilities,Gas & Water,BHARAT GAS,0,
 3,family,2024-04-20,ACH D- BHARAT PETROLEUM-112765,-534.35,Transport,Fuel,BHARAT PETROLEUM,1,burst
-3,family,2024-04-20,BHARAT PET 639025,-635.0,Transport,Fuel,BHARAT PETROLEUM,0,
+3,family,2024-04-20,BHARAT PET 639025,-635.0,Transport,Fuel,BHARAT PETROLEUM,1,burst
 3,family,2024-04-20,BHARAT PETROLEU 450654,-878.06,Transport,Fuel,BHARAT PETROLEUM,1,burst
 3,family,2024-04-20,BHARAT PETROLEUM *82030,-507.81,Transport,Fuel,BHARAT PETROLEUM,1,burst
 3,family,2024-04-20,BHARAT PETROLEUM GURGAON,-711.9,Transport,Fuel,BHARAT PETROLEUM,1,burst
@@ -2650,7 +2650,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 3,family,2024-06-09,POS 4785XXXXXX2785 ZOMATO MUMBAI,-1018.12,Food & Dining,Delivery,ZOMATO,1,burst
 3,family,2024-06-09,UPI-ZOMATO-575875168@axl,-584.75,Food & Dining,Delivery,ZOMATO,1,burst
 3,family,2024-06-09,UPI-ZOMATO-889536303@axl,-748.81,Food & Dining,Delivery,ZOMATO,1,burst
-3,family,2024-06-09,UPI/338692091919/ZOMATO/paytm,-732.35,Food & Dining,Delivery,ZOMATO,0,
+3,family,2024-06-09,UPI/338692091919/ZOMATO/paytm,-732.35,Food & Dining,Delivery,ZOMATO,1,burst
 3,family,2024-06-10,UPI/410577487806/APPLE STORE/ybl,-2414.8,Shopping,Electronics,APPLE STORE,0,
 3,family,2024-06-11,UPI-STARBUCKS-628187836729@ybl,-233.52,Food & Dining,Cafe,STARBUCKS,0,
 3,family,2024-06-13,SWIGGY I 028346,-2676.07,Groceries,Online,SWIGGY INSTAMART,0,
@@ -2700,7 +2700,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 3,family,2024-07-03,POS 6502XXXXXX9355 CHAAYOS PUNE,-291.89,Food & Dining,Cafe,CHAAYOS,1,burst
 3,family,2024-07-03,SALARY CREDIT MUMBAI,111310.57,Income,Salary,SALARY CREDIT,0,
 3,family,2024-07-03,UPI-CHAAYOS-875492787@ybl,-498.24,Food & Dining,Cafe,CHAAYOS,1,burst
-3,family,2024-07-03,UPI/012171340150/CHAAYOS/ybl,-435.92,Food & Dining,Cafe,CHAAYOS,0,
+3,family,2024-07-03,UPI/012171340150/CHAAYOS/ybl,-435.92,Food & Dining,Cafe,CHAAYOS,1,burst
 3,family,2024-07-03,UPI/764918051549/CHAAYOS/oksbi,-542.69,Food & Dining,Cafe,CHAAYOS,1,burst
 3,family,2024-07-04,UPI-TATA POWER-058299288253@axl,-2819.36,Utilities,Electricity,TATA POWER,0,
 3,family,2024-07-05,IRCTC BANGALORE,-789.65,Transport,Public,IRCTC,0,
@@ -2734,7 +2734,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 3,family,2024-07-27,POS 5432XXXXXX9435 PUNJABI DHABA BANGALORE,-615.07,Food & Dining,Restaurant,PUNJABI DHABA,0,
 3,family,2024-07-27,SHELL FUEL GURGAON,-708.01,Transport,Fuel,SHELL FUEL,0,
 3,family,2024-07-28,UPI/583267269/INDIAN OIL PETROL/ybl,-766.14,Transport,Fuel,INDIAN OIL PETROL,0,
-3,family,2024-07-29,ACH D- SONYLIV-278363,-213.66,Subscriptions,Streaming,SONYLIV,0,
+3,family,2024-07-29,ACH D- SONYLIV-278363,-213.66,Subscriptions,Streaming,SONYLIV,1,duplicate_charge
 3,family,2024-07-29,ACH D- SONYLIV-278363,-213.66,Subscriptions,Streaming,SONYLIV,1,duplicate_charge
 3,family,2024-07-29,UPI/831486419/BMTC BUS PASS/oksbi,-975.75,Transport,Public,BMTC BUS PASS,0,
 3,family,2024-07-30,BARBEQUE NATION *49313,-209.53,Food & Dining,Restaurant,BARBEQUE NATION,0,
@@ -2761,7 +2761,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 3,family,2024-08-09,BOX8 *33043,-784.49,Food & Dining,Delivery,BOX8,1,burst
 3,family,2024-08-09,POS 1917XXXXXX1158 BOX8 CHENNAI,-1136.75,Food & Dining,Delivery,BOX8,1,burst
 3,family,2024-08-09,POS 7739XXXXXX7194 BOX8 CHENNAI,-638.43,Food & Dining,Delivery,BOX8,1,burst
-3,family,2024-08-09,POS 9715XXXXXX5099 BOX8 NOIDA,-832.4,Food & Dining,Delivery,BOX8,0,
+3,family,2024-08-09,POS 9715XXXXXX5099 BOX8 NOIDA,-832.4,Food & Dining,Delivery,BOX8,1,burst
 3,family,2024-08-09,UPI-BOX8-199653722@ybl,-991.66,Food & Dining,Delivery,BOX8,1,burst
 3,family,2024-08-09,UPI-BOX8-596820656752@axl,-714.15,Food & Dining,Delivery,BOX8,1,burst
 3,family,2024-08-09,UPI-BOX8-876818666@ybl,-944.39,Food & Dining,Delivery,BOX8,1,burst
@@ -2869,7 +2869,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 3,family,2024-10-07,POS 6192XXXXXX2139 PUNJABI DHABA GURGAON,-614.15,Food & Dining,Restaurant,PUNJABI DHABA,0,
 3,family,2024-10-08,UPI-BSES RAJDHANI-140436141@ybl,-4207.22,Utilities,Electricity,BSES RAJDHANI,0,
 3,family,2024-10-08,UPI/515414429/AMAZON PRIME/okhdfc,-251.12,Subscriptions,Streaming,AMAZON PRIME,0,
-3,family,2024-10-09,POS 8758XXXXXX8895 CLEARTRIP NOIDA,-24685.53,Travel,Flights,CLEARTRIP,0,
+3,family,2024-10-09,POS 8758XXXXXX8895 CLEARTRIP NOIDA,-24685.53,Travel,Flights,CLEARTRIP,1,duplicate_charge
 3,family,2024-10-09,POS 8758XXXXXX8895 CLEARTRIP NOIDA,-24685.53,Travel,Flights,CLEARTRIP,1,duplicate_charge
 3,family,2024-10-09,UPI-AJIO-850206716@ybl,-6685.56,Shopping,Online,AJIO,0,
 3,family,2024-10-09,UPI-PUNJABI DHABA-070111631032@ybl,-297.74,Food & Dining,Restaurant,PUNJABI DHABA,0,
@@ -2921,7 +2921,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 3,family,2024-11-07,UPI/464298897/GOOGLE ONE/paytm,-294.28,Subscriptions,Software,GOOGLE ONE,0,
 3,family,2024-11-08,POS 5486XXXXXX6322 CAFE COFFEE DAY GURGAON,-732.67,Food & Dining,Cafe,CAFE COFFEE DAY,0,
 3,family,2024-11-09,POS 9137XXXXXX4242 MUMBAI LOCAL PASS PUNE,-3042.7,Transport,Public,MUMBAI LOCAL PASS,0,
-3,family,2024-11-09,UPI-BHARAT PETROLEUM-428232497083@icici,-478.01,Transport,Fuel,BHARAT PETROLEUM,0,
+3,family,2024-11-09,UPI-BHARAT PETROLEUM-428232497083@icici,-478.01,Transport,Fuel,BHARAT PETROLEUM,1,duplicate_charge
 3,family,2024-11-10,ACH D- BHARAT PETROLEUM-361517,-1244.49,Transport,Fuel,BHARAT PETROLEUM,0,
 3,family,2024-11-10,POS 5889XXXXXX5919 JIOMART MUMBAI,-946.69,Groceries,Online,JIOMART,0,
 3,family,2024-11-10,UPI-BHARAT PETROLEUM-428232497083@icici,-478.01,Transport,Fuel,BHARAT PETROLEUM,1,duplicate_charge
@@ -3144,7 +3144,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 3,family,2025-03-20,INDIAN OIL PETROL *87001,-602.33,Transport,Fuel,INDIAN OIL PETROL,0,
 3,family,2025-03-20,UPI/604084543230/SPENCERS/okhdfc,-1848.57,Groceries,Supermarket,SPENCERS,0,
 3,family,2025-03-21,UPI-BHARAT PETROLEUM-899653513409@axl,-1079.64,Transport,Fuel,BHARAT PETROLEUM,0,
-3,family,2025-03-23,APOLLO PHARMACY *59041,-2513.74,Health,Pharmacy,APOLLO PHARMACY,0,
+3,family,2025-03-23,APOLLO PHARMACY *59041,-2513.74,Health,Pharmacy,APOLLO PHARMACY,1,duplicate_charge
 3,family,2025-03-24,APOLLO PHARMACY *59041,-2513.74,Health,Pharmacy,APOLLO PHARMACY,1,duplicate_charge
 3,family,2025-03-24,DREAM11 *48038,-592.89,Entertainment,Gaming,DREAM11,0,
 3,family,2025-03-25,INDIAN OIL PETROL *31800,-689.64,Transport,Fuel,INDIAN OIL PETROL,0,
@@ -3230,7 +3230,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 3,family,2025-05-07,GUPTA PROVISION STORE *21768,-1744.92,Groceries,Local,GUPTA PROVISION STORE,0,
 3,family,2025-05-07,INDIAN OIL PETROL 586259,-699.66,Transport,Fuel,INDIAN OIL PETROL,0,
 3,family,2025-05-07,MILK DAIRY BOOTH *54283,-2752.29,Groceries,Local,MILK DAIRY BOOTH,0,
-3,family,2025-05-07,UPI-CHATGPT PLUS-851102594@ybl,-321.2,Subscriptions,Software,CHATGPT PLUS,0,
+3,family,2025-05-07,UPI-CHATGPT PLUS-851102594@ybl,-321.2,Subscriptions,Software,CHATGPT PLUS,1,duplicate_charge
 3,family,2025-05-08,UPI-CHATGPT PLUS-851102594@ybl,-321.2,Subscriptions,Software,CHATGPT PLUS,1,duplicate_charge
 3,family,2025-05-09,POS 5125XXXXXX2310 COMEDY CLUB TICKETS PUNE,-810.25,Entertainment,Events,COMEDY CLUB TICKETS,0,
 3,family,2025-05-10,JIOMART PUNE,-319.57,Groceries,Online,JIOMART,0,
@@ -3349,7 +3349,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 3,family,2025-07-12,POS 8756XXXXXX7470 BLUE TOKAI CHENNAI,-591.76,Food & Dining,Cafe,BLUE TOKAI,0,
 3,family,2025-07-13,ACH D- ADANI ELECTRICITY-305939,-1399.23,Utilities,Electricity,ADANI ELECTRICITY,0,
 3,family,2025-07-13,POS 3801XXXXXX6837 GUPTA PROVISION STORE PUNE,-981.83,Groceries,Local,GUPTA PROVISION STORE,0,
-3,family,2025-07-13,POS 4653XXXXXX1281 FORTIS HOSPITAL GURGAON,-1864.02,Health,Clinic,FORTIS HOSPITAL,0,
+3,family,2025-07-13,POS 4653XXXXXX1281 FORTIS HOSPITAL GURGAON,-1864.02,Health,Clinic,FORTIS HOSPITAL,1,duplicate_charge
 3,family,2025-07-13,POS 4653XXXXXX1281 FORTIS HOSPITAL GURGAON,-1864.02,Health,Clinic,FORTIS HOSPITAL,1,duplicate_charge
 3,family,2025-07-13,UPI-AMAZON-243647994135@icici,-1116.85,Shopping,Online,AMAZON,0,
 3,family,2025-07-14,SHELL FUEL NOIDA,-471.74,Transport,Fuel,SHELL FUEL,0,
@@ -3718,7 +3718,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 4,frugal_saver,2024-03-30,ACH D- MEESHO-833292,-1052.18,Shopping,Online,MEESHO,1,burst
 4,frugal_saver,2024-03-30,ACH D- MEESHO-866162,-1692.87,Shopping,Online,MEESHO,1,burst
 4,frugal_saver,2024-03-30,ACH D- NAMMA METRO-706636,-114.54,Transport,Public,NAMMA METRO,0,
-4,frugal_saver,2024-03-30,MEESHO *77640,-1245.03,Shopping,Online,MEESHO,0,
+4,frugal_saver,2024-03-30,MEESHO *77640,-1245.03,Shopping,Online,MEESHO,1,burst
 4,frugal_saver,2024-03-30,MEESHO NOIDA,-912.63,Shopping,Online,MEESHO,1,burst
 4,frugal_saver,2024-03-30,POS 4937XXXXXX7251 MEESHO NOIDA,-1340.17,Shopping,Online,MEESHO,1,burst
 4,frugal_saver,2024-03-30,POS 6005XXXXXX4840 MEESHO CHENNAI,-1635.93,Shopping,Online,MEESHO,1,burst
@@ -3748,7 +3748,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 4,frugal_saver,2024-04-26,POS 8799XXXXXX4595 ZOMATO DELHI,-133.06,Food & Dining,Delivery,ZOMATO,1,burst
 4,frugal_saver,2024-04-26,UPI-ZOMATO-191387819290@ybl,-218.52,Food & Dining,Delivery,ZOMATO,1,burst
 4,frugal_saver,2024-04-26,UPI-ZOMATO-214758807@axl,-136.21,Food & Dining,Delivery,ZOMATO,1,burst
-4,frugal_saver,2024-04-26,UPI/056046075/ZOMATO/paytm,-181.66,Food & Dining,Delivery,ZOMATO,0,
+4,frugal_saver,2024-04-26,UPI/056046075/ZOMATO/paytm,-181.66,Food & Dining,Delivery,ZOMATO,1,burst
 4,frugal_saver,2024-04-26,ZOMATO *21879,-125.34,Food & Dining,Delivery,ZOMATO,1,burst
 4,frugal_saver,2024-04-27,UPI-HALDIRAMS-390418016@icici,-403.44,Food & Dining,Restaurant,HALDIRAMS,0,
 4,frugal_saver,2024-04-29,POS 5379XXXXXX3975 IRCTC NOIDA,-122.04,Transport,Public,IRCTC,0,
@@ -3800,7 +3800,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 4,frugal_saver,2024-06-13,UPI-BIG BAZAAR-624270554884@axl,-763.06,Groceries,Supermarket,BIG BAZAAR,0,
 4,frugal_saver,2024-06-13,UPI-ZEPTO-943725210@axl,-945.41,Groceries,Online,ZEPTO,0,
 4,frugal_saver,2024-06-13,UPI/314440045/SPENCERS/paytm,-930.08,Groceries,Supermarket,SPENCERS,0,
-4,frugal_saver,2024-06-14,UBER 825162,-125.66,Transport,Rideshare,UBER,0,
+4,frugal_saver,2024-06-14,UBER 825162,-125.66,Transport,Rideshare,UBER,1,duplicate_charge
 4,frugal_saver,2024-06-14,UBER 825162,-125.66,Transport,Rideshare,UBER,1,duplicate_charge
 4,frugal_saver,2024-06-16,POS 6722XXXXXX6909 DELHI METRO GURGAON,-138.53,Transport,Public,DELHI METRO,0,
 4,frugal_saver,2024-06-16,SHELL FUEL *05835,-167.15,Transport,Fuel,SHELL FUEL,0,
@@ -3810,7 +3810,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 4,frugal_saver,2024-06-20,BURGER  339753,-322.63,Food & Dining,Restaurant,BURGER KING,1,burst
 4,frugal_saver,2024-06-20,BURGER KING 599999,-217.21,Food & Dining,Restaurant,BURGER KING,1,burst
 4,frugal_saver,2024-06-20,PHARMEAS 042697,-638.67,Health,Pharmacy,PHARMEASY,0,
-4,frugal_saver,2024-06-20,POS 3826XXXXXX2328 BURGER KING CHENNAI,-256.51,Food & Dining,Restaurant,BURGER KING,0,
+4,frugal_saver,2024-06-20,POS 3826XXXXXX2328 BURGER KING CHENNAI,-256.51,Food & Dining,Restaurant,BURGER KING,1,burst
 4,frugal_saver,2024-06-20,POS 8821XXXXXX1995 BURGER KING PUNE,-170.75,Food & Dining,Restaurant,BURGER KING,1,burst
 4,frugal_saver,2024-06-20,UPI-BIGBASKET-727658334@ybl,-1385.55,Groceries,Online,BIGBASKET,0,
 4,frugal_saver,2024-06-20,UPI/546205931464/BURGER KING/okhdfc,-262.16,Food & Dining,Restaurant,BURGER KING,1,burst
@@ -3869,7 +3869,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 4,frugal_saver,2024-08-10,ACH D- ZEPTO-157278,-1216.01,Groceries,Online,ZEPTO,0,
 4,frugal_saver,2024-08-10,AMAZON PRI 049319,-301.07,Subscriptions,Streaming,AMAZON PRIME,0,
 4,frugal_saver,2024-08-10,DELHI METRO DELHI,-120.09,Transport,Public,DELHI METRO,0,
-4,frugal_saver,2024-08-11,ACH D- HP PETROL PUMP-290666,-160.26,Transport,Fuel,HP PETROL PUMP,0,
+4,frugal_saver,2024-08-11,ACH D- HP PETROL PUMP-290666,-160.26,Transport,Fuel,HP PETROL PUMP,1,burst
 4,frugal_saver,2024-08-11,ACH D- HP PETROL PUMP-672452,-108.02,Transport,Fuel,HP PETROL PUMP,1,burst
 4,frugal_saver,2024-08-11,HP PETROL PUMP HYDERABAD,-193.7,Transport,Fuel,HP PETROL PUMP,1,burst
 4,frugal_saver,2024-08-11,POS 7529XXXXXX2670 HP PETROL PUMP PUNE,-192.85,Transport,Fuel,HP PETROL PUMP,1,burst
@@ -3890,7 +3890,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 4,frugal_saver,2024-08-24,ACH D- BIG BAZAAR-432951,-624.43,Groceries,Supermarket,BIG BAZAAR,0,
 4,frugal_saver,2024-08-25,ACH D- OLA CABS-650349,-93.25,Transport,Rideshare,OLA CABS,0,
 4,frugal_saver,2024-08-25,ACH D- UBER-735232,-58.5,Transport,Rideshare,UBER,0,
-4,frugal_saver,2024-08-25,DELHI METRO CHENNAI,-82.41,Transport,Public,DELHI METRO,0,
+4,frugal_saver,2024-08-25,DELHI METRO CHENNAI,-82.41,Transport,Public,DELHI METRO,1,burst
 4,frugal_saver,2024-08-25,POS 5770XXXXXX9951 DELHI METRO PUNE,-81.58,Transport,Public,DELHI METRO,1,burst
 4,frugal_saver,2024-08-25,UPI-BESCOM-743266151098@ybl,-1086.3,Utilities,Electricity,BESCOM,0,
 4,frugal_saver,2024-08-25,UPI-DELHI METRO-609236986@ybl,-108.51,Transport,Public,DELHI METRO,1,burst
@@ -3914,7 +3914,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 4,frugal_saver,2024-09-10,HP PETR 467773,-77.6,Transport,Fuel,HP PETROL PUMP,0,
 4,frugal_saver,2024-09-10,OLA CABS PUNE,-261.09,Transport,Rideshare,OLA CABS,1,burst
 4,frugal_saver,2024-09-10,POS 9591XXXXXX1227 BHARAT PETROLEUM PUNE,-138.87,Transport,Fuel,BHARAT PETROLEUM,0,
-4,frugal_saver,2024-09-10,UPI-OLA CABS-114873577@ybl,-273.31,Transport,Rideshare,OLA CABS,0,
+4,frugal_saver,2024-09-10,UPI-OLA CABS-114873577@ybl,-273.31,Transport,Rideshare,OLA CABS,1,burst
 4,frugal_saver,2024-09-10,UPI/767721125/OLA CABS/oksbi,-351.85,Transport,Rideshare,OLA CABS,1,burst
 4,frugal_saver,2024-09-10,UPI/895421674240/OLA CABS/ybl,-218.94,Transport,Rideshare,OLA CABS,1,burst
 4,frugal_saver,2024-09-12,POS 3609XXXXXX2622 BIGBASKET MUMBAI,-483.63,Groceries,Online,BIGBASKET,0,
@@ -3932,7 +3932,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 4,frugal_saver,2024-09-29,DOMINOS PIZZA NOIDA,-345.27,Food & Dining,Delivery,DOMINOS PIZZA,0,
 4,frugal_saver,2024-09-29,POS 6008XXXXXX8934 MICROSOFT 365 NOIDA,-277.85,Subscriptions,Software,MICROSOFT 365,0,
 4,frugal_saver,2024-09-29,UPI-JIO PREPAID-237985919@axl,-527.82,Utilities,Telecom,JIO PREPAID,0,
-4,frugal_saver,2024-09-29,VI RECHARGE *24932,-617.38,Utilities,Telecom,VI RECHARGE,0,
+4,frugal_saver,2024-09-29,VI RECHARGE *24932,-617.38,Utilities,Telecom,VI RECHARGE,1,duplicate_charge
 4,frugal_saver,2024-09-29,VI RECHARGE *24932,-617.38,Utilities,Telecom,VI RECHARGE,1,duplicate_charge
 4,frugal_saver,2024-10-02,GUPTA PROVISION STORE *34111,-844.66,Groceries,Local,GUPTA PROVISION STORE,0,
 4,frugal_saver,2024-10-02,SALARY CREDIT PUNE,60404.47,Income,Salary,SALARY CREDIT,0,
@@ -4051,7 +4051,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 4,frugal_saver,2025-01-14,SHELL FUEL BANGALORE,-294.22,Transport,Fuel,SHELL FUEL,1,burst
 4,frugal_saver,2025-01-14,UPI-BMTC BUS PASS-642777528@axl,-185.44,Transport,Public,BMTC BUS PASS,0,
 4,frugal_saver,2025-01-14,UPI-FRESH VEGETABLES MART-002394718258@icici,-690.3,Groceries,Local,FRESH VEGETABLES MART,0,
-4,frugal_saver,2025-01-14,UPI-SHELL FUEL-284178904179@axl,-282.94,Transport,Fuel,SHELL FUEL,0,
+4,frugal_saver,2025-01-14,UPI-SHELL FUEL-284178904179@axl,-282.94,Transport,Fuel,SHELL FUEL,1,burst
 4,frugal_saver,2025-01-14,UPI-SHELL FUEL-684854930148@icici,-210.01,Transport,Fuel,SHELL FUEL,1,burst
 4,frugal_saver,2025-01-14,UPI/848201986/SHELL FUEL/paytm,-294.23,Transport,Fuel,SHELL FUEL,1,burst
 4,frugal_saver,2025-01-16,UPI-INDIAN OIL PETROL-290958598760@ybl,-227.65,Transport,Fuel,INDIAN OIL PETROL,0,
@@ -4189,7 +4189,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 4,frugal_saver,2025-05-25,ACH D- ACT FIBERNET-282859,-454.0,Utilities,Telecom,ACT FIBERNET,1,burst
 4,frugal_saver,2025-05-25,ACH D- ACT FIBERNET-587014,-421.58,Utilities,Telecom,ACT FIBERNET,1,burst
 4,frugal_saver,2025-05-25,ACT FI 326179,-335.18,Utilities,Telecom,ACT FIBERNET,1,burst
-4,frugal_saver,2025-05-25,ACT FIBERNET *28092,-374.85,Utilities,Telecom,ACT FIBERNET,0,
+4,frugal_saver,2025-05-25,ACT FIBERNET *28092,-374.85,Utilities,Telecom,ACT FIBERNET,1,burst
 4,frugal_saver,2025-05-25,ACT FIBERNET *76610,-444.66,Utilities,Telecom,ACT FIBERNET,1,burst
 4,frugal_saver,2025-05-25,ACT FIBERNET 098615,-480.51,Utilities,Telecom,ACT FIBERNET,1,burst
 4,frugal_saver,2025-05-25,ACT FIBERNET GURGAON,-248.63,Utilities,Telecom,ACT FIBERNET,1,burst
@@ -4247,7 +4247,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 4,frugal_saver,2025-07-13,RAPIDO 411766,-115.24,Transport,Rideshare,RAPIDO,0,
 4,frugal_saver,2025-07-13,UPI-GUPTA PROVISION STORE-142121813492@icici,-793.62,Groceries,Local,GUPTA PROVISION STORE,0,
 4,frugal_saver,2025-07-15,UPI-GOOGLE ONE-537623024@axl,-143.32,Subscriptions,Software,GOOGLE ONE,0,
-4,frugal_saver,2025-07-16,POS 5675XXXXXX3956 BOX8 NOIDA,-231.58,Food & Dining,Delivery,BOX8,0,
+4,frugal_saver,2025-07-16,POS 5675XXXXXX3956 BOX8 NOIDA,-231.58,Food & Dining,Delivery,BOX8,1,duplicate_charge
 4,frugal_saver,2025-07-16,UPI-MORE SUPERMARKET-636306940@axl,-1286.96,Groceries,Supermarket,MORE SUPERMARKET,0,
 4,frugal_saver,2025-07-16,UPI-RAPIDO-543246219@ybl,-166.75,Transport,Rideshare,RAPIDO,0,
 4,frugal_saver,2025-07-16,UPI/399063646833/BURGER KING/oksbi,-284.76,Food & Dining,Restaurant,BURGER KING,0,
@@ -4327,7 +4327,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 4,frugal_saver,2025-09-29,POS 6232XXXXXX7198 DMART DELHI,-404.22,Groceries,Supermarket,DMART,0,
 4,frugal_saver,2025-10-01,SALARY CREDIT DELHI,61711.53,Income,Salary,SALARY CREDIT,0,
 4,frugal_saver,2025-10-01,SONYLIV 467538,-300.96,Subscriptions,Streaming,SONYLIV,0,
-4,frugal_saver,2025-10-02,ACH D- SPENCERS-267144,-828.56,Groceries,Supermarket,SPENCERS,0,
+4,frugal_saver,2025-10-02,ACH D- SPENCERS-267144,-828.56,Groceries,Supermarket,SPENCERS,1,burst
 4,frugal_saver,2025-10-02,ACH D- SPENCERS-887624,-1043.25,Groceries,Supermarket,SPENCERS,1,burst
 4,frugal_saver,2025-10-02,POS 7821XXXXXX3100 SPENCERS NOIDA,-671.54,Groceries,Supermarket,SPENCERS,1,burst
 4,frugal_saver,2025-10-02,POS 9550XXXXXX1445 SPENCERS CHENNAI,-1149.59,Groceries,Supermarket,SPENCERS,1,burst
@@ -4432,7 +4432,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2024-01-05,RAPIDO *33319,-761.04,Transport,Rideshare,RAPIDO,0,
 5,big_spender,2024-01-06,UPI-IRCTC-097499822932@ybl,-511.65,Transport,Public,IRCTC,0,
 5,big_spender,2024-01-07,BLUE TOKAI *88173,-1459.95,Food & Dining,Cafe,BLUE TOKAI,1,burst
-5,big_spender,2024-01-07,BLUE TOKAI BANGALORE,-1672.08,Food & Dining,Cafe,BLUE TOKAI,0,
+5,big_spender,2024-01-07,BLUE TOKAI BANGALORE,-1672.08,Food & Dining,Cafe,BLUE TOKAI,1,burst
 5,big_spender,2024-01-07,BLUE TOKAI CHENNAI,-2279.07,Food & Dining,Cafe,BLUE TOKAI,1,burst
 5,big_spender,2024-01-07,BLUE TOKAI HYDERABAD,-1012.78,Food & Dining,Cafe,BLUE TOKAI,1,burst
 5,big_spender,2024-01-07,BWSSB WATER NOIDA,-2055.46,Utilities,Gas & Water,BWSSB WATER,0,
@@ -4509,7 +4509,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2024-02-10,BURGER KING *43085,-2180.69,Food & Dining,Restaurant,BURGER KING,1,burst
 5,big_spender,2024-02-10,POS 3173XXXXXX6557 BURGER KING DELHI,-1717.37,Food & Dining,Restaurant,BURGER KING,1,burst
 5,big_spender,2024-02-10,POS 5593XXXXXX2345 CHATGPT PLUS DELHI,-420.5,Subscriptions,Software,CHATGPT PLUS,0,
-5,big_spender,2024-02-10,UPI-BURGER KING-409943967@icici,-1796.58,Food & Dining,Restaurant,BURGER KING,0,
+5,big_spender,2024-02-10,UPI-BURGER KING-409943967@icici,-1796.58,Food & Dining,Restaurant,BURGER KING,1,burst
 5,big_spender,2024-02-11,ACH D- PAYTM INSIDER-679136,-2794.36,Entertainment,Events,PAYTM INSIDER,0,
 5,big_spender,2024-02-11,ACH D- PIZZA HUT-303493,-1879.03,Food & Dining,Delivery,PIZZA HUT,0,
 5,big_spender,2024-02-11,ACH D- RAPIDO-789642,-561.05,Transport,Rideshare,RAPIDO,0,
@@ -4527,14 +4527,14 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2024-02-16,FRESH  144078,-1955.2,Groceries,Local,FRESH VEGETABLES MART,0,
 5,big_spender,2024-02-17,POS 6990XXXXXX1680 SAGAR RATNA GURGAON,-1312.11,Food & Dining,Restaurant,SAGAR RATNA,0,
 5,big_spender,2024-02-18,ACH D- IRCTC-642100,-586.27,Transport,Public,IRCTC,0,
-5,big_spender,2024-02-18,SAGAR RATNA *88070,-1995.97,Food & Dining,Restaurant,SAGAR RATNA,0,
+5,big_spender,2024-02-18,SAGAR RATNA *88070,-1995.97,Food & Dining,Restaurant,SAGAR RATNA,1,duplicate_charge
 5,big_spender,2024-02-18,SAGAR RATNA *88070,-1995.97,Food & Dining,Restaurant,SAGAR RATNA,1,duplicate_charge
 5,big_spender,2024-02-19,ACH D- MYNTRA-834255,-3541.64,Shopping,Online,MYNTRA,0,
 5,big_spender,2024-02-20,ACH D- BOOKMYSHOW-336737,-2301.84,Entertainment,Movies,BOOKMYSHOW,0,
 5,big_spender,2024-02-20,MUMBAI LOCAL PASS *36501,-646.27,Transport,Public,MUMBAI LOCAL PASS,0,
 5,big_spender,2024-02-20,POS 3389XXXXXX7970 BHARAT GAS GURGAON,-1365.85,Utilities,Gas & Water,BHARAT GAS,0,
 5,big_spender,2024-02-21,HOTSTA 135697,-597.49,Subscriptions,Streaming,HOTSTAR,0,
-5,big_spender,2024-02-21,POS 2439XXXXXX2040 PUNJABI DHABA NOIDA,-1008.03,Food & Dining,Restaurant,PUNJABI DHABA,0,
+5,big_spender,2024-02-21,POS 2439XXXXXX2040 PUNJABI DHABA NOIDA,-1008.03,Food & Dining,Restaurant,PUNJABI DHABA,1,duplicate_charge
 5,big_spender,2024-02-22,POS 2439XXXXXX2040 PUNJABI DHABA NOIDA,-1008.03,Food & Dining,Restaurant,PUNJABI DHABA,1,duplicate_charge
 5,big_spender,2024-02-22,UPI-H&M-508125052746@axl,-9519.77,Shopping,Fashion,H&M,0,
 5,big_spender,2024-02-22,UPI/881015843/JIO PREPAID/ybl,-3167.31,Utilities,Telecom,JIO PREPAID,0,
@@ -4660,7 +4660,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2024-04-22,POS 2491XXXXXX3373 MICROSOFT 365 NOIDA,-622.76,Subscriptions,Software,MICROSOFT 365,0,
 5,big_spender,2024-04-22,UPI/291504236/PUNJABI DHABA/ybl,-766.36,Food & Dining,Restaurant,PUNJABI DHABA,0,
 5,big_spender,2024-04-23,POS 2499XXXXXX5588 APPLE STORE GURGAON,-4517.97,Shopping,Electronics,APPLE STORE,0,
-5,big_spender,2024-04-23,UPI/271042229/NAMMA METRO/oksbi,-318.15,Transport,Public,NAMMA METRO,0,
+5,big_spender,2024-04-23,UPI/271042229/NAMMA METRO/oksbi,-318.15,Transport,Public,NAMMA METRO,1,duplicate_charge
 5,big_spender,2024-04-23,UPI/271042229/NAMMA METRO/oksbi,-318.15,Transport,Public,NAMMA METRO,1,duplicate_charge
 5,big_spender,2024-04-24,ACH D- CHATGPT PLUS-116633,-1098.65,Subscriptions,Software,CHATGPT PLUS,0,
 5,big_spender,2024-04-24,ACH D- PLAYSTATION STORE-832446,-2373.8,Entertainment,Gaming,PLAYSTATION STORE,0,
@@ -4673,7 +4673,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2024-04-27,HP PETROL PUMP *49570,-422.2,Transport,Fuel,HP PETROL PUMP,0,
 5,big_spender,2024-04-28,AIRBNB *03495,-20587.06,Travel,Stay,AIRBNB,0,
 5,big_spender,2024-04-28,UPI-MUMBAI LOCAL PASS-754974924569@ybl,-894.02,Transport,Public,MUMBAI LOCAL PASS,0,
-5,big_spender,2024-04-29,MUMBAI LOCAL PASS NOIDA,-518.28,Transport,Public,MUMBAI LOCAL PASS,0,
+5,big_spender,2024-04-29,MUMBAI LOCAL PASS NOIDA,-518.28,Transport,Public,MUMBAI LOCAL PASS,1,duplicate_charge
 5,big_spender,2024-04-29,UPI-URBAN COMPANY-480886433672@icici,-39739.78,Housing,Maintenance,URBAN COMPANY,0,
 5,big_spender,2024-04-30,ACH D- BURGER KING-307887,-703.43,Food & Dining,Restaurant,BURGER KING,0,
 5,big_spender,2024-04-30,MUMBAI LOCAL PASS NOIDA,-518.28,Transport,Public,MUMBAI LOCAL PASS,1,duplicate_charge
@@ -4749,7 +4749,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2024-05-31,UPI-RAPIDO-382956271@axl,-746.15,Transport,Rideshare,RAPIDO,0,
 5,big_spender,2024-06-01,ACH D- CHATGPT PLUS-866077,-388.09,Subscriptions,Software,CHATGPT PLUS,0,
 5,big_spender,2024-06-01,HP PETROL PUMP PUNE,-888.55,Transport,Fuel,HP PETROL PUMP,0,
-5,big_spender,2024-06-03,ICLOUD DELHI,-486.69,Subscriptions,Software,ICLOUD,0,
+5,big_spender,2024-06-03,ICLOUD DELHI,-486.69,Subscriptions,Software,ICLOUD,1,burst
 5,big_spender,2024-06-03,POS 7197XXXXXX9111 BLUSMART NOIDA,-798.95,Transport,Rideshare,BLUSMART,0,
 5,big_spender,2024-06-03,SALARY CREDIT CHENNAI,184303.07,Income,Salary,SALARY CREDIT,0,
 5,big_spender,2024-06-03,UPI-ICLOUD-004190172@axl,-641.55,Subscriptions,Software,ICLOUD,1,burst
@@ -4810,7 +4810,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2024-06-22,UPI-STARBUCKS-701916156795@axl,-785.6,Food & Dining,Cafe,STARBUCKS,0,
 5,big_spender,2024-06-23,BLUE TOKAI NOIDA,-927.08,Food & Dining,Cafe,BLUE TOKAI,0,
 5,big_spender,2024-06-23,ZOMATO 758239,-775.36,Food & Dining,Delivery,ZOMATO,0,
-5,big_spender,2024-06-25,ACH D- THIRD WAVE COFFEE-452242,-1712.55,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
+5,big_spender,2024-06-25,ACH D- THIRD WAVE COFFEE-452242,-1712.55,Food & Dining,Cafe,THIRD WAVE COFFEE,1,duplicate_charge
 5,big_spender,2024-06-25,ACH D- THIRD WAVE COFFEE-452242,-1712.55,Food & Dining,Cafe,THIRD WAVE COFFEE,1,duplicate_charge
 5,big_spender,2024-06-25,GUPTA PROVISI 375863,-1397.46,Groceries,Local,GUPTA PROVISION STORE,0,
 5,big_spender,2024-06-25,POS 5177XXXXXX4162 DREAM11 PUNE,-24078.91,Entertainment,Gaming,DREAM11,1,amount_spike
@@ -5080,7 +5080,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2024-10-30,PLAYSTATION STORE MUMBAI,-3999.45,Entertainment,Gaming,PLAYSTATION STORE,1,burst
 5,big_spender,2024-10-30,POS 2856XXXXXX9902 SHELL FUEL CHENNAI,-540.45,Transport,Fuel,SHELL FUEL,0,
 5,big_spender,2024-10-30,POS 7109XXXXXX7000 PLAYSTATION STORE MUMBAI,-2808.15,Entertainment,Gaming,PLAYSTATION STORE,1,burst
-5,big_spender,2024-10-30,UPI-PLAYSTATION STORE-300015957@ybl,-3376.8,Entertainment,Gaming,PLAYSTATION STORE,0,
+5,big_spender,2024-10-30,UPI-PLAYSTATION STORE-300015957@ybl,-3376.8,Entertainment,Gaming,PLAYSTATION STORE,1,burst
 5,big_spender,2024-10-30,UPI/390588775/PLAYSTATION STORE/ybl,-2905.94,Entertainment,Gaming,PLAYSTATION STORE,1,burst
 5,big_spender,2024-10-31,ACH D- INDIAN OIL PETROL-731729,-523.81,Transport,Fuel,INDIAN OIL PETROL,0,
 5,big_spender,2024-10-31,PUNJABI DHABA *52100,-632.27,Food & Dining,Restaurant,PUNJABI DHABA,0,
@@ -5165,7 +5165,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2024-12-07,BLUE TOKAI *19572,-1605.63,Food & Dining,Cafe,BLUE TOKAI,0,
 5,big_spender,2024-12-08,HP PET 158730,-435.54,Transport,Fuel,HP PETROL PUMP,0,
 5,big_spender,2024-12-08,UPI-GOOGLE ONE-445141481@ybl,-787.52,Subscriptions,Software,GOOGLE ONE,0,
-5,big_spender,2024-12-09,POS 6150XXXXXX8478 COMEDY CLUB TICKETS DELHI,-2339.81,Entertainment,Events,COMEDY CLUB TICKETS,0,
+5,big_spender,2024-12-09,POS 6150XXXXXX8478 COMEDY CLUB TICKETS DELHI,-2339.81,Entertainment,Events,COMEDY CLUB TICKETS,1,duplicate_charge
 5,big_spender,2024-12-09,POS 6150XXXXXX8478 COMEDY CLUB TICKETS DELHI,-2339.81,Entertainment,Events,COMEDY CLUB TICKETS,1,duplicate_charge
 5,big_spender,2024-12-10,BMTC BUS  723167,-509.92,Transport,Public,BMTC BUS PASS,0,
 5,big_spender,2024-12-10,OLA CABS BANGALORE,-585.74,Transport,Rideshare,OLA CABS,0,
@@ -5254,7 +5254,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2025-01-21,RAPIDO *45683,-597.88,Transport,Rideshare,RAPIDO,0,
 5,big_spender,2025-01-21,THIRD WAVE COFFEE *64907,-537.22,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 5,big_spender,2025-01-22,STARBUCKS GURGAON,-1630.77,Food & Dining,Cafe,STARBUCKS,0,
-5,big_spender,2025-01-23,ACH D- GOOGLE ONE-226254,-473.39,Subscriptions,Software,GOOGLE ONE,0,
+5,big_spender,2025-01-23,ACH D- GOOGLE ONE-226254,-473.39,Subscriptions,Software,GOOGLE ONE,1,burst
 5,big_spender,2025-01-23,ACH D- GOOGLE ONE-544499,-630.33,Subscriptions,Software,GOOGLE ONE,1,burst
 5,big_spender,2025-01-23,GOOGLE O 116288,-499.36,Subscriptions,Software,GOOGLE ONE,1,burst
 5,big_spender,2025-01-23,POS 3546XXXXXX1048 HOTSTAR PUNE,-753.76,Subscriptions,Streaming,HOTSTAR,0,
@@ -5551,7 +5551,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2025-05-29,NOBROKER RE 356221,-31718.6,Housing,Rent,NOBROKER RENT,1,burst
 5,big_spender,2025-05-29,NOBROKER RENT *83471,-47856.58,Housing,Rent,NOBROKER RENT,1,burst
 5,big_spender,2025-05-29,NOBROKER RENT *93417,-48236.48,Housing,Rent,NOBROKER RENT,1,burst
-5,big_spender,2025-05-29,NOBROKER RENT CHENNAI,-35292.1,Housing,Rent,NOBROKER RENT,0,
+5,big_spender,2025-05-29,NOBROKER RENT CHENNAI,-35292.1,Housing,Rent,NOBROKER RENT,1,burst
 5,big_spender,2025-05-29,UPI-NOBROKER RENT-834002965@icici,-31382.22,Housing,Rent,NOBROKER RENT,1,burst
 5,big_spender,2025-05-29,UPI/254006490021/NOBROKER RENT/okhdfc,-43938.66,Housing,Rent,NOBROKER RENT,1,burst
 5,big_spender,2025-05-29,UPI/658366639/NOBROKER RENT/paytm,-27540.89,Housing,Rent,NOBROKER RENT,1,burst
@@ -5583,7 +5583,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2025-06-09,SHELL FUEL *26767,-296.42,Transport,Fuel,SHELL FUEL,0,
 5,big_spender,2025-06-09,UPI-BHARAT PETROLEUM-784301125547@ybl,-1010.8,Transport,Fuel,BHARAT PETROLEUM,1,burst
 5,big_spender,2025-06-09,UPI/200736593/BHARAT PETROLEUM/okhdfc,-1095.04,Transport,Fuel,BHARAT PETROLEUM,1,burst
-5,big_spender,2025-06-09,UPI/501851155740/BHARAT PETROLEUM/paytm,-927.99,Transport,Fuel,BHARAT PETROLEUM,0,
+5,big_spender,2025-06-09,UPI/501851155740/BHARAT PETROLEUM/paytm,-927.99,Transport,Fuel,BHARAT PETROLEUM,1,burst
 5,big_spender,2025-06-09,ZOMATO MUMBAI,-561.08,Food & Dining,Delivery,ZOMATO,0,
 5,big_spender,2025-06-10,BOOKMYSHOW PUNE,-1763.71,Entertainment,Movies,BOOKMYSHOW,0,
 5,big_spender,2025-06-10,EATSURE *24147,-1029.92,Food & Dining,Delivery,EATSURE,0,
@@ -5646,7 +5646,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2025-07-06,BMTC B 620183,-559.88,Transport,Public,BMTC BUS PASS,0,
 5,big_spender,2025-07-06,BURGER KING NOIDA,-1852.84,Food & Dining,Restaurant,BURGER KING,0,
 5,big_spender,2025-07-06,STARBUCKS GURGAON,-1745.58,Food & Dining,Cafe,STARBUCKS,0,
-5,big_spender,2025-07-07,ACH D- PLAYSTATION STORE-979652,-1723.81,Entertainment,Gaming,PLAYSTATION STORE,0,
+5,big_spender,2025-07-07,ACH D- PLAYSTATION STORE-979652,-1723.81,Entertainment,Gaming,PLAYSTATION STORE,1,burst
 5,big_spender,2025-07-07,MUMBAI LOCAL PASS *52176,-248.29,Transport,Public,MUMBAI LOCAL PASS,0,
 5,big_spender,2025-07-07,PLAYSTATION STORE *28410,-1545.67,Entertainment,Gaming,PLAYSTATION STORE,1,burst
 5,big_spender,2025-07-07,PLAYSTATION STORE *31419,-1176.06,Entertainment,Gaming,PLAYSTATION STORE,1,burst
@@ -5667,7 +5667,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2025-07-12,ACH D- THIRD WAVE COFFEE-672928,-774.74,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 5,big_spender,2025-07-12,BMTC BUS PASS *85183,-518.54,Transport,Public,BMTC BUS PASS,0,
 5,big_spender,2025-07-12,PIZZA HUT HYDERABAD,-1551.9,Food & Dining,Delivery,PIZZA HUT,0,
-5,big_spender,2025-07-12,STARBUCK 823786,-1305.64,Food & Dining,Cafe,STARBUCKS,0,
+5,big_spender,2025-07-12,STARBUCK 823786,-1305.64,Food & Dining,Cafe,STARBUCKS,1,burst
 5,big_spender,2025-07-12,STARBUCKS *25298,-1497.06,Food & Dining,Cafe,STARBUCKS,1,burst
 5,big_spender,2025-07-12,STARBUCKS HYDERABAD,-809.03,Food & Dining,Cafe,STARBUCKS,1,burst
 5,big_spender,2025-07-12,UPI-SPOTIFY-777153595@axl,-718.52,Subscriptions,Streaming,SPOTIFY,0,
@@ -5762,7 +5762,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2025-08-26,UPI/082812783175/PLAYSTATION STORE/okhdfc,-1678.22,Entertainment,Gaming,PLAYSTATION STORE,0,
 5,big_spender,2025-08-27,ACH D- ZOMATO-868974,-1397.21,Food & Dining,Delivery,ZOMATO,0,
 5,big_spender,2025-08-27,POS 4739XXXXXX5744 BLUE TOKAI HYDERABAD,-1542.15,Food & Dining,Cafe,BLUE TOKAI,0,
-5,big_spender,2025-08-27,UPI/814884948497/SWIGGY INSTAMART/okhdfc,-3709.84,Groceries,Online,SWIGGY INSTAMART,0,
+5,big_spender,2025-08-27,UPI/814884948497/SWIGGY INSTAMART/okhdfc,-3709.84,Groceries,Online,SWIGGY INSTAMART,1,duplicate_charge
 5,big_spender,2025-08-28,CHAAYOS *17181,-567.2,Food & Dining,Cafe,CHAAYOS,0,
 5,big_spender,2025-08-28,OLA CABS *02058,-453.37,Transport,Rideshare,OLA CABS,0,
 5,big_spender,2025-08-28,POS 9039XXXXXX9498 BLUSMART BANGALORE,-732.53,Transport,Rideshare,BLUSMART,0,
@@ -5930,7 +5930,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2025-11-12,UPI/312956493/ZARA/paytm,-5387.49,Shopping,Fashion,ZARA,0,
 5,big_spender,2025-11-12,UPI/348245407870/PLAYSTATION STORE/paytm,-3476.19,Entertainment,Gaming,PLAYSTATION STORE,0,
 5,big_spender,2025-11-13,ACH D- CHAAYOS-932170,-1327.38,Food & Dining,Cafe,CHAAYOS,0,
-5,big_spender,2025-11-13,UPI-MICROSOFT 365-332462917799@axl,-861.53,Subscriptions,Software,MICROSOFT 365,0,
+5,big_spender,2025-11-13,UPI-MICROSOFT 365-332462917799@axl,-861.53,Subscriptions,Software,MICROSOFT 365,1,duplicate_charge
 5,big_spender,2025-11-14,BHARAT  107055,-1491.21,Utilities,Gas & Water,BHARAT GAS,0,
 5,big_spender,2025-11-14,BLUSMART MUMBAI,-913.44,Transport,Rideshare,BLUSMART,0,
 5,big_spender,2025-11-14,HP PETRO 704441,-662.64,Transport,Fuel,HP PETROL PUMP,0,
@@ -5945,7 +5945,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2025-11-16,UPI-MICROSOFT 365-150877581@icici,-442.86,Subscriptions,Software,MICROSOFT 365,0,
 5,big_spender,2025-11-17,UPI/322585182/INDIAN OIL PETROL/ybl,-431.14,Transport,Fuel,INDIAN OIL PETROL,0,
 5,big_spender,2025-11-17,UPI/950173924602/AIRTEL POSTPAID/oksbi,-2425.7,Utilities,Telecom,AIRTEL POSTPAID,0,
-5,big_spender,2025-11-17,ZOMATO *81016,-651.47,Food & Dining,Delivery,ZOMATO,0,
+5,big_spender,2025-11-17,ZOMATO *81016,-651.47,Food & Dining,Delivery,ZOMATO,1,duplicate_charge
 5,big_spender,2025-11-18,ZOMATO *81016,-651.47,Food & Dining,Delivery,ZOMATO,1,duplicate_charge
 5,big_spender,2025-11-19,INOX 220830,-3962.33,Entertainment,Movies,INOX,0,
 5,big_spender,2025-11-19,RELIANCE F 253197,-3053.67,Groceries,Supermarket,RELIANCE FRESH,0,
@@ -5985,7 +5985,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 5,big_spender,2025-12-07,ACH D- APPLE STORE-659134,-16480.43,Shopping,Electronics,APPLE STORE,0,
 5,big_spender,2025-12-07,ACH D- DREAM11-774617,-4080.28,Entertainment,Gaming,DREAM11,0,
 5,big_spender,2025-12-07,ACH D- UBER-527148,-698.13,Transport,Rideshare,UBER,1,burst
-5,big_spender,2025-12-07,POS 4318XXXXXX1103 UBER NOIDA,-532.14,Transport,Rideshare,UBER,0,
+5,big_spender,2025-12-07,POS 4318XXXXXX1103 UBER NOIDA,-532.14,Transport,Rideshare,UBER,1,burst
 5,big_spender,2025-12-07,TATA POWER *92382,-2876.35,Utilities,Electricity,TATA POWER,0,
 5,big_spender,2025-12-07,UBER *12102,-413.33,Transport,Rideshare,UBER,1,burst
 5,big_spender,2025-12-07,UBER 872248,-432.8,Transport,Rideshare,UBER,1,burst
@@ -6133,7 +6133,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2024-02-25,BOX8 *30037,-217.22,Food & Dining,Delivery,BOX8,1,burst
 6,freelancer,2024-02-25,POS 1919XXXXXX6484 BOX8 NOIDA,-179.83,Food & Dining,Delivery,BOX8,1,burst
 6,freelancer,2024-02-25,UPI-BOX8-586455341@axl,-368.61,Food & Dining,Delivery,BOX8,1,burst
-6,freelancer,2024-02-25,UPI-BOX8-930576703664@ybl,-283.17,Food & Dining,Delivery,BOX8,0,
+6,freelancer,2024-02-25,UPI-BOX8-930576703664@ybl,-283.17,Food & Dining,Delivery,BOX8,1,burst
 6,freelancer,2024-02-25,UPI/695857340/BOX8/ybl,-374.83,Food & Dining,Delivery,BOX8,1,burst
 6,freelancer,2024-02-26,POS 5879XXXXXX1556 BESCOM HYDERABAD,-1406.93,Utilities,Electricity,BESCOM,0,
 6,freelancer,2024-02-26,RAPIDO 581435,-131.27,Transport,Rideshare,RAPIDO,0,
@@ -6380,7 +6380,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2024-07-20,ACH D- SHELL FUEL-897566,-322.11,Transport,Fuel,SHELL FUEL,1,burst
 6,freelancer,2024-07-20,DELHI METRO *56448,-332.1,Transport,Public,DELHI METRO,0,
 6,freelancer,2024-07-20,POS 3829XXXXXX2918 SHELL FUEL NOIDA,-365.04,Transport,Fuel,SHELL FUEL,1,burst
-6,freelancer,2024-07-20,POS 9731XXXXXX5134 SHELL FUEL PUNE,-374.5,Transport,Fuel,SHELL FUEL,0,
+6,freelancer,2024-07-20,POS 9731XXXXXX5134 SHELL FUEL PUNE,-374.5,Transport,Fuel,SHELL FUEL,1,burst
 6,freelancer,2024-07-20,SHELL FUEL *05996,-492.78,Transport,Fuel,SHELL FUEL,1,burst
 6,freelancer,2024-07-20,SHELL FUEL DELHI,-363.63,Transport,Fuel,SHELL FUEL,1,burst
 6,freelancer,2024-07-20,UPI-SHELL FUEL-948428028@ybl,-285.63,Transport,Fuel,SHELL FUEL,1,burst
@@ -6399,7 +6399,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2024-07-26,LIFESTYLE STORES *32392,-813.49,Shopping,Fashion,LIFESTYLE STORES,1,burst
 6,freelancer,2024-07-26,LIFESTYLE STORES MUMBAI,-887.88,Shopping,Fashion,LIFESTYLE STORES,1,burst
 6,freelancer,2024-07-26,LIFESTYLE STORES MUMBAI,-1741.42,Shopping,Fashion,LIFESTYLE STORES,1,burst
-6,freelancer,2024-07-26,POS 1080XXXXXX8155 LIFESTYLE STORES HYDERABAD,-1325.84,Shopping,Fashion,LIFESTYLE STORES,0,
+6,freelancer,2024-07-26,POS 1080XXXXXX8155 LIFESTYLE STORES HYDERABAD,-1325.84,Shopping,Fashion,LIFESTYLE STORES,1,burst
 6,freelancer,2024-07-26,UPI-BURGER KING-772340392912@ybl,-511.21,Food & Dining,Restaurant,BURGER KING,0,
 6,freelancer,2024-07-26,UPI-LIFESTYLE STORES-002053230871@ybl,-1427.77,Shopping,Fashion,LIFESTYLE STORES,1,burst
 6,freelancer,2024-07-28,POS 9629XXXXXX2069 URBAN COMPANY MUMBAI,-12111.93,Housing,Maintenance,URBAN COMPANY,0,
@@ -6459,7 +6459,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2024-09-04,ACH D- MILK DAIRY BOOTH-913108,-800.67,Groceries,Local,MILK DAIRY BOOTH,0,
 6,freelancer,2024-09-04,ACH D- THIRD WAVE COFFEE-955287,-364.29,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 6,freelancer,2024-09-05,ACH D- FLIPKART-703465,-1616.0,Shopping,Online,FLIPKART,1,burst
-6,freelancer,2024-09-05,ACH D- FLIPKART-895080,-2165.4,Shopping,Online,FLIPKART,0,
+6,freelancer,2024-09-05,ACH D- FLIPKART-895080,-2165.4,Shopping,Online,FLIPKART,1,burst
 6,freelancer,2024-09-05,FLIPKA 536481,-1560.66,Shopping,Online,FLIPKART,1,burst
 6,freelancer,2024-09-05,FLIPKART *17003,-2791.08,Shopping,Online,FLIPKART,1,burst
 6,freelancer,2024-09-05,FLIPKART BANGALORE,-2839.0,Shopping,Online,FLIPKART,1,burst
@@ -6475,7 +6475,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2024-09-09,UPI/682427566/BOX8/paytm,-420.29,Food & Dining,Delivery,BOX8,0,
 6,freelancer,2024-09-10,ACH D- DOMINOS PIZZA-818809,-189.05,Food & Dining,Delivery,DOMINOS PIZZA,1,burst
 6,freelancer,2024-09-10,CHAAYO 570624,-573.17,Food & Dining,Cafe,CHAAYOS,0,
-6,freelancer,2024-09-10,DOMINOS PIZZA *56327,-240.99,Food & Dining,Delivery,DOMINOS PIZZA,0,
+6,freelancer,2024-09-10,DOMINOS PIZZA *56327,-240.99,Food & Dining,Delivery,DOMINOS PIZZA,1,burst
 6,freelancer,2024-09-10,NOBROKER RENT *71715,-30300.01,Housing,Rent,NOBROKER RENT,0,
 6,freelancer,2024-09-10,POS 3234XXXXXX3572 DOMINOS PIZZA DELHI,-183.41,Food & Dining,Delivery,DOMINOS PIZZA,1,burst
 6,freelancer,2024-09-10,POS 3974XXXXXX9993 SHELL FUEL NOIDA,-234.47,Transport,Fuel,SHELL FUEL,0,
@@ -6532,7 +6532,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2024-10-04,POS 1148XXXXXX2962 BLUE TOKAI CHENNAI,-365.22,Food & Dining,Cafe,BLUE TOKAI,0,
 6,freelancer,2024-10-05,UPI-THIRD WAVE COFFEE-497602794116@icici,-428.79,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 6,freelancer,2024-10-06,SONYLIV DELHI,-559.98,Subscriptions,Streaming,SONYLIV,0,
-6,freelancer,2024-10-06,UPI/979940761729/DOMINOS PIZZA/oksbi,-363.9,Food & Dining,Delivery,DOMINOS PIZZA,0,
+6,freelancer,2024-10-06,UPI/979940761729/DOMINOS PIZZA/oksbi,-363.9,Food & Dining,Delivery,DOMINOS PIZZA,1,duplicate_charge
 6,freelancer,2024-10-07,MILK DAIRY BOOTH PUNE,-1356.6,Groceries,Local,MILK DAIRY BOOTH,0,
 6,freelancer,2024-10-07,UPI/979940761729/DOMINOS PIZZA/oksbi,-363.9,Food & Dining,Delivery,DOMINOS PIZZA,1,duplicate_charge
 6,freelancer,2024-10-09,BOOKS PUBLISHER *40983,-816.0,Education,Fees,BOOKS PUBLISHER,0,
@@ -6610,7 +6610,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2024-11-22,ACH D- MICROSOFT 365-218759,-171.82,Subscriptions,Software,MICROSOFT 365,0,
 6,freelancer,2024-11-22,UPI/597521251/NETFLIX/oksbi,-460.29,Subscriptions,Streaming,NETFLIX,0,
 6,freelancer,2024-11-23,UPI/914205607/SWIGGY/ybl,-165.83,Food & Dining,Delivery,SWIGGY,0,
-6,freelancer,2024-11-24,PANTALOONS CHENNAI,-3099.51,Shopping,Fashion,PANTALOONS,0,
+6,freelancer,2024-11-24,PANTALOONS CHENNAI,-3099.51,Shopping,Fashion,PANTALOONS,1,duplicate_charge
 6,freelancer,2024-11-24,PANTALOONS CHENNAI,-3099.51,Shopping,Fashion,PANTALOONS,1,duplicate_charge
 6,freelancer,2024-11-24,SPOTIFY *15808,-582.35,Subscriptions,Streaming,SPOTIFY,0,
 6,freelancer,2024-11-24,SWIGGY *38697,-347.3,Food & Dining,Delivery,SWIGGY,0,
@@ -6687,7 +6687,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2025-01-09,ACH D- BWSSB WATER-291470,-2113.14,Utilities,Gas & Water,BWSSB WATER,0,
 6,freelancer,2025-01-09,ACH D- INDIAN OIL PETROL-565974,-302.1,Transport,Fuel,INDIAN OIL PETROL,0,
 6,freelancer,2025-01-10,CLIENT PAYMENT NEFT PUNE,28538.67,Income,Other Income,CLIENT PAYMENT NEFT,0,
-6,freelancer,2025-01-10,HALDIRAMS *42368,-312.65,Food & Dining,Restaurant,HALDIRAMS,0,
+6,freelancer,2025-01-10,HALDIRAMS *42368,-312.65,Food & Dining,Restaurant,HALDIRAMS,1,duplicate_charge
 6,freelancer,2025-01-11,ACH D- BMTC BUS PASS-787251,-203.44,Transport,Public,BMTC BUS PASS,0,
 6,freelancer,2025-01-11,CHAAYOS PUNE,-459.01,Food & Dining,Cafe,CHAAYOS,0,
 6,freelancer,2025-01-11,GUPTA PROVISION S 388116,-1782.27,Groceries,Local,GUPTA PROVISION STORE,0,
@@ -6756,7 +6756,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2025-02-20,CAFE COFFEE 801169,-495.75,Food & Dining,Cafe,CAFE COFFEE DAY,0,
 6,freelancer,2025-02-21,POS 6660XXXXXX9676 CHAAYOS MUMBAI,-267.79,Food & Dining,Cafe,CHAAYOS,0,
 6,freelancer,2025-02-21,TATA PO 479147,-1935.24,Utilities,Electricity,TATA POWER,0,
-6,freelancer,2025-02-21,UPI/344159769211/OLA CABS/ybl,-122.3,Transport,Rideshare,OLA CABS,0,
+6,freelancer,2025-02-21,UPI/344159769211/OLA CABS/ybl,-122.3,Transport,Rideshare,OLA CABS,1,duplicate_charge
 6,freelancer,2025-02-22,UPI/344159769211/OLA CABS/ybl,-122.3,Transport,Rideshare,OLA CABS,1,duplicate_charge
 6,freelancer,2025-02-22,UPI/719774612345/BLUE TOKAI/ybl,-463.26,Food & Dining,Cafe,BLUE TOKAI,0,
 6,freelancer,2025-02-23,UPI-CAFE COFFEE DAY-987265243@axl,-417.63,Food & Dining,Cafe,CAFE COFFEE DAY,0,
@@ -6896,7 +6896,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2025-05-23,MILK DA 411879,-873.82,Groceries,Local,MILK DAIRY BOOTH,1,burst
 6,freelancer,2025-05-23,MILK DAIRY BOOTH *32715,-471.88,Groceries,Local,MILK DAIRY BOOTH,1,burst
 6,freelancer,2025-05-23,MILK DAIRY BOOTH NOIDA,-885.66,Groceries,Local,MILK DAIRY BOOTH,1,burst
-6,freelancer,2025-05-23,UPI-MILK DAIRY BOOTH-163733458592@ybl,-654.58,Groceries,Local,MILK DAIRY BOOTH,0,
+6,freelancer,2025-05-23,UPI-MILK DAIRY BOOTH-163733458592@ybl,-654.58,Groceries,Local,MILK DAIRY BOOTH,1,burst
 6,freelancer,2025-05-23,UPI/334827352/MILK DAIRY BOOTH/ybl,-732.57,Groceries,Local,MILK DAIRY BOOTH,1,burst
 6,freelancer,2025-05-24,ACH D- ACT FIBERNET-799425,-2832.65,Utilities,Telecom,ACT FIBERNET,0,
 6,freelancer,2025-05-25,SAGAR RATNA PUNE,-728.96,Food & Dining,Restaurant,SAGAR RATNA,0,
@@ -7028,7 +7028,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2025-08-07,UPI-THIRD WAVE COFFEE-895663722952@axl,-776.64,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 6,freelancer,2025-08-09,UPI/136894218/HP PETROL PUMP/okhdfc,-106.97,Transport,Fuel,HP PETROL PUMP,0,
 6,freelancer,2025-08-10,ACH D- HP PETROL PUMP-900738,-250.96,Transport,Fuel,HP PETROL PUMP,1,burst
-6,freelancer,2025-08-10,HP PETROL PUMP *76909,-237.31,Transport,Fuel,HP PETROL PUMP,0,
+6,freelancer,2025-08-10,HP PETROL PUMP *76909,-237.31,Transport,Fuel,HP PETROL PUMP,1,burst
 6,freelancer,2025-08-10,HP PETROL PUMP PUNE,-257.4,Transport,Fuel,HP PETROL PUMP,1,burst
 6,freelancer,2025-08-10,UPI-HP PETROL PUMP-749940275021@axl,-270.62,Transport,Fuel,HP PETROL PUMP,1,burst
 6,freelancer,2025-08-10,UPI-HP PETROL PUMP-869241403@axl,-244.63,Transport,Fuel,HP PETROL PUMP,1,burst
@@ -7060,7 +7060,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2025-08-26,HP PETROL PUMP *10887,-267.92,Transport,Fuel,HP PETROL PUMP,0,
 6,freelancer,2025-08-26,RAPIDO 740695,-250.55,Transport,Rideshare,RAPIDO,0,
 6,freelancer,2025-08-28,MICROSOFT 365 *49353,-489.27,Subscriptions,Software,MICROSOFT 365,0,
-6,freelancer,2025-08-29,DMART 567302,-767.52,Groceries,Supermarket,DMART,0,
+6,freelancer,2025-08-29,DMART 567302,-767.52,Groceries,Supermarket,DMART,1,duplicate_charge
 6,freelancer,2025-08-30,DMART 567302,-767.52,Groceries,Supermarket,DMART,1,duplicate_charge
 6,freelancer,2025-08-30,UPI-SHARMA KIRANA-548008346@ybl,-1018.59,Groceries,Local,SHARMA KIRANA,0,
 6,freelancer,2025-08-31,BLUE TOKAI *01437,-929.48,Food & Dining,Cafe,BLUE TOKAI,0,
@@ -7094,7 +7094,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2025-09-17,UPI-BARBEQUE NATION-236021655@ybl,-430.68,Food & Dining,Restaurant,BARBEQUE NATION,0,
 6,freelancer,2025-09-18,BOX8 299080,-497.53,Food & Dining,Delivery,BOX8,0,
 6,freelancer,2025-09-19,UPI/255108604169/SHARMA KIRANA/paytm,-885.11,Groceries,Local,SHARMA KIRANA,0,
-6,freelancer,2025-09-20,ACH D- DMART-756560,-628.11,Groceries,Supermarket,DMART,0,
+6,freelancer,2025-09-20,ACH D- DMART-756560,-628.11,Groceries,Supermarket,DMART,1,burst
 6,freelancer,2025-09-20,DMART *16227,-767.71,Groceries,Supermarket,DMART,1,burst
 6,freelancer,2025-09-20,DMART 663038,-474.52,Groceries,Supermarket,DMART,1,burst
 6,freelancer,2025-09-20,UPI/347919761/DMART/paytm,-477.04,Groceries,Supermarket,DMART,1,burst
@@ -7139,7 +7139,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2025-10-14,SPOTIF 408514,-736.77,Subscriptions,Streaming,SPOTIFY,0,
 6,freelancer,2025-10-14,UPI-BOOKS PUBLISHER-564190002653@axl,-6935.98,Education,Fees,BOOKS PUBLISHER,0,
 6,freelancer,2025-10-14,UPI-DELHI METRO-413876891@icici,-190.07,Transport,Public,DELHI METRO,1,burst
-6,freelancer,2025-10-14,UPI-DELHI METRO-607156803483@icici,-164.66,Transport,Public,DELHI METRO,0,
+6,freelancer,2025-10-14,UPI-DELHI METRO-607156803483@icici,-164.66,Transport,Public,DELHI METRO,1,burst
 6,freelancer,2025-10-16,BOX8 140746,-499.12,Food & Dining,Delivery,BOX8,0,
 6,freelancer,2025-10-16,BOX8 CHENNAI,-399.75,Food & Dining,Delivery,BOX8,0,
 6,freelancer,2025-10-16,POS 7631XXXXXX3827 ACT FIBERNET HYDERABAD,-1270.75,Utilities,Telecom,ACT FIBERNET,0,
@@ -7208,7 +7208,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2025-11-29,ACH D- SPOTIFY-241394,-1571.99,Subscriptions,Streaming,SPOTIFY,1,burst
 6,freelancer,2025-11-29,BESCOM *33456,-487.15,Utilities,Electricity,BESCOM,0,
 6,freelancer,2025-11-29,POS 2813XXXXXX3920 NAMMA METRO HYDERABAD,-459.96,Transport,Public,NAMMA METRO,0,
-6,freelancer,2025-11-29,POS 7498XXXXXX6972 SPOTIFY CHENNAI,-1158.3,Subscriptions,Streaming,SPOTIFY,0,
+6,freelancer,2025-11-29,POS 7498XXXXXX6972 SPOTIFY CHENNAI,-1158.3,Subscriptions,Streaming,SPOTIFY,1,burst
 6,freelancer,2025-11-29,POS 9037XXXXXX1510 BARBEQUE NATION HYDERABAD,-248.26,Food & Dining,Restaurant,BARBEQUE NATION,0,
 6,freelancer,2025-11-29,SPOTIFY *51504,-1014.92,Subscriptions,Streaming,SPOTIFY,1,burst
 6,freelancer,2025-11-29,SPOTIFY 259393,-723.57,Subscriptions,Streaming,SPOTIFY,1,burst
@@ -7228,9 +7228,9 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2025-12-03,UPI/797307760/BHARAT GAS/oksbi,-756.0,Utilities,Gas & Water,BHARAT GAS,0,
 6,freelancer,2025-12-04,CHAAYO 995546,-845.74,Food & Dining,Cafe,CHAAYOS,0,
 6,freelancer,2025-12-05,CHATGPT PLUS *64397,-768.19,Subscriptions,Software,CHATGPT PLUS,0,
-6,freelancer,2025-12-06,SAGAR RATNA CHENNAI,-932.52,Food & Dining,Restaurant,SAGAR RATNA,0,
 6,freelancer,2025-12-06,SAGAR RATNA CHENNAI,-932.52,Food & Dining,Restaurant,SAGAR RATNA,1,duplicate_charge
-6,freelancer,2025-12-07,ACH D- SHARMA KIRANA-813774,-1188.36,Groceries,Local,SHARMA KIRANA,0,
+6,freelancer,2025-12-06,SAGAR RATNA CHENNAI,-932.52,Food & Dining,Restaurant,SAGAR RATNA,1,duplicate_charge
+6,freelancer,2025-12-07,ACH D- SHARMA KIRANA-813774,-1188.36,Groceries,Local,SHARMA KIRANA,1,duplicate_charge
 6,freelancer,2025-12-07,DELHI METRO BANGALORE,-505.94,Transport,Public,DELHI METRO,0,
 6,freelancer,2025-12-07,MUMBAI LOCAL PASS NOIDA,-172.78,Transport,Public,MUMBAI LOCAL PASS,0,
 6,freelancer,2025-12-07,SONYLIV *49327,-907.39,Subscriptions,Streaming,SONYLIV,0,
@@ -7270,7 +7270,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 6,freelancer,2025-12-28,ACH D- APOLLO PHARMACY-404749,-413.03,Health,Pharmacy,APOLLO PHARMACY,0,
 6,freelancer,2025-12-28,DMART 479297,-765.02,Groceries,Supermarket,DMART,0,
 6,freelancer,2025-12-28,PRACTO CONSU 323487,-1251.6,Health,Clinic,PRACTO CONSULT,0,
-6,freelancer,2025-12-30,DELHI M 805473,-359.34,Transport,Public,DELHI METRO,0,
+6,freelancer,2025-12-30,DELHI M 805473,-359.34,Transport,Public,DELHI METRO,1,duplicate_charge
 6,freelancer,2025-12-30,DELHI M 805473,-359.34,Transport,Public,DELHI METRO,1,duplicate_charge
 6,freelancer,2025-12-31,MILK DAIRY BOOTH *36621,-521.99,Groceries,Local,MILK DAIRY BOOTH,0,
 6,freelancer,2025-12-31,SWIGGY 571826,-347.94,Food & Dining,Delivery,SWIGGY,0,
@@ -7282,11 +7282,11 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 7,student,2024-01-06,UPI-NETMEDS-980158403408@icici,-570.42,Health,Pharmacy,NETMEDS,0,
 7,student,2024-01-07,POS 1349XXXXXX1329 IRCTC CHENNAI,-54.55,Transport,Public,IRCTC,0,
 7,student,2024-01-07,UPI-BLUSMART-179445013329@ybl,-154.31,Transport,Rideshare,BLUSMART,0,
-7,student,2024-01-10,ACH D- PVR CINEMAS-534910,-775.15,Entertainment,Movies,PVR CINEMAS,0,
+7,student,2024-01-10,ACH D- PVR CINEMAS-534910,-775.15,Entertainment,Movies,PVR CINEMAS,1,duplicate_charge
 7,student,2024-01-10,BLUSMART MUMBAI,-137.11,Transport,Rideshare,BLUSMART,0,
 7,student,2024-01-11,ACH D- DOMINOS PIZZA-944972,-248.03,Food & Dining,Delivery,DOMINOS PIZZA,0,
 7,student,2024-01-11,ACH D- PVR CINEMAS-534910,-775.15,Entertainment,Movies,PVR CINEMAS,1,duplicate_charge
-7,student,2024-01-11,POS 2919XXXXXX9757 CAFE COFFEE DAY BANGALORE,-120.93,Food & Dining,Cafe,CAFE COFFEE DAY,0,
+7,student,2024-01-11,POS 2919XXXXXX9757 CAFE COFFEE DAY BANGALORE,-120.93,Food & Dining,Cafe,CAFE COFFEE DAY,1,duplicate_charge
 7,student,2024-01-12,DREAM11 361355,-489.26,Entertainment,Gaming,DREAM11,0,
 7,student,2024-01-12,POS 2919XXXXXX9757 CAFE COFFEE DAY BANGALORE,-120.93,Food & Dining,Cafe,CAFE COFFEE DAY,1,duplicate_charge
 7,student,2024-01-12,SHARMA KIRANA *82216,-216.29,Groceries,Local,SHARMA KIRANA,0,
@@ -7356,7 +7356,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 7,student,2024-03-06,ACH D- NETMEDS-755604,-671.22,Health,Pharmacy,NETMEDS,0,
 7,student,2024-03-08,POS 2901XXXXXX6064 THIRD WAVE COFFEE GURGAON,-177.87,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 7,student,2024-03-08,UPI-HP PETROL PUMP-429183911893@icici,-169.08,Transport,Fuel,HP PETROL PUMP,0,
-7,student,2024-03-08,UPI-THIRD WAVE COFFEE-839177227@ybl,-303.6,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
+7,student,2024-03-08,UPI-THIRD WAVE COFFEE-839177227@ybl,-303.6,Food & Dining,Cafe,THIRD WAVE COFFEE,1,duplicate_charge
 7,student,2024-03-08,UPI-THIRD WAVE COFFEE-839177227@ybl,-303.6,Food & Dining,Cafe,THIRD WAVE COFFEE,1,duplicate_charge
 7,student,2024-03-11,ACH D- PVR CINEMAS-505359,-264.89,Entertainment,Movies,PVR CINEMAS,0,
 7,student,2024-03-11,BLUSMART *86452,-108.79,Transport,Rideshare,BLUSMART,0,
@@ -7448,7 +7448,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 7,student,2024-05-25,UPI-HALDIRAMS-667304356727@ybl,-185.5,Food & Dining,Restaurant,HALDIRAMS,0,
 7,student,2024-05-26,ACH D- SHARMA KIRANA-997310,-272.43,Groceries,Local,SHARMA KIRANA,1,burst
 7,student,2024-05-26,POS 8821XXXXXX4242 SHARMA KIRANA GURGAON,-312.61,Groceries,Local,SHARMA KIRANA,1,burst
-7,student,2024-05-26,SHARMA KIRANA *99927,-372.94,Groceries,Local,SHARMA KIRANA,0,
+7,student,2024-05-26,SHARMA KIRANA *99927,-372.94,Groceries,Local,SHARMA KIRANA,1,burst
 7,student,2024-05-26,UPI-SHARMA KIRANA-009306675710@ybl,-491.7,Groceries,Local,SHARMA KIRANA,1,burst
 7,student,2024-05-26,UPI-SHARMA KIRANA-333200158115@ybl,-228.35,Groceries,Local,SHARMA KIRANA,1,burst
 7,student,2024-05-26,UPI/267711967611/SHARMA KIRANA/okhdfc,-257.73,Groceries,Local,SHARMA KIRANA,1,burst
@@ -7481,7 +7481,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 7,student,2024-06-13,UPI-THIRD WAVE COFFEE-494707274636@axl,-248.57,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 7,student,2024-06-14,HP PETRO 604451,-58.74,Transport,Fuel,HP PETROL PUMP,0,
 7,student,2024-06-14,OLA CABS GURGAON,-142.67,Transport,Rideshare,OLA CABS,0,
-7,student,2024-06-15,UPI-PVR CINEMAS-249200565694@ybl,-349.98,Entertainment,Movies,PVR CINEMAS,0,
+7,student,2024-06-15,UPI-PVR CINEMAS-249200565694@ybl,-349.98,Entertainment,Movies,PVR CINEMAS,1,duplicate_charge
 7,student,2024-06-15,UPI-PVR CINEMAS-249200565694@ybl,-349.98,Entertainment,Movies,PVR CINEMAS,1,duplicate_charge
 7,student,2024-06-16,BLUE TOKAI GURGAON,-423.93,Food & Dining,Cafe,BLUE TOKAI,0,
 7,student,2024-06-16,DOMINOS  889209,-327.93,Food & Dining,Delivery,DOMINOS PIZZA,0,
@@ -7629,7 +7629,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 7,student,2024-10-22,ACH D- MILK DAIRY BOOTH-843042,-249.23,Groceries,Local,MILK DAIRY BOOTH,0,
 7,student,2024-10-22,AIRTEL P 353570,-352.05,Utilities,Telecom,AIRTEL POSTPAID,0,
 7,student,2024-10-23,PUNJABI DHA 402745,-295.32,Food & Dining,Restaurant,PUNJABI DHABA,0,
-7,student,2024-10-23,UPI-AIRTEL POSTPAID-042763228@icici,-741.98,Utilities,Telecom,AIRTEL POSTPAID,0,
+7,student,2024-10-23,UPI-AIRTEL POSTPAID-042763228@icici,-741.98,Utilities,Telecom,AIRTEL POSTPAID,1,duplicate_charge
 7,student,2024-10-23,UPI-AIRTEL POSTPAID-042763228@icici,-741.98,Utilities,Telecom,AIRTEL POSTPAID,1,duplicate_charge
 7,student,2024-10-24,GOLDS GYM 016390,-97.92,Health,Fitness,GOLDS GYM,0,
 7,student,2024-10-24,SHELL FUE 763942,-106.57,Transport,Fuel,SHELL FUEL,0,
@@ -7649,13 +7649,13 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 7,student,2024-11-04,ALLOWANCE FROM PARENTS GURGAON,15234.07,Income,Other Income,ALLOWANCE FROM PARENTS,0,
 7,student,2024-11-04,UPI-STEAM GAMES-470832872823@ybl,-199.97,Entertainment,Gaming,STEAM GAMES,0,
 7,student,2024-11-05,UPI-MUMBAI LOCAL PASS-732009939887@ybl,-118.4,Transport,Public,MUMBAI LOCAL PASS,0,
-7,student,2024-11-06,ACH D- PUNJABI DHABA-892424,-266.35,Food & Dining,Restaurant,PUNJABI DHABA,0,
+7,student,2024-11-06,ACH D- PUNJABI DHABA-892424,-266.35,Food & Dining,Restaurant,PUNJABI DHABA,1,duplicate_charge
 7,student,2024-11-06,ACH D- PUNJABI DHABA-892424,-266.35,Food & Dining,Restaurant,PUNJABI DHABA,1,duplicate_charge
 7,student,2024-11-06,OLA CABS 677138,-123.95,Transport,Rideshare,OLA CABS,0,
 7,student,2024-11-06,SONYLIV 335020,-114.16,Subscriptions,Streaming,SONYLIV,0,
 7,student,2024-11-07,POS 2651XXXXXX5462 AMAZON PRIME CHENNAI,-212.79,Subscriptions,Streaming,AMAZON PRIME,0,
 7,student,2024-11-11,MEDPLUS HYDERABAD,-293.53,Health,Pharmacy,MEDPLUS,0,
-7,student,2024-11-12,POS 5368XXXXXX5877 STARBUCKS DELHI,-104.28,Food & Dining,Cafe,STARBUCKS,0,
+7,student,2024-11-12,POS 5368XXXXXX5877 STARBUCKS DELHI,-104.28,Food & Dining,Cafe,STARBUCKS,1,duplicate_charge
 7,student,2024-11-12,POS 5368XXXXXX5877 STARBUCKS DELHI,-104.28,Food & Dining,Cafe,STARBUCKS,1,duplicate_charge
 7,student,2024-11-13,CAFE COFFEE DA 264935,-288.63,Food & Dining,Cafe,CAFE COFFEE DAY,0,
 7,student,2024-11-15,UPI-HP PETROL PUMP-508086320@ybl,-128.74,Transport,Fuel,HP PETROL PUMP,0,
@@ -7723,7 +7723,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 7,student,2025-01-04,ALLOWANCE FROM PARENTS MUMBAI,15269.75,Income,Other Income,ALLOWANCE FROM PARENTS,0,
 7,student,2025-01-04,UPI-BLUSMART-905279177010@ybl,-357.8,Transport,Rideshare,BLUSMART,0,
 7,student,2025-01-05,UPI-BLINKIT-101579339273@ybl,-670.79,Groceries,Online,BLINKIT,0,
-7,student,2025-01-05,UPI-RELIANCE FRESH-126744230393@axl,-464.94,Groceries,Supermarket,RELIANCE FRESH,0,
+7,student,2025-01-05,UPI-RELIANCE FRESH-126744230393@axl,-464.94,Groceries,Supermarket,RELIANCE FRESH,1,duplicate_charge
 7,student,2025-01-05,UPI-RELIANCE FRESH-126744230393@axl,-464.94,Groceries,Supermarket,RELIANCE FRESH,1,duplicate_charge
 7,student,2025-01-05,UPI/630856858448/CHATGPT PLUS/ybl,-104.62,Subscriptions,Software,CHATGPT PLUS,0,
 7,student,2025-01-06,BLUSMART NOIDA,-237.25,Transport,Rideshare,BLUSMART,0,
@@ -7781,7 +7781,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 7,student,2025-02-17,POS 1569XXXXXX9780 HP PETROL PUMP CHENNAI,-143.58,Transport,Fuel,HP PETROL PUMP,0,
 7,student,2025-02-17,UPI-STEAM GAMES-561329075@ybl,-455.37,Entertainment,Gaming,STEAM GAMES,0,
 7,student,2025-02-18,BHARAT PETROLEUM *51333,-83.43,Transport,Fuel,BHARAT PETROLEUM,0,
-7,student,2025-02-19,ACH D- PUNJABI DHABA-938803,-244.03,Food & Dining,Restaurant,PUNJABI DHABA,0,
+7,student,2025-02-19,ACH D- PUNJABI DHABA-938803,-244.03,Food & Dining,Restaurant,PUNJABI DHABA,1,duplicate_charge
 7,student,2025-02-19,RELIANCE FRESH *15777,-701.56,Groceries,Supermarket,RELIANCE FRESH,0,
 7,student,2025-02-20,ACH D- PUNJABI DHABA-938803,-244.03,Food & Dining,Restaurant,PUNJABI DHABA,1,duplicate_charge
 7,student,2025-02-20,UPI-AMAZON-572646565797@ybl,-613.11,Shopping,Online,AMAZON,0,
@@ -7871,7 +7871,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 7,student,2025-04-29,SWIGGY INSTAMART *36729,-344.93,Groceries,Online,SWIGGY INSTAMART,0,
 7,student,2025-04-30,EATSURE 897064,-266.85,Food & Dining,Delivery,EATSURE,0,
 7,student,2025-05-01,BOX8 145915,-229.31,Food & Dining,Delivery,BOX8,0,
-7,student,2025-05-01,THIRD WAVE COFFEE *97374,-269.87,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
+7,student,2025-05-01,THIRD WAVE COFFEE *97374,-269.87,Food & Dining,Cafe,THIRD WAVE COFFEE,1,duplicate_charge
 7,student,2025-05-02,ALLOWANCE FROM PARENTS NOIDA,15518.75,Income,Other Income,ALLOWANCE FROM PARENTS,0,
 7,student,2025-05-02,THIRD WAVE COFFEE *97374,-269.87,Food & Dining,Cafe,THIRD WAVE COFFEE,1,duplicate_charge
 7,student,2025-05-02,UPI/631461340458/DOMINOS PIZZA/paytm,-106.49,Food & Dining,Delivery,DOMINOS PIZZA,0,
@@ -8028,7 +8028,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 7,student,2025-09-03,UPI-SPENCERS-552768909993@ybl,-479.77,Groceries,Supermarket,SPENCERS,0,
 7,student,2025-09-04,POS 7131XXXXXX4674 ICLOUD PUNE,-177.85,Subscriptions,Software,ICLOUD,0,
 7,student,2025-09-04,POS 9040XXXXXX6369 MUMBAI LOCAL PASS NOIDA,-344.09,Transport,Public,MUMBAI LOCAL PASS,0,
-7,student,2025-09-05,CAFE COFFEE DAY BANGALORE,-670.3,Food & Dining,Cafe,CAFE COFFEE DAY,0,
+7,student,2025-09-05,CAFE COFFEE DAY BANGALORE,-670.3,Food & Dining,Cafe,CAFE COFFEE DAY,1,duplicate_charge
 7,student,2025-09-05,CAFE COFFEE DAY BANGALORE,-670.3,Food & Dining,Cafe,CAFE COFFEE DAY,1,duplicate_charge
 7,student,2025-09-05,STARBUCKS *08478,-559.9,Food & Dining,Cafe,STARBUCKS,0,
 7,student,2025-09-06,UPI/110814155/PIZZA HUT/oksbi,-121.34,Food & Dining,Delivery,PIZZA HUT,0,
@@ -8275,7 +8275,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2024-02-17,PHARMEASY HYDERABAD,-1081.35,Health,Pharmacy,PHARMEASY,1,burst
 8,young_professional,2024-02-17,POS 6580XXXXXX8068 PHARMEASY DELHI,-1065.41,Health,Pharmacy,PHARMEASY,1,burst
 8,young_professional,2024-02-17,UPI-CHAAYOS-601542206067@ybl,-487.44,Food & Dining,Cafe,CHAAYOS,0,
-8,young_professional,2024-02-17,UPI-PHARMEASY-506598574642@axl,-898.69,Health,Pharmacy,PHARMEASY,0,
+8,young_professional,2024-02-17,UPI-PHARMEASY-506598574642@axl,-898.69,Health,Pharmacy,PHARMEASY,1,burst
 8,young_professional,2024-02-17,UPI/598187244/PHARMEASY/okhdfc,-794.52,Health,Pharmacy,PHARMEASY,1,burst
 8,young_professional,2024-02-18,DELHI METRO NOIDA,-129.93,Transport,Public,DELHI METRO,0,
 8,young_professional,2024-02-19,ACH D- OLA CABS-364931,-145.92,Transport,Rideshare,OLA CABS,0,
@@ -8284,7 +8284,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2024-02-20,SWIGGY INSTAMART *42985,-1491.23,Groceries,Online,SWIGGY INSTAMART,0,
 8,young_professional,2024-02-21,POS 3868XXXXXX7873 SHARMA KIRANA CHENNAI,-559.54,Groceries,Local,SHARMA KIRANA,0,
 8,young_professional,2024-02-22,ACH D- BIG BAZAAR-266379,-3795.6,Groceries,Supermarket,BIG BAZAAR,1,burst
-8,young_professional,2024-02-22,BIG BAZ 705881,-2869.01,Groceries,Supermarket,BIG BAZAAR,0,
+8,young_professional,2024-02-22,BIG BAZ 705881,-2869.01,Groceries,Supermarket,BIG BAZAAR,1,burst
 8,young_professional,2024-02-22,BIG BAZA 264327,-3929.08,Groceries,Supermarket,BIG BAZAAR,1,burst
 8,young_professional,2024-02-22,BIG BAZAAR CHENNAI,-1886.95,Groceries,Supermarket,BIG BAZAAR,1,burst
 8,young_professional,2024-02-22,BIG BAZAAR DELHI,-3567.81,Groceries,Supermarket,BIG BAZAAR,1,burst
@@ -8357,7 +8357,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2024-03-27,GUPTA PROVISION STORE BANGALORE,-1247.07,Groceries,Local,GUPTA PROVISION STORE,1,burst
 8,young_professional,2024-03-27,GUPTA PROVISION STORE NOIDA,-1412.16,Groceries,Local,GUPTA PROVISION STORE,1,burst
 8,young_professional,2024-03-27,POS 6547XXXXXX6716 PUNJABI DHABA HYDERABAD,-525.02,Food & Dining,Restaurant,PUNJABI DHABA,0,
-8,young_professional,2024-03-27,POS 9677XXXXXX8586 GUPTA PROVISION STORE BANGALORE,-1320.47,Groceries,Local,GUPTA PROVISION STORE,0,
+8,young_professional,2024-03-27,POS 9677XXXXXX8586 GUPTA PROVISION STORE BANGALORE,-1320.47,Groceries,Local,GUPTA PROVISION STORE,1,burst
 8,young_professional,2024-03-27,UPI/607261249892/GUPTA PROVISION STORE/ybl,-1655.18,Groceries,Local,GUPTA PROVISION STORE,1,burst
 8,young_professional,2024-03-29,ACH D- CROMA-142564,-2913.33,Shopping,Electronics,CROMA,0,
 8,young_professional,2024-03-30,BLINKIT MUMBAI,-8766.81,Groceries,Online,BLINKIT,1,amount_spike
@@ -8409,7 +8409,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2024-04-20,SWIGGY 303384,-509.91,Food & Dining,Delivery,SWIGGY,0,
 8,young_professional,2024-04-22,BOX8 *18891,-550.63,Food & Dining,Delivery,BOX8,0,
 8,young_professional,2024-04-22,UPI-UBER-174429053659@ybl,-311.14,Transport,Rideshare,UBER,0,
-8,young_professional,2024-04-23,ACH D- MICROSOFT 365-439907,-321.6,Subscriptions,Software,MICROSOFT 365,0,
+8,young_professional,2024-04-23,ACH D- MICROSOFT 365-439907,-321.6,Subscriptions,Software,MICROSOFT 365,1,burst
 8,young_professional,2024-04-23,MICROSOF 648289,-299.97,Subscriptions,Software,MICROSOFT 365,1,burst
 8,young_professional,2024-04-23,MICROSOFT 36 085920,-261.0,Subscriptions,Software,MICROSOFT 365,1,burst
 8,young_professional,2024-04-23,MICROSOFT 365 NOIDA,-249.77,Subscriptions,Software,MICROSOFT 365,1,burst
@@ -8425,7 +8425,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2024-04-27,UPI/689002249158/DMART/oksbi,-420.12,Groceries,Supermarket,DMART,0,
 8,young_professional,2024-04-28,ACH D- BOX8-578298,-260.9,Food & Dining,Delivery,BOX8,0,
 8,young_professional,2024-04-28,SHELL FUEL *90173,-254.54,Transport,Fuel,SHELL FUEL,0,
-8,young_professional,2024-04-28,UPI/513637596404/SAGAR RATNA/ybl,-116.63,Food & Dining,Restaurant,SAGAR RATNA,0,
+8,young_professional,2024-04-28,UPI/513637596404/SAGAR RATNA/ybl,-116.63,Food & Dining,Restaurant,SAGAR RATNA,1,duplicate_charge
 8,young_professional,2024-04-28,UPI/513637596404/SAGAR RATNA/ybl,-116.63,Food & Dining,Restaurant,SAGAR RATNA,1,duplicate_charge
 8,young_professional,2024-04-29,ACH D- RENT TRANSFER LANDLORD-890708,-11360.0,Housing,Rent,RENT TRANSFER LANDLORD,0,
 8,young_professional,2024-04-29,GUPTA PROVISION STORE *23320,-783.25,Groceries,Local,GUPTA PROVISION STORE,0,
@@ -8493,7 +8493,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2024-05-27,STEAM GAMES MUMBAI,-45066.42,Entertainment,Gaming,STEAM GAMES,1,unusual_high_value
 8,young_professional,2024-05-27,UPI/870767210403/THIRD WAVE COFFEE/oksbi,-615.46,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 8,young_professional,2024-05-28,ACH D- SONYLIV-963620,-792.3,Subscriptions,Streaming,SONYLIV,0,
-8,young_professional,2024-05-29,INDIAN OIL PETRO 198162,-233.44,Transport,Fuel,INDIAN OIL PETROL,0,
+8,young_professional,2024-05-29,INDIAN OIL PETRO 198162,-233.44,Transport,Fuel,INDIAN OIL PETROL,1,duplicate_charge
 8,young_professional,2024-05-29,INDIAN OIL PETRO 198162,-233.44,Transport,Fuel,INDIAN OIL PETROL,1,duplicate_charge
 8,young_professional,2024-05-29,POS 6618XXXXXX5935 OLA CABS CHENNAI,-251.74,Transport,Rideshare,OLA CABS,0,
 8,young_professional,2024-05-30,NYKAA *96579,-1562.71,Shopping,Online,NYKAA,0,
@@ -8581,7 +8581,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2024-07-13,ACH D- BARBEQUE NATION-646685,-445.75,Food & Dining,Restaurant,BARBEQUE NATION,1,burst
 8,young_professional,2024-07-13,BARBEQUE NATI 511603,-441.77,Food & Dining,Restaurant,BARBEQUE NATION,1,burst
 8,young_professional,2024-07-13,BARBEQUE NATION *87266,-272.37,Food & Dining,Restaurant,BARBEQUE NATION,1,burst
-8,young_professional,2024-07-13,BARBEQUE NATION BANGALORE,-389.62,Food & Dining,Restaurant,BARBEQUE NATION,0,
+8,young_professional,2024-07-13,BARBEQUE NATION BANGALORE,-389.62,Food & Dining,Restaurant,BARBEQUE NATION,1,burst
 8,young_professional,2024-07-13,CAFE COFFEE DAY BANGALORE,-636.25,Food & Dining,Cafe,CAFE COFFEE DAY,0,
 8,young_professional,2024-07-13,CHAAYOS 023492,-235.89,Food & Dining,Cafe,CHAAYOS,0,
 8,young_professional,2024-07-13,POS 4896XXXXXX2428 BARBEQUE NATION DELHI,-514.15,Food & Dining,Restaurant,BARBEQUE NATION,1,burst
@@ -8858,7 +8858,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2024-12-05,MORE SUPERMAR 559158,-907.76,Groceries,Supermarket,MORE SUPERMARKET,1,burst
 8,young_professional,2024-12-05,MORE SUPERMARKET HYDERABAD,-438.94,Groceries,Supermarket,MORE SUPERMARKET,1,burst
 8,young_professional,2024-12-05,POS 2426XXXXXX4021 MORE SUPERMARKET PUNE,-915.68,Groceries,Supermarket,MORE SUPERMARKET,1,burst
-8,young_professional,2024-12-05,POS 3306XXXXXX8859 MORE SUPERMARKET NOIDA,-708.87,Groceries,Supermarket,MORE SUPERMARKET,0,
+8,young_professional,2024-12-05,POS 3306XXXXXX8859 MORE SUPERMARKET NOIDA,-708.87,Groceries,Supermarket,MORE SUPERMARKET,1,burst
 8,young_professional,2024-12-08,CHAAYOS *35138,-212.33,Food & Dining,Cafe,CHAAYOS,0,
 8,young_professional,2024-12-08,IRCTC 729789,-100.79,Transport,Public,IRCTC,0,
 8,young_professional,2024-12-08,KFC 977594,-359.72,Food & Dining,Restaurant,KFC,0,
@@ -8969,12 +8969,12 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2025-02-03,POS 1585XXXXXX6963 DREAM11 PUNE,-1182.86,Entertainment,Gaming,DREAM11,0,
 8,young_professional,2025-02-03,SALARY CREDIT BANGALORE,57876.16,Income,Salary,SALARY CREDIT,0,
 8,young_professional,2025-02-04,FLIPKART *38935,-2809.84,Shopping,Online,FLIPKART,0,
-8,young_professional,2025-02-06,ACH D- BLUSMART-724109,-192.08,Transport,Rideshare,BLUSMART,0,
+8,young_professional,2025-02-06,ACH D- BLUSMART-724109,-192.08,Transport,Rideshare,BLUSMART,1,duplicate_charge
 8,young_professional,2025-02-06,ACH D- BLUSMART-724109,-192.08,Transport,Rideshare,BLUSMART,1,duplicate_charge
 8,young_professional,2025-02-06,POS 1127XXXXXX3016 BURGER KING HYDERABAD,-616.89,Food & Dining,Restaurant,BURGER KING,0,
 8,young_professional,2025-02-08,POS 2972XXXXXX9642 AIRTEL POSTPAID HYDERABAD,-1166.1,Utilities,Telecom,AIRTEL POSTPAID,0,
 8,young_professional,2025-02-08,POS 7770XXXXXX3056 FRESH VEGETABLES MART BANGALORE,-1069.77,Groceries,Local,FRESH VEGETABLES MART,0,
-8,young_professional,2025-02-08,UPI-KFC-188902173@axl,-293.22,Food & Dining,Restaurant,KFC,0,
+8,young_professional,2025-02-08,UPI-KFC-188902173@axl,-293.22,Food & Dining,Restaurant,KFC,1,duplicate_charge
 8,young_professional,2025-02-09,UPI-KFC-188902173@axl,-293.22,Food & Dining,Restaurant,KFC,1,duplicate_charge
 8,young_professional,2025-02-10,H&M CHENNAI,-1666.46,Shopping,Fashion,H&M,0,
 8,young_professional,2025-02-10,POS 4974XXXXXX1452 RELIANCE DIGITAL CHENNAI,-2414.91,Shopping,Electronics,RELIANCE DIGITAL,0,
@@ -9108,7 +9108,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2025-04-07,UPI-STARBUCKS-947778186178@icici,-802.83,Food & Dining,Cafe,STARBUCKS,0,
 8,young_professional,2025-04-08,SHELL FUEL BANGALORE,-288.37,Transport,Fuel,SHELL FUEL,0,
 8,young_professional,2025-04-11,UPI-STARBUCKS-871449595609@ybl,-298.72,Food & Dining,Cafe,STARBUCKS,0,
-8,young_professional,2025-04-12,ACH D- IRCTC-534310,-69.31,Transport,Public,IRCTC,0,
+8,young_professional,2025-04-12,ACH D- IRCTC-534310,-69.31,Transport,Public,IRCTC,1,duplicate_charge
 8,young_professional,2025-04-12,ACH D- IRCTC-534310,-69.31,Transport,Public,IRCTC,1,duplicate_charge
 8,young_professional,2025-04-12,CROMA HYDERABAD,-2500.12,Shopping,Electronics,CROMA,0,
 8,young_professional,2025-04-12,THIRD WAVE COFFEE *18924,-420.43,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
@@ -9174,7 +9174,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2025-05-15,ACH D- MUMBAI LOCAL PASS-650648,-119.7,Transport,Public,MUMBAI LOCAL PASS,0,
 8,young_professional,2025-05-15,POS 5378XXXXXX6145 BOX8 CHENNAI,-385.28,Food & Dining,Delivery,BOX8,0,
 8,young_professional,2025-05-16,UPI/009429751/DELHI METRO/paytm,-134.89,Transport,Public,DELHI METRO,0,
-8,young_professional,2025-05-17,RELIANCE DIGITAL BANGALORE,-2390.12,Shopping,Electronics,RELIANCE DIGITAL,0,
+8,young_professional,2025-05-17,RELIANCE DIGITAL BANGALORE,-2390.12,Shopping,Electronics,RELIANCE DIGITAL,1,duplicate_charge
 8,young_professional,2025-05-17,RELIANCE DIGITAL BANGALORE,-2390.12,Shopping,Electronics,RELIANCE DIGITAL,1,duplicate_charge
 8,young_professional,2025-05-17,UPI-BHARAT PETROLEUM-782153562@icici,-174.67,Transport,Fuel,BHARAT PETROLEUM,0,
 8,young_professional,2025-05-18,POS 9312XXXXXX4016 MILK DAIRY BOOTH BANGALORE,-969.92,Groceries,Local,MILK DAIRY BOOTH,0,
@@ -9201,7 +9201,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2025-05-26,SHARMA KIRANA GURGAON,-1253.74,Groceries,Local,SHARMA KIRANA,0,
 8,young_professional,2025-05-26,TATA POWER PUNE,-3918.95,Utilities,Electricity,TATA POWER,0,
 8,young_professional,2025-05-26,UPI-JIOMART-681034450@axl,-987.38,Groceries,Online,JIOMART,1,burst
-8,young_professional,2025-05-26,UPI/062546630/JIOMART/ybl,-1088.96,Groceries,Online,JIOMART,0,
+8,young_professional,2025-05-26,UPI/062546630/JIOMART/ybl,-1088.96,Groceries,Online,JIOMART,1,burst
 8,young_professional,2025-05-27,BLUSMART BANGALORE,-340.53,Transport,Rideshare,BLUSMART,0,
 8,young_professional,2025-05-27,CROMA 515358,-1357.74,Shopping,Electronics,CROMA,0,
 8,young_professional,2025-05-27,FLIPKART *37409,-3856.71,Shopping,Online,FLIPKART,0,
@@ -9223,7 +9223,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2025-06-05,ACH D- HOTSTAR-384862,-171.11,Subscriptions,Streaming,HOTSTAR,1,burst
 8,young_professional,2025-06-05,CAFE COFFEE DAY GURGAON,-726.03,Food & Dining,Cafe,CAFE COFFEE DAY,0,
 8,young_professional,2025-06-05,HOTSTAR *70835,-206.02,Subscriptions,Streaming,HOTSTAR,1,burst
-8,young_professional,2025-06-05,HOTSTAR *75907,-175.85,Subscriptions,Streaming,HOTSTAR,0,
+8,young_professional,2025-06-05,HOTSTAR *75907,-175.85,Subscriptions,Streaming,HOTSTAR,1,burst
 8,young_professional,2025-06-05,HOTSTAR BANGALORE,-188.24,Subscriptions,Streaming,HOTSTAR,1,burst
 8,young_professional,2025-06-05,POS 9591XXXXXX7226 HOTSTAR PUNE,-154.94,Subscriptions,Streaming,HOTSTAR,1,burst
 8,young_professional,2025-06-05,UPI-HOTSTAR-237136059029@ybl,-119.94,Subscriptions,Streaming,HOTSTAR,1,burst
@@ -9299,7 +9299,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2025-07-12,UPI/085697933485/SAGAR RATNA/oksbi,-128.09,Food & Dining,Restaurant,SAGAR RATNA,0,
 8,young_professional,2025-07-14,ACH D- BARBEQUE NATION-695103,-195.02,Food & Dining,Restaurant,BARBEQUE NATION,0,
 8,young_professional,2025-07-14,BURGER  427764,-402.53,Food & Dining,Restaurant,BURGER KING,0,
-8,young_professional,2025-07-14,POS 7999XXXXXX4013 BMTC BUS PASS BANGALORE,-451.47,Transport,Public,BMTC BUS PASS,0,
+8,young_professional,2025-07-14,POS 7999XXXXXX4013 BMTC BUS PASS BANGALORE,-451.47,Transport,Public,BMTC BUS PASS,1,duplicate_charge
 8,young_professional,2025-07-14,POS 7999XXXXXX4013 BMTC BUS PASS BANGALORE,-451.47,Transport,Public,BMTC BUS PASS,1,duplicate_charge
 8,young_professional,2025-07-14,UPI-EATSURE-531929789294@axl,-553.12,Food & Dining,Delivery,EATSURE,0,
 8,young_professional,2025-07-17,POS 1995XXXXXX8717 AIRBNB HYDERABAD,-2597.05,Travel,Stay,AIRBNB,0,
@@ -9424,7 +9424,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2025-09-16,ACH D- BIG BAZAAR-332351,-884.88,Groceries,Supermarket,BIG BAZAAR,1,burst
 8,young_professional,2025-09-16,BIG BAZAA 718313,-840.89,Groceries,Supermarket,BIG BAZAAR,1,burst
 8,young_professional,2025-09-16,BIG BAZAAR *72327,-802.97,Groceries,Supermarket,BIG BAZAAR,1,burst
-8,young_professional,2025-09-16,BIG BAZAAR MUMBAI,-1211.99,Groceries,Supermarket,BIG BAZAAR,0,
+8,young_professional,2025-09-16,BIG BAZAAR MUMBAI,-1211.99,Groceries,Supermarket,BIG BAZAAR,1,burst
 8,young_professional,2025-09-16,BURGER KING *89710,-534.38,Food & Dining,Restaurant,BURGER KING,0,
 8,young_professional,2025-09-16,OLA CABS MUMBAI,-488.42,Transport,Rideshare,OLA CABS,0,
 8,young_professional,2025-09-16,PAYTM INSIDER NOIDA,-861.57,Entertainment,Events,PAYTM INSIDER,0,
@@ -9544,7 +9544,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 8,young_professional,2025-11-15,ACH D- NYKAA-399104,-6578.89,Shopping,Online,NYKAA,1,burst
 8,young_professional,2025-11-15,AJIO 978683,-5708.01,Shopping,Online,AJIO,0,
 8,young_professional,2025-11-15,NYKAA 592360,-9135.35,Shopping,Online,NYKAA,1,burst
-8,young_professional,2025-11-15,POS 1257XXXXXX4275 NYKAA CHENNAI,-6941.68,Shopping,Online,NYKAA,0,
+8,young_professional,2025-11-15,POS 1257XXXXXX4275 NYKAA CHENNAI,-6941.68,Shopping,Online,NYKAA,1,burst
 8,young_professional,2025-11-15,POS 8063XXXXXX4001 NYKAA DELHI,-8280.02,Shopping,Online,NYKAA,1,burst
 8,young_professional,2025-11-15,POS 8375XXXXXX5340 NYKAA NOIDA,-7107.69,Shopping,Online,NYKAA,1,burst
 8,young_professional,2025-11-15,UPI-NYKAA-115397310907@axl,-6825.55,Shopping,Online,NYKAA,1,burst
@@ -9655,7 +9655,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 9,family,2024-01-10,UPI-NETMEDS-533655122@icici,-709.18,Health,Pharmacy,NETMEDS,0,
 9,family,2024-01-10,UPI-SWIGGY-106124049172@axl,-805.43,Food & Dining,Delivery,SWIGGY,0,
 9,family,2024-01-10,UPI-ZOMATO-678417735@axl,-570.85,Food & Dining,Delivery,ZOMATO,0,
-9,family,2024-01-10,UPI/761675737717/AIR INDIA/ybl,-7430.66,Travel,Flights,AIR INDIA,0,
+9,family,2024-01-10,UPI/761675737717/AIR INDIA/ybl,-7430.66,Travel,Flights,AIR INDIA,1,duplicate_charge
 9,family,2024-01-10,UPI/761675737717/AIR INDIA/ybl,-7430.66,Travel,Flights,AIR INDIA,1,duplicate_charge
 9,family,2024-01-11,BLUSMART *51546,-790.44,Transport,Rideshare,BLUSMART,0,
 9,family,2024-01-11,EXAM FEE NTA *14137,-6753.96,Education,Fees,EXAM FEE NTA,0,
@@ -9774,7 +9774,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 9,family,2024-03-19,POS 9939XXXXXX7620 UBER HYDERABAD,-1608.2,Transport,Rideshare,UBER,0,
 9,family,2024-03-19,UPI/184819416521/ZOMATO/okhdfc,-666.58,Food & Dining,Delivery,ZOMATO,1,burst
 9,family,2024-03-19,ZOMATO 619031,-592.62,Food & Dining,Delivery,ZOMATO,1,burst
-9,family,2024-03-19,ZOMATO 621868,-876.76,Food & Dining,Delivery,ZOMATO,0,
+9,family,2024-03-19,ZOMATO 621868,-876.76,Food & Dining,Delivery,ZOMATO,1,burst
 9,family,2024-03-20,POS 9415XXXXXX5282 AIRTEL POSTPAID MUMBAI,-613.64,Utilities,Telecom,AIRTEL POSTPAID,0,
 9,family,2024-03-21,UPI/471057741149/OLA CABS/oksbi,-890.05,Transport,Rideshare,OLA CABS,0,
 9,family,2024-03-22,POS 5357XXXXXX8724 NAMMA METRO DELHI,-964.86,Transport,Public,NAMMA METRO,0,
@@ -9834,8 +9834,8 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 9,family,2024-04-22,ACH D- BIGBASKET-999207,-768.85,Groceries,Online,BIGBASKET,0,
 9,family,2024-04-22,BHARAT PETROLEUM *03691,-1151.61,Transport,Fuel,BHARAT PETROLEUM,0,
 9,family,2024-04-23,UPI/677593324/SPENCERS/ybl,-1102.27,Groceries,Supermarket,SPENCERS,0,
-9,family,2024-04-24,AMAZON 516150,-3712.81,Shopping,Online,AMAZON,0,
-9,family,2024-04-24,OLA CABS *01591,-1562.28,Transport,Rideshare,OLA CABS,0,
+9,family,2024-04-24,AMAZON 516150,-3712.81,Shopping,Online,AMAZON,1,duplicate_charge
+9,family,2024-04-24,OLA CABS *01591,-1562.28,Transport,Rideshare,OLA CABS,1,duplicate_charge
 9,family,2024-04-24,OLA CABS *01591,-1562.28,Transport,Rideshare,OLA CABS,1,duplicate_charge
 9,family,2024-04-25,AMAZON 516150,-3712.81,Shopping,Online,AMAZON,1,duplicate_charge
 9,family,2024-04-25,MCDONALD 839695,-684.14,Food & Dining,Restaurant,MCDONALDS,0,
@@ -9982,7 +9982,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 9,family,2024-07-20,SHARMA KIRA 094080,-1780.72,Groceries,Local,SHARMA KIRANA,0,
 9,family,2024-07-20,UPI-BLUSMART-536836199@icici,-1292.62,Transport,Rideshare,BLUSMART,0,
 9,family,2024-07-21,AIRBNB *65044,-48773.29,Travel,Stay,AIRBNB,1,unusual_high_value
-9,family,2024-07-21,DELHI METRO PUNE,-850.53,Transport,Public,DELHI METRO,0,
+9,family,2024-07-21,DELHI METRO PUNE,-850.53,Transport,Public,DELHI METRO,1,duplicate_charge
 9,family,2024-07-21,UPI-MEESHO-453179846@icici,-3419.48,Shopping,Online,MEESHO,0,
 9,family,2024-07-21,UPI/461835222783/INDIGO AIRLINES/okhdfc,-14972.17,Travel,Flights,INDIGO AIRLINES,0,
 9,family,2024-07-22,DELHI METRO PUNE,-850.53,Transport,Public,DELHI METRO,1,duplicate_charge
@@ -10096,7 +10096,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 9,family,2024-09-23,POS 1553XXXXXX6650 NETFLIX GURGAON,-571.28,Subscriptions,Streaming,NETFLIX,0,
 9,family,2024-09-25,POS 5851XXXXXX2424 THIRD WAVE COFFEE CHENNAI,-222.56,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 9,family,2024-09-25,UPI-MORE SUPERMARKET-461940118320@icici,-1075.26,Groceries,Supermarket,MORE SUPERMARKET,0,
-9,family,2024-09-26,ACH D- EATSURE-649356,-827.71,Food & Dining,Delivery,EATSURE,0,
+9,family,2024-09-26,ACH D- EATSURE-649356,-827.71,Food & Dining,Delivery,EATSURE,1,burst
 9,family,2024-09-26,ACH D- EATSURE-681537,-1099.79,Food & Dining,Delivery,EATSURE,1,burst
 9,family,2024-09-26,EATSURE DELHI,-917.29,Food & Dining,Delivery,EATSURE,1,burst
 9,family,2024-09-26,EATSURE PUNE,-1149.75,Food & Dining,Delivery,EATSURE,1,burst
@@ -10220,7 +10220,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 9,family,2024-11-29,PLAYSTATION STORE 515556,-2921.86,Entertainment,Gaming,PLAYSTATION STORE,0,
 9,family,2024-11-29,STEAM GAME 443243,-1632.25,Entertainment,Gaming,STEAM GAMES,0,
 9,family,2024-11-30,ACH D- OYO ROOMS-858906,-17054.56,Travel,Stay,OYO ROOMS,0,
-9,family,2024-12-01,BWSSB W 008048,-2625.28,Utilities,Gas & Water,BWSSB WATER,0,
+9,family,2024-12-01,BWSSB W 008048,-2625.28,Utilities,Gas & Water,BWSSB WATER,1,duplicate_charge
 9,family,2024-12-02,BWSSB W 008048,-2625.28,Utilities,Gas & Water,BWSSB WATER,1,duplicate_charge
 9,family,2024-12-02,POS 5831XXXXXX8440 JIO PREPAID BANGALORE,-3328.04,Utilities,Telecom,JIO PREPAID,0,
 9,family,2024-12-02,SWIGGY 311496,-511.12,Food & Dining,Delivery,SWIGGY,0,
@@ -10249,7 +10249,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 9,family,2024-12-15,UPI/301362293/SHELL FUEL/okhdfc,-675.58,Transport,Fuel,SHELL FUEL,0,
 9,family,2024-12-16,GUPTA PROVISION ST 343852,-2660.78,Groceries,Local,GUPTA PROVISION STORE,0,
 9,family,2024-12-17,UPI/373351308/MORE SUPERMARKET/oksbi,-3488.35,Groceries,Supermarket,MORE SUPERMARKET,0,
-9,family,2024-12-19,MAKEMYTRIP CHENNAI,-15132.05,Travel,Flights,MAKEMYTRIP,0,
+9,family,2024-12-19,MAKEMYTRIP CHENNAI,-15132.05,Travel,Flights,MAKEMYTRIP,1,duplicate_charge
 9,family,2024-12-19,MICROSOFT 630607,-290.01,Subscriptions,Software,MICROSOFT 365,0,
 9,family,2024-12-19,NAMMA METRO BANGALORE,-887.38,Transport,Public,NAMMA METRO,0,
 9,family,2024-12-19,PIZZA HUT NOIDA,-301.31,Food & Dining,Delivery,PIZZA HUT,0,
@@ -10525,7 +10525,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 9,family,2025-05-16,EATSURE 949429,-344.67,Food & Dining,Delivery,EATSURE,0,
 9,family,2025-05-16,POS 4858XXXXXX7008 CULT FIT HYDERABAD,-1853.04,Health,Fitness,CULT FIT,0,
 9,family,2025-05-17,ACH D- BARBEQUE NATION-222485,-1075.94,Food & Dining,Restaurant,BARBEQUE NATION,0,
-9,family,2025-05-17,ACH D- VI RECHARGE-223988,-3762.53,Utilities,Telecom,VI RECHARGE,0,
+9,family,2025-05-17,ACH D- VI RECHARGE-223988,-3762.53,Utilities,Telecom,VI RECHARGE,1,burst
 9,family,2025-05-17,ACH D- VI RECHARGE-747154,-4657.14,Utilities,Telecom,VI RECHARGE,1,burst
 9,family,2025-05-17,ACH D- VI RECHARGE-753440,-3718.66,Utilities,Telecom,VI RECHARGE,1,burst
 9,family,2025-05-17,UPI-THIRD WAVE COFFEE-973388226941@icici,-633.63,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
@@ -10813,7 +10813,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 9,family,2025-10-25,ACH D- PAYTM INSIDER-488257,-1095.34,Entertainment,Events,PAYTM INSIDER,0,
 9,family,2025-10-25,HP PETROL PUMP *62053,-849.8,Transport,Fuel,HP PETROL PUMP,0,
 9,family,2025-10-25,RELIANCE DI 980854,-3749.3,Shopping,Electronics,RELIANCE DIGITAL,0,
-9,family,2025-10-25,UPI/584498619/BIGBASKET/okhdfc,-2109.41,Groceries,Online,BIGBASKET,0,
+9,family,2025-10-25,UPI/584498619/BIGBASKET/okhdfc,-2109.41,Groceries,Online,BIGBASKET,1,duplicate_charge
 9,family,2025-10-25,UPI/584498619/BIGBASKET/okhdfc,-2109.41,Groceries,Online,BIGBASKET,1,duplicate_charge
 9,family,2025-10-27,BSES RAJDHANI *54802,-2443.52,Utilities,Electricity,BSES RAJDHANI,0,
 9,family,2025-10-28,POS 1056XXXXXX9645 NAMMA METRO MUMBAI,-2115.84,Transport,Public,NAMMA METRO,0,
@@ -10885,12 +10885,12 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 9,family,2025-12-08,RELIANCE FRESH *98864,-1051.56,Groceries,Supermarket,RELIANCE FRESH,0,
 9,family,2025-12-10,NAMMA METRO *07374,-549.18,Transport,Public,NAMMA METRO,0,
 9,family,2025-12-10,POS 5772XXXXXX2209 BMTC BUS PASS NOIDA,-1672.92,Transport,Public,BMTC BUS PASS,0,
-9,family,2025-12-10,SHELL FUEL PUNE,-2051.2,Transport,Fuel,SHELL FUEL,0,
+9,family,2025-12-10,SHELL FUEL PUNE,-2051.2,Transport,Fuel,SHELL FUEL,1,duplicate_charge
 9,family,2025-12-10,SHELL FUEL PUNE,-2051.2,Transport,Fuel,SHELL FUEL,1,duplicate_charge
 9,family,2025-12-10,UPI-BESCOM-234153958211@axl,-2779.99,Utilities,Electricity,BESCOM,0,
 9,family,2025-12-12,ACH D- EATSURE-104978,-401.02,Food & Dining,Delivery,EATSURE,1,burst
 9,family,2025-12-12,BIG BAZAAR CHENNAI,-864.42,Groceries,Supermarket,BIG BAZAAR,0,
-9,family,2025-12-12,EATSURE 617660,-667.39,Food & Dining,Delivery,EATSURE,0,
+9,family,2025-12-12,EATSURE 617660,-667.39,Food & Dining,Delivery,EATSURE,1,burst
 9,family,2025-12-12,POS 8247XXXXXX5614 EATSURE CHENNAI,-828.73,Food & Dining,Delivery,EATSURE,1,burst
 9,family,2025-12-12,POS 8406XXXXXX8213 EATSURE MUMBAI,-487.93,Food & Dining,Delivery,EATSURE,1,burst
 9,family,2025-12-12,UPI-DMART-767845055246@ybl,-1211.45,Groceries,Supermarket,DMART,0,
@@ -10908,7 +10908,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 9,family,2025-12-17,BWSSB WATER *47787,-1414.53,Utilities,Gas & Water,BWSSB WATER,0,
 9,family,2025-12-18,GUPTA PROVISION STORE *36404,-1325.34,Groceries,Local,GUPTA PROVISION STORE,0,
 9,family,2025-12-19,UPI-FRESH VEGETABLES MART-997137848339@axl,-1777.52,Groceries,Local,FRESH VEGETABLES MART,0,
-9,family,2025-12-20,MILK DAIRY BOOTH 602077,-1228.32,Groceries,Local,MILK DAIRY BOOTH,0,
+9,family,2025-12-20,MILK DAIRY BOOTH 602077,-1228.32,Groceries,Local,MILK DAIRY BOOTH,1,duplicate_charge
 9,family,2025-12-20,MILK DAIRY BOOTH 602077,-1228.32,Groceries,Local,MILK DAIRY BOOTH,1,duplicate_charge
 9,family,2025-12-20,POS 4650XXXXXX3491 PUNJABI DHABA PUNE,-457.35,Food & Dining,Restaurant,PUNJABI DHABA,0,
 9,family,2025-12-20,UPI/288666821/ZEPTO/paytm,-1184.68,Groceries,Online,ZEPTO,0,
@@ -11090,12 +11090,12 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 10,frugal_saver,2024-06-09,BIG BAZ 681334,-525.6,Groceries,Supermarket,BIG BAZAAR,0,
 10,frugal_saver,2024-06-11,BHARAT  522446,-769.56,Utilities,Gas & Water,BHARAT GAS,0,
 10,frugal_saver,2024-06-11,FRESH VEGE 378205,-987.72,Groceries,Local,FRESH VEGETABLES MART,0,
-10,frugal_saver,2024-06-11,RAPIDO 547976,-36.72,Transport,Rideshare,RAPIDO,0,
+10,frugal_saver,2024-06-11,RAPIDO 547976,-36.72,Transport,Rideshare,RAPIDO,1,duplicate_charge
 10,frugal_saver,2024-06-11,RAPIDO 547976,-36.72,Transport,Rideshare,RAPIDO,1,duplicate_charge
 10,frugal_saver,2024-06-12,SHARMA KIRANA *61470,-2158.43,Groceries,Local,SHARMA KIRANA,0,
 10,frugal_saver,2024-06-12,VI RECHARGE *49286,-1103.88,Utilities,Telecom,VI RECHARGE,0,
 10,frugal_saver,2024-06-17,BWSSB WA 562827,-541.23,Utilities,Gas & Water,BWSSB WATER,0,
-10,frugal_saver,2024-06-17,POS 5943XXXXXX7800 CAFE COFFEE DAY NOIDA,-220.55,Food & Dining,Cafe,CAFE COFFEE DAY,0,
+10,frugal_saver,2024-06-17,POS 5943XXXXXX7800 CAFE COFFEE DAY NOIDA,-220.55,Food & Dining,Cafe,CAFE COFFEE DAY,1,duplicate_charge
 10,frugal_saver,2024-06-18,ACH D- NAMMA METRO-399780,-86.83,Transport,Public,NAMMA METRO,0,
 10,frugal_saver,2024-06-18,BURGER  442446,-157.7,Food & Dining,Restaurant,BURGER KING,0,
 10,frugal_saver,2024-06-18,POS 5943XXXXXX7800 CAFE COFFEE DAY NOIDA,-220.55,Food & Dining,Cafe,CAFE COFFEE DAY,1,duplicate_charge
@@ -11113,14 +11113,14 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 10,frugal_saver,2024-06-29,ACH D- GOLDS GYM-905875,-573.69,Health,Fitness,GOLDS GYM,1,burst
 10,frugal_saver,2024-06-29,GOLDS GYM *03833,-517.47,Health,Fitness,GOLDS GYM,1,burst
 10,frugal_saver,2024-06-29,OLA CAB 906021,-131.38,Transport,Rideshare,OLA CABS,0,
-10,frugal_saver,2024-06-29,POS 1879XXXXXX3934 GOLDS GYM HYDERABAD,-428.39,Health,Fitness,GOLDS GYM,0,
+10,frugal_saver,2024-06-29,POS 1879XXXXXX3934 GOLDS GYM HYDERABAD,-428.39,Health,Fitness,GOLDS GYM,1,burst
 10,frugal_saver,2024-06-29,UPI-GOLDS GYM-050350575583@axl,-465.3,Health,Fitness,GOLDS GYM,1,burst
 10,frugal_saver,2024-06-29,UPI/232441230/GOLDS GYM/oksbi,-461.55,Health,Fitness,GOLDS GYM,1,burst
 10,frugal_saver,2024-06-29,UPI/290063317259/GOLDS GYM/ybl,-566.12,Health,Fitness,GOLDS GYM,1,burst
 10,frugal_saver,2024-06-30,SHELL FUEL NOIDA,-68.31,Transport,Fuel,SHELL FUEL,0,
 10,frugal_saver,2024-07-02,POS 7325XXXXXX7864 SHARMA KIRANA GURGAON,-1443.83,Groceries,Local,SHARMA KIRANA,0,
 10,frugal_saver,2024-07-02,ZEPTO 439320,-814.94,Groceries,Online,ZEPTO,0,
-10,frugal_saver,2024-07-03,ACH D- MICROSOFT 365-832995,-114.93,Subscriptions,Software,MICROSOFT 365,0,
+10,frugal_saver,2024-07-03,ACH D- MICROSOFT 365-832995,-114.93,Subscriptions,Software,MICROSOFT 365,1,duplicate_charge
 10,frugal_saver,2024-07-03,ACH D- MICROSOFT 365-832995,-114.93,Subscriptions,Software,MICROSOFT 365,1,duplicate_charge
 10,frugal_saver,2024-07-03,SALARY CREDIT DELHI,61551.24,Income,Salary,SALARY CREDIT,0,
 10,frugal_saver,2024-07-04,ACH D- ZEPTO-363650,-472.08,Groceries,Online,ZEPTO,0,
@@ -11173,7 +11173,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 10,frugal_saver,2024-08-19,RAPIDO 704641,-112.45,Transport,Rideshare,RAPIDO,0,
 10,frugal_saver,2024-08-20,UPI-JIOMART-294817156@icici,-1122.78,Groceries,Online,JIOMART,0,
 10,frugal_saver,2024-08-21,BARBEQUE NATION MUMBAI,-252.5,Food & Dining,Restaurant,BARBEQUE NATION,0,
-10,frugal_saver,2024-08-21,POS 1247XXXXXX1753 JIOMART NOIDA,-956.9,Groceries,Online,JIOMART,0,
+10,frugal_saver,2024-08-21,POS 1247XXXXXX1753 JIOMART NOIDA,-956.9,Groceries,Online,JIOMART,1,duplicate_charge
 10,frugal_saver,2024-08-21,POS 1247XXXXXX1753 JIOMART NOIDA,-956.9,Groceries,Online,JIOMART,1,duplicate_charge
 10,frugal_saver,2024-08-23,BIG BAZAAR *70403,-1821.51,Groceries,Supermarket,BIG BAZAAR,0,
 10,frugal_saver,2024-08-23,POS 2850XXXXXX6445 INDIAN OIL PETROL NOIDA,-116.13,Transport,Fuel,INDIAN OIL PETROL,0,
@@ -11230,7 +11230,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 10,frugal_saver,2024-10-10,POS 1126XXXXXX9984 BIGBASKET BANGALORE,-980.61,Groceries,Online,BIGBASKET,0,
 10,frugal_saver,2024-10-11,NAMMA METRO HYDERABAD,-67.56,Transport,Public,NAMMA METRO,0,
 10,frugal_saver,2024-10-12,ACH D- INDIAN OIL PETROL-703371,-74.59,Transport,Fuel,INDIAN OIL PETROL,0,
-10,frugal_saver,2024-10-12,POS 4427XXXXXX6394 GUPTA PROVISION STORE HYDERABAD,-822.08,Groceries,Local,GUPTA PROVISION STORE,0,
+10,frugal_saver,2024-10-12,POS 4427XXXXXX6394 GUPTA PROVISION STORE HYDERABAD,-822.08,Groceries,Local,GUPTA PROVISION STORE,1,duplicate_charge
 10,frugal_saver,2024-10-12,POS 4427XXXXXX6394 GUPTA PROVISION STORE HYDERABAD,-822.08,Groceries,Local,GUPTA PROVISION STORE,1,duplicate_charge
 10,frugal_saver,2024-10-13,UPI-DMART-885706465@icici,-826.71,Groceries,Supermarket,DMART,0,
 10,frugal_saver,2024-10-16,SHARMA KIRANA *57322,-549.4,Groceries,Local,SHARMA KIRANA,0,
@@ -11317,7 +11317,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 10,frugal_saver,2024-12-25,POS 4396XXXXXX6273 PIZZA HUT NOIDA,-293.28,Food & Dining,Delivery,PIZZA HUT,1,burst
 10,frugal_saver,2024-12-25,POS 7694XXXXXX9349 OLA CABS BANGALORE,-97.38,Transport,Rideshare,OLA CABS,0,
 10,frugal_saver,2024-12-25,UPI-RELIANCE FRESH-933550585@icici,-313.66,Groceries,Supermarket,RELIANCE FRESH,0,
-10,frugal_saver,2024-12-25,UPI/552554875/PIZZA HUT/okhdfc,-267.42,Food & Dining,Delivery,PIZZA HUT,0,
+10,frugal_saver,2024-12-25,UPI/552554875/PIZZA HUT/okhdfc,-267.42,Food & Dining,Delivery,PIZZA HUT,1,burst
 10,frugal_saver,2024-12-29,ACH D- HOTSTAR-608289,-161.85,Subscriptions,Streaming,HOTSTAR,0,
 10,frugal_saver,2024-12-30,UPI-BLINKIT-801706666@ybl,-1254.56,Groceries,Online,BLINKIT,0,
 10,frugal_saver,2025-01-01,ACH D- SHELL FUEL-308079,-92.97,Transport,Fuel,SHELL FUEL,0,
@@ -11500,7 +11500,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 10,frugal_saver,2025-06-12,CAFE COFFEE DAY MUMBAI,-167.82,Food & Dining,Cafe,CAFE COFFEE DAY,0,
 10,frugal_saver,2025-06-12,UPI/996219830/MORE SUPERMARKET/oksbi,-614.95,Groceries,Supermarket,MORE SUPERMARKET,0,
 10,frugal_saver,2025-06-15,ACH D- SHELL FUEL-220103,-62.52,Transport,Fuel,SHELL FUEL,0,
-10,frugal_saver,2025-06-15,MORE SUPERMA 316824,-774.3,Groceries,Supermarket,MORE SUPERMARKET,0,
+10,frugal_saver,2025-06-15,MORE SUPERMA 316824,-774.3,Groceries,Supermarket,MORE SUPERMARKET,1,duplicate_charge
 10,frugal_saver,2025-06-15,MORE SUPERMA 316824,-774.3,Groceries,Supermarket,MORE SUPERMARKET,1,duplicate_charge
 10,frugal_saver,2025-06-16,ACH D- SHELL FUEL-874403,-65.42,Transport,Fuel,SHELL FUEL,0,
 10,frugal_saver,2025-06-16,UPI/089795740865/NOBROKER RENT/oksbi,-13868.06,Housing,Rent,NOBROKER RENT,0,
@@ -11538,7 +11538,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 10,frugal_saver,2025-07-19,INDIAN  530404,-175.33,Transport,Fuel,INDIAN OIL PETROL,1,burst
 10,frugal_saver,2025-07-19,INDIAN OIL PETROL *78016,-196.89,Transport,Fuel,INDIAN OIL PETROL,1,burst
 10,frugal_saver,2025-07-19,INDIAN OIL PETROL 973498,-152.71,Transport,Fuel,INDIAN OIL PETROL,1,burst
-10,frugal_saver,2025-07-19,POS 5856XXXXXX7671 INDIAN OIL PETROL NOIDA,-155.19,Transport,Fuel,INDIAN OIL PETROL,0,
+10,frugal_saver,2025-07-19,POS 5856XXXXXX7671 INDIAN OIL PETROL NOIDA,-155.19,Transport,Fuel,INDIAN OIL PETROL,1,burst
 10,frugal_saver,2025-07-19,UPI-INDIAN OIL PETROL-125233225882@icici,-95.76,Transport,Fuel,INDIAN OIL PETROL,1,burst
 10,frugal_saver,2025-07-19,UPI-INDIAN OIL PETROL-209246460030@ybl,-196.87,Transport,Fuel,INDIAN OIL PETROL,1,burst
 10,frugal_saver,2025-07-19,UPI-INDIAN OIL PETROL-823516605976@icici,-160.09,Transport,Fuel,INDIAN OIL PETROL,1,burst
@@ -11581,7 +11581,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 10,frugal_saver,2025-08-27,INDIAN OIL PETROL 706824,-60.95,Transport,Fuel,INDIAN OIL PETROL,0,
 10,frugal_saver,2025-08-29,IRCTC GURGAON,-112.51,Transport,Public,IRCTC,0,
 10,frugal_saver,2025-08-29,RAPIDO 543123,-90.1,Transport,Rideshare,RAPIDO,0,
-10,frugal_saver,2025-08-30,CHAAYOS PUNE,-241.39,Food & Dining,Cafe,CHAAYOS,0,
+10,frugal_saver,2025-08-30,CHAAYOS PUNE,-241.39,Food & Dining,Cafe,CHAAYOS,1,duplicate_charge
 10,frugal_saver,2025-08-30,CHAAYOS PUNE,-241.39,Food & Dining,Cafe,CHAAYOS,1,duplicate_charge
 10,frugal_saver,2025-08-30,UPI-RAPIDO-792854536@axl,-35.28,Transport,Rideshare,RAPIDO,0,
 10,frugal_saver,2025-09-01,JIO PREPAID NOIDA,-392.76,Utilities,Telecom,JIO PREPAID,0,
@@ -11608,7 +11608,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 10,frugal_saver,2025-09-17,UPI/100722735785/BHARAT PETROLEUM/paytm,-108.98,Transport,Fuel,BHARAT PETROLEUM,0,
 10,frugal_saver,2025-09-18,UPI-MILK DAIRY BOOTH-306893157610@axl,-743.37,Groceries,Local,MILK DAIRY BOOTH,0,
 10,frugal_saver,2025-09-19,ACH D- PLUMBER HOME SERVICE-238283,-19901.17,Housing,Maintenance,PLUMBER HOME SERVICE,0,
-10,frugal_saver,2025-09-19,POS 2092XXXXXX3194 DELHI METRO PUNE,-154.35,Transport,Public,DELHI METRO,0,
+10,frugal_saver,2025-09-19,POS 2092XXXXXX3194 DELHI METRO PUNE,-154.35,Transport,Public,DELHI METRO,1,duplicate_charge
 10,frugal_saver,2025-09-19,POS 2092XXXXXX3194 DELHI METRO PUNE,-154.35,Transport,Public,DELHI METRO,1,duplicate_charge
 10,frugal_saver,2025-09-21,ADANI EL 635193,-1120.12,Utilities,Electricity,ADANI ELECTRICITY,0,
 10,frugal_saver,2025-09-21,MORE SUPERMARKET *25072,-679.72,Groceries,Supermarket,MORE SUPERMARKET,0,
@@ -11623,7 +11623,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 10,frugal_saver,2025-09-30,UPI-IRCTC-992269284@icici,-57.91,Transport,Public,IRCTC,0,
 10,frugal_saver,2025-10-01,OLA CABS *21824,-102.75,Transport,Rideshare,OLA CABS,0,
 10,frugal_saver,2025-10-02,ACH D- ZEPTO-127216,-321.65,Groceries,Online,ZEPTO,1,burst
-10,frugal_saver,2025-10-02,POS 4088XXXXXX2487 ZEPTO HYDERABAD,-328.04,Groceries,Online,ZEPTO,0,
+10,frugal_saver,2025-10-02,POS 4088XXXXXX2487 ZEPTO HYDERABAD,-328.04,Groceries,Online,ZEPTO,1,burst
 10,frugal_saver,2025-10-02,UPI-ZEPTO-463711848584@ybl,-398.98,Groceries,Online,ZEPTO,1,burst
 10,frugal_saver,2025-10-02,ZEPTO 219724,-274.26,Groceries,Online,ZEPTO,1,burst
 10,frugal_saver,2025-10-02,ZEPTO 505367,-347.3,Groceries,Online,ZEPTO,1,burst
@@ -11671,7 +11671,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 10,frugal_saver,2025-11-09,ACT FIBE 854235,-1241.48,Utilities,Telecom,ACT FIBERNET,0,
 10,frugal_saver,2025-11-10,ACH D- MILK DAIRY BOOTH-341520,-1099.81,Groceries,Local,MILK DAIRY BOOTH,0,
 10,frugal_saver,2025-11-10,RELIANCE FRE 094728,-930.24,Groceries,Supermarket,RELIANCE FRESH,0,
-10,frugal_saver,2025-11-13,DECATH 356525,-1744.65,Shopping,Fashion,DECATHLON,0,
+10,frugal_saver,2025-11-13,DECATH 356525,-1744.65,Shopping,Fashion,DECATHLON,1,duplicate_charge
 10,frugal_saver,2025-11-13,DECATH 356525,-1744.65,Shopping,Fashion,DECATHLON,1,duplicate_charge
 10,frugal_saver,2025-11-14,UPI-RELIANCE FRESH-719779711425@ybl,-709.89,Groceries,Supermarket,RELIANCE FRESH,0,
 10,frugal_saver,2025-11-15,ACH D- AJIO-206483,-1683.15,Shopping,Online,AJIO,0,
@@ -11806,7 +11806,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2024-02-05,ACH D- MCDONALDS-540410,-1858.18,Food & Dining,Restaurant,MCDONALDS,0,
 11,big_spender,2024-02-05,POS 9726XXXXXX7767 AMAZON PRIME MUMBAI,-724.44,Subscriptions,Streaming,AMAZON PRIME,0,
 11,big_spender,2024-02-05,UPI-IRCTC-773177953@axl,-421.08,Transport,Public,IRCTC,0,
-11,big_spender,2024-02-06,UPI-DOMINOS PIZZA-155689818092@ybl,-997.53,Food & Dining,Delivery,DOMINOS PIZZA,0,
+11,big_spender,2024-02-06,UPI-DOMINOS PIZZA-155689818092@ybl,-997.53,Food & Dining,Delivery,DOMINOS PIZZA,1,duplicate_charge
 11,big_spender,2024-02-06,UPI-DOMINOS PIZZA-155689818092@ybl,-997.53,Food & Dining,Delivery,DOMINOS PIZZA,1,duplicate_charge
 11,big_spender,2024-02-06,UPI/044545539/BMTC BUS PASS/oksbi,-991.69,Transport,Public,BMTC BUS PASS,0,
 11,big_spender,2024-02-06,UPI/762411793253/FORTIS HOSPITAL/paytm,-2603.51,Health,Clinic,FORTIS HOSPITAL,0,
@@ -11822,7 +11822,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2024-02-13,ACH D- PLAYSTATION STORE-553431,-3398.14,Entertainment,Gaming,PLAYSTATION STORE,1,burst
 11,big_spender,2024-02-13,ACH D- UBER-431876,-256.45,Transport,Rideshare,UBER,0,
 11,big_spender,2024-02-13,MORE SUPERMARKE 183141,-2740.76,Groceries,Supermarket,MORE SUPERMARKET,0,
-11,big_spender,2024-02-13,PLAYSTATION STORE NOIDA,-2729.54,Entertainment,Gaming,PLAYSTATION STORE,0,
+11,big_spender,2024-02-13,PLAYSTATION STORE NOIDA,-2729.54,Entertainment,Gaming,PLAYSTATION STORE,1,burst
 11,big_spender,2024-02-13,UPI/074922603876/PLAYSTATION STORE/paytm,-2385.04,Entertainment,Gaming,PLAYSTATION STORE,1,burst
 11,big_spender,2024-02-13,UPI/663670498015/PLAYSTATION STORE/okhdfc,-3637.19,Entertainment,Gaming,PLAYSTATION STORE,1,burst
 11,big_spender,2024-02-13,UPI/672619092792/PLAYSTATION STORE/oksbi,-2706.81,Entertainment,Gaming,PLAYSTATION STORE,1,burst
@@ -11911,7 +11911,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2024-03-26,UPI/286358973/NYKAA/ybl,-1937.3,Shopping,Online,NYKAA,0,
 11,big_spender,2024-03-27,PAYTM INSIDER PUNE,-1878.23,Entertainment,Events,PAYTM INSIDER,0,
 11,big_spender,2024-03-28,UPI-BESCOM-394645244140@ybl,-1201.28,Utilities,Electricity,BESCOM,0,
-11,big_spender,2024-03-28,UPI/607699345354/BOX8/ybl,-627.17,Food & Dining,Delivery,BOX8,0,
+11,big_spender,2024-03-28,UPI/607699345354/BOX8/ybl,-627.17,Food & Dining,Delivery,BOX8,1,duplicate_charge
 11,big_spender,2024-03-28,UPI/607699345354/BOX8/ybl,-627.17,Food & Dining,Delivery,BOX8,1,duplicate_charge
 11,big_spender,2024-03-29,ACH D- CULT FIT-710515,-3078.35,Health,Fitness,CULT FIT,0,
 11,big_spender,2024-03-29,UBER HYDERABAD,-923.58,Transport,Rideshare,UBER,0,
@@ -11965,7 +11965,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2024-04-17,AIRTEL POSTPAID *96814,-1480.85,Utilities,Telecom,AIRTEL POSTPAID,0,
 11,big_spender,2024-04-17,BLUE TOK 004283,-1903.59,Food & Dining,Cafe,BLUE TOKAI,1,burst
 11,big_spender,2024-04-17,BLUE TOKAI NOIDA,-1872.27,Food & Dining,Cafe,BLUE TOKAI,1,burst
-11,big_spender,2024-04-17,POS 2025XXXXXX5023 BLUE TOKAI NOIDA,-1427.53,Food & Dining,Cafe,BLUE TOKAI,0,
+11,big_spender,2024-04-17,POS 2025XXXXXX5023 BLUE TOKAI NOIDA,-1427.53,Food & Dining,Cafe,BLUE TOKAI,1,burst
 11,big_spender,2024-04-17,POS 6570XXXXXX1887 CHAAYOS CHENNAI,-900.41,Food & Dining,Cafe,CHAAYOS,0,
 11,big_spender,2024-04-17,POS 7268XXXXXX8546 BLUE TOKAI DELHI,-1612.53,Food & Dining,Cafe,BLUE TOKAI,1,burst
 11,big_spender,2024-04-17,UPI/916117469131/BLUE TOKAI/ybl,-1172.45,Food & Dining,Cafe,BLUE TOKAI,1,burst
@@ -12059,7 +12059,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2024-05-27,UPI/438063486/CULT FIT/ybl,-2256.8,Health,Fitness,CULT FIT,0,
 11,big_spender,2024-05-28,ACH D- INOX-799368,-2242.07,Entertainment,Movies,INOX,1,burst
 11,big_spender,2024-05-28,INOX *86180,-2242.31,Entertainment,Movies,INOX,1,burst
-11,big_spender,2024-05-28,POS 1816XXXXXX1916 INOX MUMBAI,-2293.12,Entertainment,Movies,INOX,0,
+11,big_spender,2024-05-28,POS 1816XXXXXX1916 INOX MUMBAI,-2293.12,Entertainment,Movies,INOX,1,burst
 11,big_spender,2024-05-28,UPI-INOX-454728874559@axl,-1763.52,Entertainment,Movies,INOX,1,burst
 11,big_spender,2024-05-28,UPI-INOX-877450730744@axl,-2778.44,Entertainment,Movies,INOX,1,burst
 11,big_spender,2024-05-28,UPI/103988674375/INOX/oksbi,-2981.82,Entertainment,Movies,INOX,1,burst
@@ -12248,7 +12248,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2024-08-22,DELHI METRO CHENNAI,-621.37,Transport,Public,DELHI METRO,0,
 11,big_spender,2024-08-22,UPI-BLUE TOKAI-512012460@axl,-761.38,Food & Dining,Cafe,BLUE TOKAI,0,
 11,big_spender,2024-08-22,UPI-UBER-817882838125@ybl,-384.23,Transport,Rideshare,UBER,0,
-11,big_spender,2024-08-22,UPI/600940406/RAPIDO/paytm,-629.25,Transport,Rideshare,RAPIDO,0,
+11,big_spender,2024-08-22,UPI/600940406/RAPIDO/paytm,-629.25,Transport,Rideshare,RAPIDO,1,duplicate_charge
 11,big_spender,2024-08-22,UPI/600940406/RAPIDO/paytm,-629.25,Transport,Rideshare,RAPIDO,1,duplicate_charge
 11,big_spender,2024-08-24,EATSURE *88208,-1065.69,Food & Dining,Delivery,EATSURE,0,
 11,big_spender,2024-08-24,POS 1345XXXXXX8400 OLA CABS BANGALORE,-961.45,Transport,Rideshare,OLA CABS,0,
@@ -12347,7 +12347,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2024-10-10,BHARAT GAS HYDERABAD,-1494.43,Utilities,Gas & Water,BHARAT GAS,1,burst
 11,big_spender,2024-10-10,POS 5159XXXXXX8553 BHARAT GAS GURGAON,-1208.81,Utilities,Gas & Water,BHARAT GAS,1,burst
 11,big_spender,2024-10-10,POS 5270XXXXXX1178 BHARAT GAS GURGAON,-1499.0,Utilities,Gas & Water,BHARAT GAS,1,burst
-11,big_spender,2024-10-10,UPI-BHARAT GAS-848971439@ybl,-1801.59,Utilities,Gas & Water,BHARAT GAS,0,
+11,big_spender,2024-10-10,UPI-BHARAT GAS-848971439@ybl,-1801.59,Utilities,Gas & Water,BHARAT GAS,1,burst
 11,big_spender,2024-10-10,UPI/621748204001/BMTC BUS PASS/okhdfc,-576.2,Transport,Public,BMTC BUS PASS,0,
 11,big_spender,2024-10-11,ACH D- COMEDY CLUB TICKETS-198200,-5768.75,Entertainment,Events,COMEDY CLUB TICKETS,0,
 11,big_spender,2024-10-13,PVR CINEMAS *38997,-2476.75,Entertainment,Movies,PVR CINEMAS,0,
@@ -12498,7 +12498,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2024-12-18,BOOKMYS 389688,-3361.3,Entertainment,Movies,BOOKMYSHOW,1,burst
 11,big_spender,2024-12-18,BOOKMYSHO 151204,-3385.4,Entertainment,Movies,BOOKMYSHOW,1,burst
 11,big_spender,2024-12-18,BOOKMYSHO 812769,-6068.28,Entertainment,Movies,BOOKMYSHOW,1,burst
-11,big_spender,2024-12-18,BOOKMYSHOW *67131,-4650.23,Entertainment,Movies,BOOKMYSHOW,0,
+11,big_spender,2024-12-18,BOOKMYSHOW *67131,-4650.23,Entertainment,Movies,BOOKMYSHOW,1,burst
 11,big_spender,2024-12-18,BOOKMYSHOW CHENNAI,-4654.16,Entertainment,Movies,BOOKMYSHOW,1,burst
 11,big_spender,2024-12-18,BOOKMYSHOW PUNE,-3026.45,Entertainment,Movies,BOOKMYSHOW,1,burst
 11,big_spender,2024-12-18,NAMMA METRO *71133,-959.31,Transport,Public,NAMMA METRO,0,
@@ -12661,14 +12661,14 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2025-02-24,UPI-THIRD WAVE COFFEE-973776040405@icici,-1942.52,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 11,big_spender,2025-02-24,UPI/624597030/CHATGPT PLUS/oksbi,-904.49,Subscriptions,Software,CHATGPT PLUS,0,
 11,big_spender,2025-02-25,POS 7641XXXXXX2448 CHAAYOS HYDERABAD,-2049.96,Food & Dining,Cafe,CHAAYOS,0,
-11,big_spender,2025-02-25,SWIGGY HYDERABAD,-978.05,Food & Dining,Delivery,SWIGGY,0,
+11,big_spender,2025-02-25,SWIGGY HYDERABAD,-978.05,Food & Dining,Delivery,SWIGGY,1,duplicate_charge
 11,big_spender,2025-02-25,SWIGGY HYDERABAD,-978.05,Food & Dining,Delivery,SWIGGY,1,duplicate_charge
 11,big_spender,2025-02-25,UPI-ICLOUD-374233737@icici,-944.95,Subscriptions,Software,ICLOUD,0,
 11,big_spender,2025-02-26,UPI/271550424/RELIANCE DIGITAL/ybl,-6764.03,Shopping,Electronics,RELIANCE DIGITAL,0,
 11,big_spender,2025-02-27,POS 5979XXXXXX8406 INDIAN OIL PETROL MUMBAI,-760.12,Transport,Fuel,INDIAN OIL PETROL,0,
 11,big_spender,2025-02-28,ACH D- MEESHO-675937,-1899.76,Shopping,Online,MEESHO,0,
 11,big_spender,2025-03-01,ACH D- BOX8-340669,-2774.09,Food & Dining,Delivery,BOX8,0,
-11,big_spender,2025-03-01,UPI-BLUSMART-337811722@axl,-735.58,Transport,Rideshare,BLUSMART,0,
+11,big_spender,2025-03-01,UPI-BLUSMART-337811722@axl,-735.58,Transport,Rideshare,BLUSMART,1,duplicate_charge
 11,big_spender,2025-03-01,UPI-KFC-762766559@icici,-961.21,Food & Dining,Restaurant,KFC,0,
 11,big_spender,2025-03-01,UPI-SHELL FUEL-242034597241@icici,-340.79,Transport,Fuel,SHELL FUEL,0,
 11,big_spender,2025-03-02,ACT FIBERNET *94909,-2115.32,Utilities,Telecom,ACT FIBERNET,0,
@@ -12746,7 +12746,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2025-04-04,UPI-DELHI METRO-660115589665@axl,-372.87,Transport,Public,DELHI METRO,0,
 11,big_spender,2025-04-05,ACH D- CHAAYOS-175198,-1462.15,Food & Dining,Cafe,CHAAYOS,0,
 11,big_spender,2025-04-05,UPI-AIRTEL POSTPAID-868136897364@ybl,-2399.24,Utilities,Telecom,AIRTEL POSTPAID,0,
-11,big_spender,2025-04-06,BIG BAZA 365755,-2131.42,Groceries,Supermarket,BIG BAZAAR,0,
+11,big_spender,2025-04-06,BIG BAZA 365755,-2131.42,Groceries,Supermarket,BIG BAZAAR,1,duplicate_charge
 11,big_spender,2025-04-06,BIG BAZA 365755,-2131.42,Groceries,Supermarket,BIG BAZAAR,1,duplicate_charge
 11,big_spender,2025-04-06,UPI-KFC-413284424@icici,-922.66,Food & Dining,Restaurant,KFC,0,
 11,big_spender,2025-04-07,PUNJABI DHABA *59981,-1306.3,Food & Dining,Restaurant,PUNJABI DHABA,0,
@@ -12842,7 +12842,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2025-05-13,AJIO HYDERABAD,-2621.29,Shopping,Online,AJIO,1,burst
 11,big_spender,2025-05-13,MILK DAIRY BOOTH CHENNAI,-2795.07,Groceries,Local,MILK DAIRY BOOTH,0,
 11,big_spender,2025-05-13,SPOTIF 585033,-722.55,Subscriptions,Streaming,SPOTIFY,0,
-11,big_spender,2025-05-13,UPI-AJIO-584286009270@ybl,-1981.28,Shopping,Online,AJIO,0,
+11,big_spender,2025-05-13,UPI-AJIO-584286009270@ybl,-1981.28,Shopping,Online,AJIO,1,burst
 11,big_spender,2025-05-13,UPI/694389011/AJIO/paytm,-2152.22,Shopping,Online,AJIO,1,burst
 11,big_spender,2025-05-14,AJIO MUMBAI,-3205.48,Shopping,Online,AJIO,0,
 11,big_spender,2025-05-14,PANTALOONS *91224,-6298.64,Shopping,Fashion,PANTALOONS,0,
@@ -12887,14 +12887,14 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2025-06-03,POS 8957XXXXXX5074 RENT TRANSFER LANDLORD HYDERABAD,-30931.44,Housing,Rent,RENT TRANSFER LANDLORD,0,
 11,big_spender,2025-06-03,POS 9547XXXXXX1387 DREAM11 PUNE,-3799.87,Entertainment,Gaming,DREAM11,0,
 11,big_spender,2025-06-03,SALARY CREDIT BANGALORE,189706.72,Income,Salary,SALARY CREDIT,0,
-11,big_spender,2025-06-04,ACH D- MORE SUPERMARKET-885859,-2653.05,Groceries,Supermarket,MORE SUPERMARKET,0,
+11,big_spender,2025-06-04,ACH D- MORE SUPERMARKET-885859,-2653.05,Groceries,Supermarket,MORE SUPERMARKET,1,duplicate_charge
 11,big_spender,2025-06-04,ACH D- MORE SUPERMARKET-885859,-2653.05,Groceries,Supermarket,MORE SUPERMARKET,1,duplicate_charge
 11,big_spender,2025-06-04,MUMBAI LO 260900,-567.52,Transport,Public,MUMBAI LOCAL PASS,0,
 11,big_spender,2025-06-04,UPI-BSES RAJDHANI-837578190521@icici,-3123.04,Utilities,Electricity,BSES RAJDHANI,0,
 11,big_spender,2025-06-05,ACH D- EATSURE-649702,-692.95,Food & Dining,Delivery,EATSURE,0,
-11,big_spender,2025-06-05,ACH D- PUNJABI DHABA-738326,-835.12,Food & Dining,Restaurant,PUNJABI DHABA,0,
 11,big_spender,2025-06-05,ACH D- PUNJABI DHABA-738326,-835.12,Food & Dining,Restaurant,PUNJABI DHABA,1,duplicate_charge
-11,big_spender,2025-06-05,PUNJABI DHABA *47937,-2994.72,Food & Dining,Restaurant,PUNJABI DHABA,0,
+11,big_spender,2025-06-05,ACH D- PUNJABI DHABA-738326,-835.12,Food & Dining,Restaurant,PUNJABI DHABA,1,duplicate_charge
+11,big_spender,2025-06-05,PUNJABI DHABA *47937,-2994.72,Food & Dining,Restaurant,PUNJABI DHABA,1,duplicate_charge
 11,big_spender,2025-06-06,POS 8196XXXXXX1739 EATSURE DELHI,-1146.03,Food & Dining,Delivery,EATSURE,0,
 11,big_spender,2025-06-06,PUNJABI DHABA *47937,-2994.72,Food & Dining,Restaurant,PUNJABI DHABA,1,duplicate_charge
 11,big_spender,2025-06-07,ACH D- OLA CABS-324282,-884.65,Transport,Rideshare,OLA CABS,0,
@@ -13037,7 +13037,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2025-08-09,FRESH VEGETABLES MART *95550,-1662.5,Groceries,Local,FRESH VEGETABLES MART,1,burst
 11,big_spender,2025-08-09,FRESH VEGETABLES MART CHENNAI,-1689.17,Groceries,Local,FRESH VEGETABLES MART,0,
 11,big_spender,2025-08-09,SWIGGY *82665,-880.41,Food & Dining,Delivery,SWIGGY,0,
-11,big_spender,2025-08-09,UPI-FRESH VEGETABLES MART-876213327@icici,-1494.29,Groceries,Local,FRESH VEGETABLES MART,0,
+11,big_spender,2025-08-09,UPI-FRESH VEGETABLES MART-876213327@icici,-1494.29,Groceries,Local,FRESH VEGETABLES MART,1,burst
 11,big_spender,2025-08-09,UPI/771645760408/FRESH VEGETABLES MART/ybl,-2038.39,Groceries,Local,FRESH VEGETABLES MART,1,burst
 11,big_spender,2025-08-09,UPI/899374764/YOUTUBE PREMIUM/ybl,-271.76,Subscriptions,Streaming,YOUTUBE PREMIUM,0,
 11,big_spender,2025-08-09,UPI/929797162370/FRESH VEGETABLES MART/okhdfc,-1750.16,Groceries,Local,FRESH VEGETABLES MART,1,burst
@@ -13068,7 +13068,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2025-08-19,MCDONALDS *59336,-2534.82,Food & Dining,Restaurant,MCDONALDS,1,burst
 11,big_spender,2025-08-19,MCDONALDS *95377,-2338.87,Food & Dining,Restaurant,MCDONALDS,1,burst
 11,big_spender,2025-08-19,MCDONALDS MUMBAI,-1561.29,Food & Dining,Restaurant,MCDONALDS,1,burst
-11,big_spender,2025-08-19,UPI-MCDONALDS-405749547@icici,-2129.26,Food & Dining,Restaurant,MCDONALDS,0,
+11,big_spender,2025-08-19,UPI-MCDONALDS-405749547@icici,-2129.26,Food & Dining,Restaurant,MCDONALDS,1,burst
 11,big_spender,2025-08-19,UPI/550769818/MCDONALDS/paytm,-2273.63,Food & Dining,Restaurant,MCDONALDS,1,burst
 11,big_spender,2025-08-20,KFC HYDERABAD,-940.95,Food & Dining,Restaurant,KFC,0,
 11,big_spender,2025-08-20,POS 3340XXXXXX7108 INDIAN OIL PETROL HYDERABAD,-241.83,Transport,Fuel,INDIAN OIL PETROL,0,
@@ -13144,7 +13144,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2025-09-20,OYO ROOMS 904720,-33472.48,Travel,Stay,OYO ROOMS,0,
 11,big_spender,2025-09-22,POS 6983XXXXXX3040 PUNJABI DHABA CHENNAI,-711.49,Food & Dining,Restaurant,PUNJABI DHABA,0,
 11,big_spender,2025-09-24,MCDONALDS *12474,-1816.79,Food & Dining,Restaurant,MCDONALDS,0,
-11,big_spender,2025-09-25,POS 6030XXXXXX3714 MEDPLUS BANGALORE,-2704.25,Health,Pharmacy,MEDPLUS,0,
+11,big_spender,2025-09-25,POS 6030XXXXXX3714 MEDPLUS BANGALORE,-2704.25,Health,Pharmacy,MEDPLUS,1,duplicate_charge
 11,big_spender,2025-09-25,POS 6030XXXXXX3714 MEDPLUS BANGALORE,-2704.25,Health,Pharmacy,MEDPLUS,1,duplicate_charge
 11,big_spender,2025-09-25,POS 7215XXXXXX2078 FLIPKART MUMBAI,-5316.58,Shopping,Online,FLIPKART,0,
 11,big_spender,2025-09-25,UPI/648110090937/SWIGGY INSTAMART/paytm,-1052.45,Groceries,Online,SWIGGY INSTAMART,0,
@@ -13282,7 +13282,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 11,big_spender,2025-11-24,STEAM GAMES *70540,-3265.97,Entertainment,Gaming,STEAM GAMES,0,
 11,big_spender,2025-11-25,ACH D- STEAM GAMES-747429,-790.48,Entertainment,Gaming,STEAM GAMES,0,
 11,big_spender,2025-11-25,UPI/148671759343/BHARAT PETROLEUM/oksbi,-592.01,Transport,Fuel,BHARAT PETROLEUM,0,
-11,big_spender,2025-11-26,SWIGGY 513457,-740.52,Food & Dining,Delivery,SWIGGY,0,
+11,big_spender,2025-11-26,SWIGGY 513457,-740.52,Food & Dining,Delivery,SWIGGY,1,duplicate_charge
 11,big_spender,2025-11-26,SWIGGY 513457,-740.52,Food & Dining,Delivery,SWIGGY,1,duplicate_charge
 11,big_spender,2025-11-27,NAMMA METRO DELHI,-784.14,Transport,Public,NAMMA METRO,0,
 11,big_spender,2025-11-27,POS 6788XXXXXX2027 CAFE COFFEE DAY DELHI,-1568.02,Food & Dining,Cafe,CAFE COFFEE DAY,0,
@@ -13476,7 +13476,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2024-03-16,ACH D- ZEPTO-169355,-889.54,Groceries,Online,ZEPTO,0,
 12,freelancer,2024-03-16,UPI-BHARAT PETROLEUM-834166965@axl,-180.18,Transport,Fuel,BHARAT PETROLEUM,0,
 12,freelancer,2024-03-16,UPI/440811393/ADANI ELECTRICITY/paytm,-1366.67,Utilities,Electricity,ADANI ELECTRICITY,0,
-12,freelancer,2024-03-17,CAFE C 360654,-489.95,Food & Dining,Cafe,CAFE COFFEE DAY,0,
+12,freelancer,2024-03-17,CAFE C 360654,-489.95,Food & Dining,Cafe,CAFE COFFEE DAY,1,duplicate_charge
 12,freelancer,2024-03-17,CAFE C 360654,-489.95,Food & Dining,Cafe,CAFE COFFEE DAY,1,duplicate_charge
 12,freelancer,2024-03-17,POS 1881XXXXXX9299 VIJAY SALES CHENNAI,-2337.24,Shopping,Electronics,VIJAY SALES,0,
 12,freelancer,2024-03-17,UPI/052298541/ZOMATO/oksbi,-299.7,Food & Dining,Delivery,ZOMATO,0,
@@ -13518,7 +13518,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2024-04-06,POS 7592XXXXXX8101 RELIANCE FRESH CHENNAI,-1831.49,Groceries,Supermarket,RELIANCE FRESH,0,
 12,freelancer,2024-04-07,ACH D- STARBUCKS-667722,-394.16,Food & Dining,Cafe,STARBUCKS,1,burst
 12,freelancer,2024-04-07,POS 4073XXXXXX5014 STARBUCKS HYDERABAD,-448.95,Food & Dining,Cafe,STARBUCKS,1,burst
-12,freelancer,2024-04-07,POS 5054XXXXXX8530 STARBUCKS MUMBAI,-401.64,Food & Dining,Cafe,STARBUCKS,0,
+12,freelancer,2024-04-07,POS 5054XXXXXX8530 STARBUCKS MUMBAI,-401.64,Food & Dining,Cafe,STARBUCKS,1,burst
 12,freelancer,2024-04-07,POS 5306XXXXXX2095 THIRD WAVE COFFEE PUNE,-259.89,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 12,freelancer,2024-04-07,UPI-STARBUCKS-392634041@icici,-419.06,Food & Dining,Cafe,STARBUCKS,1,burst
 12,freelancer,2024-04-07,UPI-STARBUCKS-882216020029@ybl,-498.0,Food & Dining,Cafe,STARBUCKS,1,burst
@@ -13579,7 +13579,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2024-05-08,POS 1960XXXXXX9879 SWIGGY INSTAMART MUMBAI,-479.01,Groceries,Online,SWIGGY INSTAMART,0,
 12,freelancer,2024-05-08,UPI-INDIAN OIL PETROL-683774580@ybl,-250.1,Transport,Fuel,INDIAN OIL PETROL,0,
 12,freelancer,2024-05-10,ACH D- STARBUCKS-622077,-585.47,Food & Dining,Cafe,STARBUCKS,1,burst
-12,freelancer,2024-05-10,POS 2910XXXXXX1953 STARBUCKS CHENNAI,-513.95,Food & Dining,Cafe,STARBUCKS,0,
+12,freelancer,2024-05-10,POS 2910XXXXXX1953 STARBUCKS CHENNAI,-513.95,Food & Dining,Cafe,STARBUCKS,1,burst
 12,freelancer,2024-05-10,POS 5992XXXXXX8631 STARBUCKS DELHI,-319.08,Food & Dining,Cafe,STARBUCKS,1,burst
 12,freelancer,2024-05-10,POS 7979XXXXXX8857 STARBUCKS DELHI,-365.16,Food & Dining,Cafe,STARBUCKS,1,burst
 12,freelancer,2024-05-10,STARBU 388563,-711.13,Food & Dining,Cafe,STARBUCKS,1,burst
@@ -13608,10 +13608,10 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2024-05-24,ACH D- IRCTC-974797,-302.92,Transport,Public,IRCTC,1,burst
 12,freelancer,2024-05-24,BHARAT GAS 018135,-1908.23,Utilities,Gas & Water,BHARAT GAS,0,
 12,freelancer,2024-05-24,IRCTC 325896,-235.53,Transport,Public,IRCTC,1,burst
-12,freelancer,2024-05-24,IRCTC 606588,-261.75,Transport,Public,IRCTC,0,
+12,freelancer,2024-05-24,IRCTC 606588,-261.75,Transport,Public,IRCTC,1,burst
 12,freelancer,2024-05-24,IRCTC 849012,-263.23,Transport,Public,IRCTC,1,burst
 12,freelancer,2024-05-24,POS 3029XXXXXX5794 IRCTC DELHI,-200.98,Transport,Public,IRCTC,1,burst
-12,freelancer,2024-05-24,SAGAR RATNA NOIDA,-316.29,Food & Dining,Restaurant,SAGAR RATNA,0,
+12,freelancer,2024-05-24,SAGAR RATNA NOIDA,-316.29,Food & Dining,Restaurant,SAGAR RATNA,1,duplicate_charge
 12,freelancer,2024-05-24,SAGAR RATNA NOIDA,-316.29,Food & Dining,Restaurant,SAGAR RATNA,1,duplicate_charge
 12,freelancer,2024-05-24,STARBUCKS 817118,-637.4,Food & Dining,Cafe,STARBUCKS,0,
 12,freelancer,2024-05-24,UBER *89869,-200.77,Transport,Rideshare,UBER,0,
@@ -13759,7 +13759,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2024-08-20,BLUSMART PUNE,-166.82,Transport,Rideshare,BLUSMART,1,burst
 12,freelancer,2024-08-20,CAFE COFFEE DAY BANGALORE,-700.89,Food & Dining,Cafe,CAFE COFFEE DAY,0,
 12,freelancer,2024-08-20,POS 3778XXXXXX4891 PUNJABI DHABA PUNE,-348.84,Food & Dining,Restaurant,PUNJABI DHABA,0,
-12,freelancer,2024-08-20,POS 8865XXXXXX3725 BLUSMART GURGAON,-198.37,Transport,Rideshare,BLUSMART,0,
+12,freelancer,2024-08-20,POS 8865XXXXXX3725 BLUSMART GURGAON,-198.37,Transport,Rideshare,BLUSMART,1,burst
 12,freelancer,2024-08-20,THIRD WAVE COFFEE *95917,-521.92,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
 12,freelancer,2024-08-21,CLIENT PAYMENT NEFT MUMBAI,17797.29,Income,Other Income,CLIENT PAYMENT NEFT,0,
 12,freelancer,2024-08-21,POS 4411XXXXXX4732 BHARAT GAS DELHI,-1014.51,Utilities,Gas & Water,BHARAT GAS,0,
@@ -13803,7 +13803,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2024-09-14,ACH D- KFC-390469,-177.63,Food & Dining,Restaurant,KFC,0,
 12,freelancer,2024-09-14,ACH D- SOCIETY MAINTENANCE-583145,-9576.81,Housing,Maintenance,SOCIETY MAINTENANCE,0,
 12,freelancer,2024-09-14,MCDONALD 384524,-479.47,Food & Dining,Restaurant,MCDONALDS,1,burst
-12,freelancer,2024-09-14,POS 7440XXXXXX9625 MCDONALDS GURGAON,-486.23,Food & Dining,Restaurant,MCDONALDS,0,
+12,freelancer,2024-09-14,POS 7440XXXXXX9625 MCDONALDS GURGAON,-486.23,Food & Dining,Restaurant,MCDONALDS,1,burst
 12,freelancer,2024-09-14,POS 8307XXXXXX5526 AMAZON PRIME CHENNAI,-1480.91,Subscriptions,Streaming,AMAZON PRIME,0,
 12,freelancer,2024-09-14,POS 8835XXXXXX4801 MCDONALDS GURGAON,-375.6,Food & Dining,Restaurant,MCDONALDS,1,burst
 12,freelancer,2024-09-14,UPI/582272735051/MCDONALDS/ybl,-477.25,Food & Dining,Restaurant,MCDONALDS,1,burst
@@ -13850,7 +13850,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2024-10-04,NAMMA METRO *51352,-412.54,Transport,Public,NAMMA METRO,0,
 12,freelancer,2024-10-04,POS 6773XXXXXX5550 MYNTRA DELHI,-2344.18,Shopping,Online,MYNTRA,1,burst
 12,freelancer,2024-10-04,UPI/309836669/MYNTRA/ybl,-1231.93,Shopping,Online,MYNTRA,1,burst
-12,freelancer,2024-10-04,UPI/358570983/MYNTRA/paytm,-2045.01,Shopping,Online,MYNTRA,0,
+12,freelancer,2024-10-04,UPI/358570983/MYNTRA/paytm,-2045.01,Shopping,Online,MYNTRA,1,burst
 12,freelancer,2024-10-05,MICROSOFT  844493,-935.52,Subscriptions,Software,MICROSOFT 365,0,
 12,freelancer,2024-10-06,ACH D- SHARMA KIRANA-243454,-1012.55,Groceries,Local,SHARMA KIRANA,0,
 12,freelancer,2024-10-07,ACH D- THIRD WAVE COFFEE-411318,-709.39,Food & Dining,Cafe,THIRD WAVE COFFEE,0,
@@ -13969,7 +13969,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2024-12-13,ACH D- ICLOUD-651126,-425.6,Subscriptions,Software,ICLOUD,0,
 12,freelancer,2024-12-13,UPI-MORE SUPERMARKET-915728060@icici,-977.14,Groceries,Supermarket,MORE SUPERMARKET,0,
 12,freelancer,2024-12-14,ACH D- DMART-163062,-927.71,Groceries,Supermarket,DMART,1,burst
-12,freelancer,2024-12-14,DMART *75958,-705.21,Groceries,Supermarket,DMART,0,
+12,freelancer,2024-12-14,DMART *75958,-705.21,Groceries,Supermarket,DMART,1,burst
 12,freelancer,2024-12-14,DMART *86143,-844.98,Groceries,Supermarket,DMART,1,burst
 12,freelancer,2024-12-14,DMART BANGALORE,-786.29,Groceries,Supermarket,DMART,1,burst
 12,freelancer,2024-12-14,POS 4034XXXXXX5517 DMART PUNE,-462.71,Groceries,Supermarket,DMART,1,burst
@@ -14196,7 +14196,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2025-05-03,ACH D- NOBROKER RENT-967508,-8920.99,Housing,Rent,NOBROKER RENT,0,
 12,freelancer,2025-05-03,CLIENT PAYMENT NEFT DELHI,15563.55,Income,Other Income,CLIENT PAYMENT NEFT,0,
 12,freelancer,2025-05-04,SWIGGY *63226,-353.5,Food & Dining,Delivery,SWIGGY,0,
-12,freelancer,2025-05-04,UPI/539922864460/SOCIETY MAINTENANCE/okhdfc,-6192.15,Housing,Maintenance,SOCIETY MAINTENANCE,0,
+12,freelancer,2025-05-04,UPI/539922864460/SOCIETY MAINTENANCE/okhdfc,-6192.15,Housing,Maintenance,SOCIETY MAINTENANCE,1,duplicate_charge
 12,freelancer,2025-05-04,UPI/539922864460/SOCIETY MAINTENANCE/okhdfc,-6192.15,Housing,Maintenance,SOCIETY MAINTENANCE,1,duplicate_charge
 12,freelancer,2025-05-05,POS 1232XXXXXX4576 SWIGGY BANGALORE,-574.69,Food & Dining,Delivery,SWIGGY,0,
 12,freelancer,2025-05-05,SAGAR RATNA GURGAON,-377.66,Food & Dining,Restaurant,SAGAR RATNA,0,
@@ -14222,7 +14222,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2025-05-21,ACH D- AMAZON PRIME-900608,-321.34,Subscriptions,Streaming,AMAZON PRIME,0,
 12,freelancer,2025-05-21,ACH D- TATA POWER-522883,-1438.6,Utilities,Electricity,TATA POWER,0,
 12,freelancer,2025-05-21,CLIENT PAYMENT NEFT MUMBAI,16759.69,Income,Other Income,CLIENT PAYMENT NEFT,0,
-12,freelancer,2025-05-21,MCDONA 620198,-546.85,Food & Dining,Restaurant,MCDONALDS,0,
+12,freelancer,2025-05-21,MCDONA 620198,-546.85,Food & Dining,Restaurant,MCDONALDS,1,duplicate_charge
 12,freelancer,2025-05-21,MCDONA 620198,-546.85,Food & Dining,Restaurant,MCDONALDS,1,duplicate_charge
 12,freelancer,2025-05-21,UPI-CHATGPT PLUS-700548704@icici,-960.36,Subscriptions,Software,CHATGPT PLUS,0,
 12,freelancer,2025-05-22,PIZZA HUT 895694,-465.31,Food & Dining,Delivery,PIZZA HUT,0,
@@ -14274,7 +14274,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2025-06-16,ACH D- GOOGLE ONE-382670,-321.47,Subscriptions,Software,GOOGLE ONE,0,
 12,freelancer,2025-06-18,UPI/061332406/ACT FIBERNET/paytm,-1177.81,Utilities,Telecom,ACT FIBERNET,0,
 12,freelancer,2025-06-19,NETFLIX *25625,-892.71,Subscriptions,Streaming,NETFLIX,0,
-12,freelancer,2025-06-19,POS 5296XXXXXX4846 BESCOM GURGAON,-3445.77,Utilities,Electricity,BESCOM,0,
+12,freelancer,2025-06-19,POS 5296XXXXXX4846 BESCOM GURGAON,-3445.77,Utilities,Electricity,BESCOM,1,duplicate_charge
 12,freelancer,2025-06-19,UPI/663180150/PUNJABI DHABA/paytm,-403.26,Food & Dining,Restaurant,PUNJABI DHABA,0,
 12,freelancer,2025-06-20,POS 1357XXXXXX7747 ZOMATO BANGALORE,-162.47,Food & Dining,Delivery,ZOMATO,0,
 12,freelancer,2025-06-20,POS 5296XXXXXX4846 BESCOM GURGAON,-3445.77,Utilities,Electricity,BESCOM,1,duplicate_charge
@@ -14543,7 +14543,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2025-12-06,ICLOUD DELHI,-706.72,Subscriptions,Software,ICLOUD,0,
 12,freelancer,2025-12-06,PIZZA HUT NOIDA,-212.31,Food & Dining,Delivery,PIZZA HUT,0,
 12,freelancer,2025-12-07,BLUE TOKAI CHENNAI,-585.64,Food & Dining,Cafe,BLUE TOKAI,0,
-12,freelancer,2025-12-08,BLUSMART *71885,-479.22,Transport,Rideshare,BLUSMART,0,
+12,freelancer,2025-12-08,BLUSMART *71885,-479.22,Transport,Rideshare,BLUSMART,1,duplicate_charge
 12,freelancer,2025-12-08,BLUSMART *71885,-479.22,Transport,Rideshare,BLUSMART,1,duplicate_charge
 12,freelancer,2025-12-08,POS 4738XXXXXX8651 BMTC BUS PASS GURGAON,-294.67,Transport,Public,BMTC BUS PASS,0,
 12,freelancer,2025-12-09,POS 2475XXXXXX9452 JIOMART PUNE,-369.19,Groceries,Online,JIOMART,0,
@@ -14556,7 +14556,7 @@ user_id,persona,date,description,amount,category,subcategory,merchant_key,is_ano
 12,freelancer,2025-12-14,UPI-ICLOUD-246468328907@icici,-249.89,Subscriptions,Software,ICLOUD,0,
 12,freelancer,2025-12-14,UPI-PUNJABI DHABA-440080715045@axl,-658.62,Food & Dining,Restaurant,PUNJABI DHABA,0,
 12,freelancer,2025-12-15,POS 4035XXXXXX4145 DMART PUNE,-1439.69,Groceries,Supermarket,DMART,0,
-12,freelancer,2025-12-16,ACH D- HP PETROL PUMP-760744,-112.25,Transport,Fuel,HP PETROL PUMP,0,
+12,freelancer,2025-12-16,ACH D- HP PETROL PUMP-760744,-112.25,Transport,Fuel,HP PETROL PUMP,1,duplicate_charge
 12,freelancer,2025-12-16,UPI/084697298/ADANI ELECTRICITY/oksbi,-995.59,Utilities,Electricity,ADANI ELECTRICITY,0,
 12,freelancer,2025-12-16,ZOMATO 599619,-728.85,Food & Dining,Delivery,ZOMATO,0,
 12,freelancer,2025-12-17,ACH D- HP PETROL PUMP-760744,-112.25,Transport,Fuel,HP PETROL PUMP,1,duplicate_charge

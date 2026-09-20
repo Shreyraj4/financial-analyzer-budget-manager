@@ -1,0 +1,204 @@
+{
+  "protocol": "unsupervised fit on months 1-12; threshold chosen on months 13-18; reported on months 19-24; debits only",
+  "results": {
+    "robust_zscore": {
+      "threshold": 3.5,
+      "validation": {
+        "pr_auc": 0.2256,
+        "roc_auc": 0.5289,
+        "precision": 0.3678,
+        "recall": 0.172,
+        "f1": 0.2344,
+        "flag_rate": 0.0244,
+        "base_rate": 0.0522,
+        "recall_by_type": {
+          "amount_spike": 1.0,
+          "burst": 0.009,
+          "duplicate_charge": 0.042,
+          "unusual_high_value": 0.87
+        }
+      },
+      "test": {
+        "pr_auc": 0.2687,
+        "roc_auc": 0.6187,
+        "precision": 0.3306,
+        "recall": 0.1826,
+        "f1": 0.2353,
+        "flag_rate": 0.0343,
+        "base_rate": 0.0621,
+        "recall_by_type": {
+          "amount_spike": 1.0,
+          "burst": 0.022,
+          "duplicate_charge": 0.0,
+          "unusual_high_value": 0.8
+        }
+      }
+    },
+    "hand_written_rules": {
+      "threshold": 1.0,
+      "validation": {
+        "pr_auc": 0.7307,
+        "roc_auc": 0.945,
+        "precision": 0.7353,
+        "recall": 0.9409,
+        "f1": 0.8255,
+        "flag_rate": 0.0668,
+        "base_rate": 0.0522,
+        "recall_by_type": {
+          "amount_spike": 1.0,
+          "burst": 0.896,
+          "duplicate_charge": 1.0,
+          "unusual_high_value": 1.0
+        }
+      },
+      "test": {
+        "pr_auc": 0.7068,
+        "roc_auc": 0.9455,
+        "precision": 0.6949,
+        "recall": 0.9361,
+        "f1": 0.7977,
+        "flag_rate": 0.0836,
+        "base_rate": 0.0621,
+        "recall_by_type": {
+          "amount_spike": 1.0,
+          "burst": 0.911,
+          "duplicate_charge": 1.0,
+          "unusual_high_value": 0.92
+        }
+      }
+    },
+    "isolation_forest": {
+      "threshold": 0.5438,
+      "validation": {
+        "pr_auc": 0.8835,
+        "roc_auc": 0.9746,
+        "precision": 0.881,
+        "recall": 0.7957,
+        "f1": 0.8362,
+        "flag_rate": 0.0472,
+        "base_rate": 0.0522,
+        "recall_by_type": {
+          "amount_spike": 0.556,
+          "burst": 0.783,
+          "duplicate_charge": 0.771,
+          "unusual_high_value": 1.0
+        }
+      },
+      "test": {
+        "pr_auc": 0.8701,
+        "roc_auc": 0.9783,
+        "precision": 0.8259,
+        "recall": 0.8447,
+        "f1": 0.8352,
+        "flag_rate": 0.0635,
+        "base_rate": 0.0621,
+        "recall_by_type": {
+          "amount_spike": 0.529,
+          "burst": 0.911,
+          "duplicate_charge": 0.714,
+          "unusual_high_value": 0.92
+        }
+      }
+    },
+    "isolation_forest_per_user": {
+      "threshold": 0.5532,
+      "validation": {
+        "pr_auc": 0.848,
+        "roc_auc": 0.9753,
+        "precision": 0.8033,
+        "recall": 0.7903,
+        "f1": 0.7967,
+        "flag_rate": 0.0514,
+        "base_rate": 0.0522,
+        "recall_by_type": {
+          "amount_spike": 0.778,
+          "burst": 0.774,
+          "duplicate_charge": 0.729,
+          "unusual_high_value": 1.0
+        }
+      },
+      "test": {
+        "pr_auc": 0.8354,
+        "roc_auc": 0.973,
+        "precision": 0.7602,
+        "recall": 0.8539,
+        "f1": 0.8043,
+        "flag_rate": 0.0697,
+        "base_rate": 0.0621,
+        "recall_by_type": {
+          "amount_spike": 0.647,
+          "burst": 0.904,
+          "duplicate_charge": 0.714,
+          "unusual_high_value": 0.96
+        }
+      }
+    },
+    "local_outlier_factor": {
+      "threshold": 1.3529,
+      "validation": {
+        "pr_auc": 0.4546,
+        "roc_auc": 0.7839,
+        "precision": 0.6031,
+        "recall": 0.4247,
+        "f1": 0.4984,
+        "flag_rate": 0.0368,
+        "base_rate": 0.0522,
+        "recall_by_type": {
+          "amount_spike": 0.889,
+          "burst": 0.189,
+          "duplicate_charge": 0.604,
+          "unusual_high_value": 0.957
+        }
+      },
+      "test": {
+        "pr_auc": 0.3925,
+        "roc_auc": 0.701,
+        "precision": 0.5985,
+        "recall": 0.3607,
+        "f1": 0.4501,
+        "flag_rate": 0.0374,
+        "base_rate": 0.0621,
+        "recall_by_type": {
+          "amount_spike": 0.824,
+          "burst": 0.104,
+          "duplicate_charge": 0.667,
+          "unusual_high_value": 0.92
+        }
+      }
+    },
+    "iforest_plus_zscore": {
+      "threshold": 1.0,
+      "validation": {
+        "pr_auc": 0.6752,
+        "roc_auc": 0.9666,
+        "precision": 0.6711,
+        "recall": 0.8226,
+        "f1": 0.7391,
+        "flag_rate": 0.064,
+        "base_rate": 0.0522,
+        "recall_by_type": {
+          "amount_spike": 1.0,
+          "burst": 0.792,
+          "duplicate_charge": 0.771,
+          "unusual_high_value": 1.0
+        }
+      },
+      "test": {
+        "pr_auc": 0.6456,
+        "roc_auc": 0.9656,
+        "precision": 0.6287,
+        "recall": 0.8813,
+        "f1": 0.7338,
+        "flag_rate": 0.087,
+        "base_rate": 0.0621,
+        "recall_by_type": {
+          "amount_spike": 1.0,
+          "burst": 0.911,
+          "duplicate_charge": 0.714,
+          "unusual_high_value": 0.92
+        }
+      }
+    }
+  },
+  "production_model": "isolation_forest"
+}

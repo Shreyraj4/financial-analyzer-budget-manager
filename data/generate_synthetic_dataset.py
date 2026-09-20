@@ -229,11 +229,12 @@ def build_user(user_id: int, persona: str, months: int, rng: random.Random) -> l
             r["amount"] = round(r["amount"] * rng.uniform(5, 15), 2)
             r["is_anomaly"], r["anomaly_type"] = 1, kind
         elif kind == "duplicate_charge":
+            r["is_anomaly"], r["anomaly_type"] = 1, kind  # the original is part of the event too
             dup = dict(r)
-            dup["is_anomaly"], dup["anomaly_type"] = 1, kind
             dup["date"] = r["date"] + timedelta(days=rng.randint(0, 1))
             rows.append(dup)
         elif kind == "burst":
+            r["is_anomaly"], r["anomaly_type"] = 1, kind
             for _ in range(rng.randint(4, 7)):
                 b = dict(r)
                 b["amount"] = round(r["amount"] * rng.uniform(0.6, 1.4), 2)

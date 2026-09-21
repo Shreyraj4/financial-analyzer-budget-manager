@@ -21,7 +21,7 @@ from app.ml.categorization.model import (
     SubstringRulesBaseline,
 )
 from app.ml.dataset import load_labeled_transactions
-from app.scripts.seed_category_rules import RULES
+from app.ingestion.default_rules import RULES
 
 METRICS_PATH = REPO_ROOT / "docs" / "metrics" / "categorization.json"
 PRODUCTION = "logreg_text+amount_C10"

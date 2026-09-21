@@ -13,8 +13,11 @@ COPY data data
 COPY docs docs
 COPY frontend frontend
 
+# Training never touches the database, but importing app.models builds a SQLAlchemy engine, which needs a
+# parseable URL. A placeholder is set for this step only (create_engine does not connect).
 WORKDIR /srv/backend
-RUN python -m app.ml.categorization.train \
+RUN export DATABASE_URL=postgresql://build:build@localhost:5432/build \
+ && python -m app.ml.categorization.train \
  && python -m app.ml.forecasting.train \
  && python -m app.ml.anomaly.train \
  && python -m app.ml.clustering.train \

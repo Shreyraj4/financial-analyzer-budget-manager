@@ -6,18 +6,9 @@ Usage: python -m app.scripts.seed_category_rules
 from sqlalchemy import select
 
 from app.database.session import SessionLocal
+from app.ingestion.default_rules import RULES
 from app.models import CategoryRule
 
-RULES = [
-    ("SWIGGY", "Food & Dining", "Delivery"),
-    ("ZOMATO", "Food & Dining", "Delivery"),
-    ("DMART", "Groceries", "Supermarket"),
-    ("NETFLIX", "Subscriptions", "Streaming"),
-    ("UBER", "Transport", "Rideshare"),
-    ("AMAZON", "Shopping", "Online"),
-    ("ELECTRICITY BOARD", "Utilities", "Electricity"),
-    ("SALARY", "Income", None),
-]
 
 
 def run() -> None:

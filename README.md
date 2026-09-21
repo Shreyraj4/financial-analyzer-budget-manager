@@ -9,8 +9,9 @@ metrics via tool calls, then produces a validated structured report.
 
 ## Status
 
-Project scaffolding in progress. See `docs/architecture.md` (coming soon) for the
-full design.
+Backend (auth, import, ML categorization / forecasting / anomalies / clustering /
+budget recommendations, verified LLM report) and a plain-JS dashboard are working.
+Architecture and interview notes: `docs/study/00_project_pitch_and_architecture.md`.
 
 ## Stack
 
@@ -22,4 +23,16 @@ full design.
 
 ## Local development
 
-Setup instructions will be added as the backend comes online (Milestone 2).
+```
+cp .env.example .env            # fill in DATABASE_URL, JWT_SECRET, and optionally an LLM key
+cd backend
+pip install -r requirements.txt
+alembic upgrade head
+uvicorn app.main:app --port 8000
+
+cd ../frontend                   # in a second terminal
+python -m http.server 5500       # open http://localhost:5500
+```
+
+The dashboard talks to `http://localhost:8000` (override with `window.API_BASE`).
+Reports use Claude, OpenRouter (free models work), or a built-in template, chosen from `.env`.

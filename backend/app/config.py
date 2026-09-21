@@ -15,6 +15,10 @@ class Settings(BaseSettings):
     jwt_algorithm: str = "HS256"
     access_token_expire_minutes: int = 60
     anthropic_api_key: str = ""
+    anthropic_model: str = "claude-opus-5"
+    # "auto": use Claude when ANTHROPIC_API_KEY is set, else the built-in template report.
+    # "template": never call the API (useful for demos and tests).
+    report_narrator: str = "auto"
     cors_origins: str = "http://localhost:5500"
 
     @property

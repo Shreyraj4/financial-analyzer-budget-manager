@@ -7,6 +7,7 @@ from app.api.budgets import router as budgets_router
 from app.api.forecast import router as forecast_router
 from app.api.profile import router as profile_router
 from app.api.recommendations import router as recommendations_router
+from app.api.reports import router as reports_router
 from app.api.transactions import router as transactions_router
 from app.config import get_settings
 
@@ -29,6 +30,7 @@ app.include_router(transactions_router)
 app.include_router(forecast_router)
 app.include_router(profile_router)
 app.include_router(recommendations_router)
+app.include_router(reports_router)
 
 
 @app.get("/health")

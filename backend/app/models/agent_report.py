@@ -1,6 +1,6 @@
 from datetime import date, datetime
 
-from sqlalchemy import Date, DateTime, ForeignKey, String, func
+from sqlalchemy import JSON, Date, DateTime, ForeignKey, String, func
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -16,7 +16,8 @@ class AgentReport(Base):
     period_start: Mapped[date] = mapped_column(Date, index=True)
     period_end: Mapped[date] = mapped_column(Date)
     summary: Mapped[str] = mapped_column(String)
-    structured_report: Mapped[dict] = mapped_column(JSONB)
+    # JSONB on PostgreSQL (unchanged), plain JSON elsewhere so tests can run on SQLite.
+    structured_report: Mapped[dict] = mapped_column(JSON().with_variant(JSONB(), "postgresql"))
 
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 

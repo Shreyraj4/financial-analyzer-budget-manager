@@ -1,5 +1,6 @@
 // Thin API client. The token lives in localStorage (wrapped: storage can be unavailable).
-const API_BASE = window.API_BASE || "http://localhost:8000";
+// Served by the API itself under /app -> same origin; otherwise (python -m http.server) use localhost:8000.
+const API_BASE = window.API_BASE || (location.pathname.startsWith("/app") ? location.origin : "http://localhost:8000");
 
 const store = {
   get() { try { return localStorage.getItem("token"); } catch { return null; } },

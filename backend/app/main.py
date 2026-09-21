@@ -1,5 +1,8 @@
+from pathlib import Path
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from app.api.anomalies import router as anomalies_router
 from app.api.auth import router as auth_router
@@ -31,6 +34,12 @@ app.include_router(forecast_router)
 app.include_router(profile_router)
 app.include_router(recommendations_router)
 app.include_router(reports_router)
+
+
+# Serve the dashboard from the same origin (used in deployment; locally it can also run on :5500).
+FRONTEND_DIR = Path(__file__).resolve().parent.parent.parent / "frontend"
+if FRONTEND_DIR.is_dir():
+    app.mount("/app", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
 
 
 @app.get("/health")

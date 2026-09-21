@@ -49,6 +49,19 @@ ML outputs (profile, forecast+budgets, anomalies, spend trends)
 8. **Auditability.** Each stored report keeps the facts it was allowed to use and the verification
    record, so any sentence can be traced back to the model output that produced it.
 
+## Multiple providers (Anthropic and OpenRouter)
+
+The narrator is an interface (`narrate(facts, previous, feedback)`), so providers are swappable:
+`ClaudeNarrator` (Anthropic SDK, schema-constrained output), `OpenRouterNarrator` (plain HTTPS to
+OpenRouter's chat API, prompt-for-JSON then strict Pydantic validation), and `TemplateNarrator`
+(no LLM). Selection lives in one function (`narrator_choice`) and never changes the pipeline.
+Because free models are weaker, the safety net around the LLM (verification, retry, drop, fallback)
+matters more than which model is used: **the design assumes the LLM is unreliable and makes that safe.**
+
+Trade-offs to mention: schema-constrained output guarantees shape but not every provider supports it;
+prompting for JSON needs tolerant parsing (fences, prose, reasoning blocks) plus a repair round;
+free tiers are rate limited and may log prompts (privacy).
+
 ## Concepts to be able to explain
 
 - **Grounded generation / faithfulness** vs hallucination.

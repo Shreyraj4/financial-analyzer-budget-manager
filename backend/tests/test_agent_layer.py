@@ -14,7 +14,6 @@ from app.agent.narrators import SYSTEM_PROMPT, ClaudeNarrator, NarrationError, T
 from app.agent.schemas import AgentReportContent, Insight, SuggestedAction
 from app.agent.service import narrate_verified
 from app.agent.verify import drop_failed_parts, extract_numbers, unsupported_numbers, verify_report
-from app.api import reports as reports_api
 from app.api.deps import get_current_user
 from app.database.session import Base, get_db
 from app.main import app
@@ -285,22 +284,47 @@ def test_reports_list_and_empty_states(client):
     assert c.get("/reports").json() == []                            # reports are per-user
 
 
-def test_status_reflects_configuration(client, monkeypatch):
+def _settings(**kw):
+    base = dict(anthropic_api_key="", anthropic_model="claude-opus-5", openrouter_api_key="", openrouter_model="openrouter/free",
+                openrouter_base_url="https://openrouter.ai/api/v1", report_narrator="auto")
+    return SimpleNamespace(**{**base, **kw})
+
+
+@pytest.mark.parametrize(
+    "settings, expected",
+    [
+        (_settings(), ("template", None)),
+        (_settings(anthropic_api_key="sk-ant-x"), ("claude", "claude-opus-5")),
+        (_settings(openrouter_api_key="sk-or-x"), ("openrouter", "openrouter/free")),
+        (_settings(anthropic_api_key="a", openrouter_api_key="o"), ("claude", "claude-opus-5")),                       # auto prefers Claude
+        (_settings(anthropic_api_key="a", openrouter_api_key="o", report_narrator="openrouter"), ("openrouter", "openrouter/free")),
+        (_settings(anthropic_api_key="a", openrouter_api_key="o", report_narrator="template"), ("template", None)),
+        (_settings(openrouter_api_key="o", report_narrator="claude"), ("template", None)),                            # forced provider without its key
+    ],
+)
+def test_narrator_choice_matrix(settings, expected):
+    assert agent_service.narrator_choice(settings) == expected
+
+
+def test_status_endpoint_reports_the_choice(client, monkeypatch):
     c, _ = client
-    monkeypatch.setattr(reports_api, "get_settings", lambda: SimpleNamespace(anthropic_api_key="", report_narrator="auto", anthropic_model="claude-opus-5"))
+    monkeypatch.setattr(agent_service, "get_settings", lambda: _settings(openrouter_api_key="sk-or-x"))
+    assert c.get("/reports/status").json() == {"narrator": "openrouter", "model": "openrouter/free"}
+    monkeypatch.setattr(agent_service, "get_settings", lambda: _settings())
     assert c.get("/reports/status").json() == {"narrator": "template", "model": None}
-    monkeypatch.setattr(reports_api, "get_settings", lambda: SimpleNamespace(anthropic_api_key="sk-ant-x", report_narrator="auto", anthropic_model="claude-opus-5"))
-    assert c.get("/reports/status").json() == {"narrator": "claude", "model": "claude-opus-5"}
-    monkeypatch.setattr(reports_api, "get_settings", lambda: SimpleNamespace(anthropic_api_key="sk-ant-x", report_narrator="template", anthropic_model="m"))
-    assert c.get("/reports/status").json()["narrator"] == "template"
 
 
-def test_get_narrator_uses_template_without_a_key(monkeypatch):
-    monkeypatch.setattr(agent_service, "get_settings", lambda: SimpleNamespace(anthropic_api_key="", report_narrator="auto", anthropic_model="m"))
+def test_get_narrator_builds_the_configured_provider(monkeypatch):
+    from app.agent.openrouter import OpenRouterNarrator
+
+    monkeypatch.setattr(agent_service, "get_settings", lambda: _settings())
     assert isinstance(agent_service.get_narrator(), TemplateNarrator)
-    monkeypatch.setattr(agent_service, "get_settings", lambda: SimpleNamespace(anthropic_api_key="sk-ant-x", report_narrator="auto", anthropic_model="claude-opus-5"))
-    narrator = agent_service.get_narrator()
-    assert isinstance(narrator, ClaudeNarrator) and narrator.model == "claude-opus-5"
+    monkeypatch.setattr(agent_service, "get_settings", lambda: _settings(openrouter_api_key="sk-or-x"))
+    nar = agent_service.get_narrator()
+    assert isinstance(nar, OpenRouterNarrator) and nar.model == "openrouter/free" and nar.client.api_key == "sk-or-x"
+    monkeypatch.setattr(agent_service, "get_settings", lambda: _settings(anthropic_api_key="sk-ant-x"))
+    nar = agent_service.get_narrator()
+    assert isinstance(nar, ClaudeNarrator) and nar.model == "claude-opus-5"
 
 
 def test_reports_require_auth():

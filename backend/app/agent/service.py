@@ -11,7 +11,8 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.agent.facts import FactSet, build_facts
-from app.agent.narrators import ClaudeNarrator, NarrationError, NarrationResult, TemplateNarrator
+from app.agent.narrators import ClaudeNarrator, NarrationResult, TemplateNarrator
+from app.agent.openrouter import OpenRouterClient, OpenRouterNarrator
 from app.agent.schemas import AgentReportContent
 from app.agent.verify import drop_failed_parts, verify_report
 from app.config import get_settings
@@ -20,14 +21,29 @@ from app.models import AgentReport
 logger = logging.getLogger(__name__)
 
 
-def get_narrator():
-    """Claude when an API key is configured (and not forced off), otherwise the template narrator."""
-    settings = get_settings()
-    if settings.report_narrator == "template" or not settings.anthropic_api_key:
-        return TemplateNarrator()
-    import anthropic  # imported lazily: the app runs without the SDK/key
+def narrator_choice(settings=None) -> tuple[str, str | None]:
+    """Which writer will be used, as (kind, model): "claude" | "openrouter" | "template"."""
+    s = settings or get_settings()
+    mode = s.report_narrator
+    if mode == "template":
+        return "template", None
+    if mode in ("auto", "claude") and s.anthropic_api_key:
+        return "claude", s.anthropic_model
+    if mode in ("auto", "openrouter") and s.openrouter_api_key:
+        return "openrouter", s.openrouter_model
+    return "template", None
 
-    return ClaudeNarrator(anthropic.Anthropic(api_key=settings.anthropic_api_key), settings.anthropic_model)
+
+def get_narrator():
+    settings = get_settings()
+    kind, model = narrator_choice(settings)
+    if kind == "claude":
+        import anthropic  # imported lazily: the app runs without this SDK or a key
+
+        return ClaudeNarrator(anthropic.Anthropic(api_key=settings.anthropic_api_key), model)
+    if kind == "openrouter":
+        return OpenRouterNarrator(OpenRouterClient(settings.openrouter_api_key, settings.openrouter_base_url), model)
+    return TemplateNarrator()
 
 
 def narrate_verified(facts: FactSet, narrator) -> tuple[NarrationResult, dict]:
@@ -40,7 +56,7 @@ def narrate_verified(facts: FactSet, narrator) -> tuple[NarrationResult, dict]:
         result = narrator.narrate(facts)
         info["attempts"] = 1
         verdict = verify_report(result.content, ids)
-        if not verdict.ok and narrator.name == "claude":
+        if not verdict.ok and getattr(narrator, "supports_feedback", False):
             info["first_attempt_issues"] = [f"{i.part}: {i.problem}" for i in verdict.issues]
             result = narrator.narrate(facts, previous=result.content, feedback=verdict.feedback())
             info["attempts"] = 2

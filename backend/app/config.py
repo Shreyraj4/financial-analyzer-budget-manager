@@ -16,8 +16,12 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 60
     anthropic_api_key: str = ""
     anthropic_model: str = "claude-opus-5"
-    # "auto": use Claude when ANTHROPIC_API_KEY is set, else the built-in template report.
-    # "template": never call the API (useful for demos and tests).
+    # OpenRouter (https://openrouter.ai): one key for many models, including free ones.
+    openrouter_api_key: str = ""
+    openrouter_model: str = "openrouter/free"
+    openrouter_base_url: str = "https://openrouter.ai/api/v1"
+    # Who writes the report: "auto" = Claude if ANTHROPIC_API_KEY is set, else OpenRouter if
+    # OPENROUTER_API_KEY is set, else the built-in template. Or force "claude" | "openrouter" | "template".
     report_narrator: str = "auto"
     cors_origins: str = "http://localhost:5500"
 

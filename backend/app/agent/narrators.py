@@ -4,6 +4,7 @@
                     Used when no API key is configured and as the fallback when
                     Claude fails - so every number in it is correct by construction.
   ClaudeNarrator    asks Claude to write the report in plain language, citing fact ids.
+  (OpenRouterNarrator, in openrouter.py, does the same through OpenRouter's HTTP API.)
 """
 import json
 from dataclasses import dataclass, field
@@ -23,10 +24,19 @@ Rules:
 7. Use rupees written like ₹1,234 exactly as in the facts. If there is little data, say so plainly."""
 
 
+def facts_message(facts: FactSet) -> str:
+    """The user turn shared by every LLM narrator: the facts as a JSON data payload."""
+    payload = {
+        "period": f"{facts.period_start} to {facts.period_end}",
+        "facts": [{"id": f.id, "statement": f.statement} for f in facts.facts],
+    }
+    return "Write the report from these facts.\n" + json.dumps(payload, ensure_ascii=False, indent=1)
+
+
 @dataclass
 class NarrationResult:
     content: AgentReportContent
-    narrator: str                       # "claude" | "template"
+    narrator: str                       # "claude" | "openrouter" | "template"
     model: str | None = None
     usage: dict = field(default_factory=dict)
 
@@ -37,6 +47,7 @@ class NarrationError(Exception):
 
 class TemplateNarrator:
     name = "template"
+    supports_feedback = False   # deterministic: nothing to retry
 
     def narrate(self, facts: FactSet, previous=None, feedback: str | None = None) -> NarrationResult:
         f = facts.by_id()
@@ -79,22 +90,15 @@ class TemplateNarrator:
 
 class ClaudeNarrator:
     name = "claude"
+    supports_feedback = True
 
     def __init__(self, client, model: str, max_tokens: int = 8000):
         self.client = client
         self.model = model
         self.max_tokens = max_tokens
 
-    @staticmethod
-    def user_message(facts: FactSet) -> str:
-        payload = {
-            "period": f"{facts.period_start} to {facts.period_end}",
-            "facts": [{"id": f.id, "statement": f.statement} for f in facts.facts],
-        }
-        return "Write the report from these facts.\n" + json.dumps(payload, ensure_ascii=False, indent=1)
-
     def narrate(self, facts: FactSet, previous: AgentReportContent | None = None, feedback: str | None = None) -> NarrationResult:
-        messages = [{"role": "user", "content": self.user_message(facts)}]
+        messages = [{"role": "user", "content": facts_message(facts)}]
         if previous is not None and feedback:
             messages += [
                 {"role": "assistant", "content": previous.model_dump_json()},

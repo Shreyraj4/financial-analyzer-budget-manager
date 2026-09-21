@@ -6,8 +6,7 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.agent.schemas import AgentReportContent
-from app.agent.service import generate_report, latest_report
-from app.config import get_settings
+from app.agent.service import generate_report, latest_report, narrator_choice
 from app.api.deps import get_current_user
 from app.database.session import get_db
 from app.models import AgentReport, User
@@ -39,7 +38,7 @@ class ReportSummary(BaseModel):
 
 
 class NarratorStatus(BaseModel):
-    narrator: str   # "claude" | "template"
+    narrator: str   # "claude" | "openrouter" | "template"
     model: str | None
 
 
@@ -53,10 +52,9 @@ def _to_out(r: AgentReport) -> ReportOut:
 
 @router.get("/status", response_model=NarratorStatus)
 def narrator_status(current_user: User = Depends(get_current_user)) -> NarratorStatus:
-    """Which writer will produce the next report: Claude (API key configured) or the built-in template."""
-    settings = get_settings()
-    using_claude = bool(settings.anthropic_api_key) and settings.report_narrator != "template"
-    return NarratorStatus(narrator="claude" if using_claude else "template", model=settings.anthropic_model if using_claude else None)
+    """Which writer will produce the next report: Claude, OpenRouter, or the built-in template."""
+    kind, model = narrator_choice()
+    return NarratorStatus(narrator=kind, model=model)
 
 
 @router.post("/generate", response_model=ReportOut, status_code=status.HTTP_201_CREATED)

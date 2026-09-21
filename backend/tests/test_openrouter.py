@@ -63,7 +63,7 @@ def test_request_goes_to_chat_completions_with_key_only_in_the_auth_header():
     assert req["headers"]["Authorization"] == "Bearer sk-or-secret"
     assert "sk-or-secret" not in json.dumps(req["body"])
     body = req["body"]
-    assert body["model"] == "vendor/free-model:free" and body["max_tokens"] == 4000
+    assert body["model"] == "vendor/free-model:free" and body["max_tokens"] == 12000 and body["reasoning"] == {"effort": "low"}
     assert [m["role"] for m in body["messages"]] == ["system", "user"]
     assert body["messages"][0]["content"] == SYSTEM_PROMPT + JSON_FORMAT
     assert "spend.latest_total" in body["messages"][1]["content"]     # facts sent as a data payload

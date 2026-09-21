@@ -73,7 +73,9 @@ class OpenRouterClient:
         }
 
     def chat(self, model: str, messages: list[dict], max_tokens: int = 4000, temperature: float = 0.2) -> dict:
-        body = json.dumps({"model": model, "messages": messages, "max_tokens": max_tokens, "temperature": temperature}).encode()
+        # "reasoning" asks thinking models to keep it short; free models may burn the whole budget on thoughts otherwise.
+        body = json.dumps({"model": model, "messages": messages, "max_tokens": max_tokens, "temperature": temperature,
+                           "reasoning": {"effort": "low"}}).encode()
         status, raw = self.transport(f"{self.base_url}/chat/completions", self._headers(), body, self.timeout)
         try:
             payload = json.loads(raw)
@@ -136,7 +138,7 @@ class OpenRouterNarrator:
     name = "openrouter"
     supports_feedback = True
 
-    def __init__(self, client: OpenRouterClient, model: str, max_tokens: int = 4000):
+    def __init__(self, client: OpenRouterClient, model: str, max_tokens: int = 12000):
         self.client = client
         self.model = model
         self.max_tokens = max_tokens

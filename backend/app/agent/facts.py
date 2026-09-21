@@ -13,6 +13,8 @@ from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from app.agent.verify import extract_numbers
+from app.ingestion.personal import PERSONAL_CATEGORY, person_name
+from app.preprocessing.text import extract_merchant
 from app.models import Transaction
 
 MAX_TEXT = 60
@@ -135,15 +137,26 @@ def build_facts_from_parts(
             ))
 
     for a in anomalies:
-        reasons = " ".join(r["text"] for r in a["reasons"])
-        facts.append(Fact(
-            f"anomaly.{a['transaction_id']}",
-            f"On {a['transaction_date']:%d %b %Y} a payment of {money(abs(float(a['amount'])))} to \"{clean_text(a['description'])}\" "
-            f"({a['category'] or 'uncategorized'}) was flagged as unusual: {clean_text(reasons, 220)}",
-        ))
+        facts.append(anomaly_fact(a))
 
     period_start = last.date().replace(day=1)
     return FactSet(facts=facts, period_start=period_start, period_end=period_end)
+
+
+def anomaly_fact(a: dict) -> Fact:
+    """One flagged transaction as a fact. Names of private individuals are never written into it (they would be
+    sent to the LLM): person-to-person payments read "a person" and the name is scrubbed from the reasons."""
+    reasons = " ".join(r["text"] for r in a["reasons"])
+    payee, category = f"\"{clean_text(a['description'])}\"", a["category"] or "uncategorized"
+    if a["category"] == PERSONAL_CATEGORY or person_name(a["description"]):
+        name = extract_merchant(a["description"])
+        reasons = re.sub(re.escape(name), "this person", reasons, flags=re.IGNORECASE) if name else reasons
+        payee, category = "a person", PERSONAL_CATEGORY
+    return Fact(
+        f"anomaly.{a['transaction_id']}",
+        f"On {a['transaction_date']:%d %b %Y} a payment of {money(abs(float(a['amount'])))} to {payee} "
+        f"({category}) was flagged as unusual: {clean_text(reasons, 220)}",
+    )
 
 
 def build_facts(db: Session, user_id: int) -> FactSet | None:

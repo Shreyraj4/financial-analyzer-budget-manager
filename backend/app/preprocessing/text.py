@@ -30,9 +30,31 @@ def _is_reference_token(token: str) -> bool:
     return sum(c.isdigit() for c in token) >= 3 or "XXX" in token
 
 
+_RAIL_MARKERS = {"UPI", "DR", "CR"}
+
+
+def upi_counterparty(description: str | None) -> str | None:
+    """The party on the other side of a slash-separated UPI narration, e.g. ``UPI/<name>/<bank>/<ref>/<remark>``
+    (also ``UPI/<ref>/<name>/<handle>`` and ``UPI/DR/<ref>/<name>/...``): the first segment that is not the rail
+    marker or a reference number. Returns None for anything that is not shaped like that."""
+    text = str(description or "").strip()
+    if not text.upper().startswith("UPI") or "/" not in text:
+        return None
+    for segment in text.split("/"):
+        segment = _VPA.sub(" ", segment.strip()).strip()
+        upper = segment.upper()
+        if not segment or upper in _RAIL_MARKERS or _is_reference_token(upper.replace(" ", "")):
+            continue
+        return re.sub(r"\s+", " ", segment)
+    return None
+
+
 def _tokens(description: str | None) -> list[str]:
     text = str(description or "").upper()
     is_upi = text.startswith("UPI")
+    counterparty = upi_counterparty(text)
+    if counterparty:  # the bank code, reference and remark around the name are noise
+        text = counterparty.upper()
     text = _VPA.sub(" ", text)
     tokens = [t.strip(".") for t in _TOKEN_SPLIT.split(text)]
     tokens = [t for t in tokens if t and not _is_reference_token(t) and t not in VPA_HANDLES]

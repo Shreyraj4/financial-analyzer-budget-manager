@@ -5,7 +5,14 @@ from decimal import Decimal, InvalidOperation
 
 import pandas as pd
 
-DATE_FORMATS = ["%Y-%m-%d", "%d-%m-%Y", "%d/%m/%Y", "%m/%d/%Y"]
+from app.ingestion.personal import mask_long_numbers
+from app.preprocessing.text import upi_counterparty
+
+DATE_FORMATS = [
+    "%Y-%m-%d", "%d-%m-%Y", "%d/%m/%Y", "%m/%d/%Y",
+    "%d %b %Y", "%d-%b-%Y", "%d %B %Y", "%d-%B-%Y",  # 15 Jun 2026, 15-Jun-2026
+    "%d/%m/%y", "%d-%m-%y", "%d %b %y", "%d-%b-%y",
+]
 
 
 @dataclass
@@ -43,6 +50,9 @@ def _parse_amount(raw: str) -> Decimal | None:
 
 
 def _normalize_merchant(description: str) -> str:
+    counterparty = upi_counterparty(description)
+    if counterparty:  # UPI narrations: just the other party, not the bank code / reference / remark
+        return re.sub(r"\s+", " ", counterparty.upper())
     normalized = re.sub(r"\s+", " ", description.strip().upper())
     return normalized
 
@@ -59,7 +69,7 @@ def clean_transactions(df: pd.DataFrame, source: str = "csv_upload") -> list[Cle
         errors: list[str] = []
 
         raw_date = str(raw.get("date", "")).strip()
-        raw_description = str(raw.get("description", "")).strip()
+        raw_description = mask_long_numbers(str(raw.get("description", "")).strip())
         raw_amount = str(raw.get("amount", "")).strip()
 
         transaction_date = _parse_date(raw_date) if raw_date else None

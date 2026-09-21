@@ -3,8 +3,10 @@
 Priority (first match wins):
   1. user   - the user already labeled this merchant (their word is final)
   2. rule   - curated CategoryRule table
-  3. model  - ML prediction, only if confidence >= CONFIDENCE_THRESHOLD
-  4. none   - left uncategorized for the user to label; the model's best
+  3. person - a UPI payment to an individual: "Personal Transfers", the person's name as subcategory
+              (before the model: it is confidently wrong on names, e.g. 1.0 for a person as a merchant)
+  4. model  - ML prediction, only if confidence >= CONFIDENCE_THRESHOLD
+  5. none   - left uncategorized for the user to label; the model's best
               guess is still attached as ``suggested_category``
 """
 import logging
@@ -17,6 +19,7 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.ingestion.categorize import categorize as rule_categorize
+from app.ingestion.personal import PERSONAL_CATEGORY, person_name
 from app.ml.categorization.model import MODEL_PATH, MLCategorizer
 from app.models import CategoryRule, Transaction
 from app.preprocessing.text import extract_merchant
@@ -32,7 +35,7 @@ CONFIDENCE_THRESHOLD = 0.7
 class Categorization:
     category: str | None
     subcategory: str | None
-    source: str | None  # "user" | "rule" | "model" | None
+    source: str | None  # "user" | "rule" | "person" | "model" | None
     confidence: float | None
     suggested_category: str | None = None
 
@@ -95,6 +98,10 @@ class Categorizer:
             category, subcategory = rule_categorize(merchant, self.rules)
             if category is not None:
                 results[i] = Categorization(category, subcategory, "rule", 1.0)
+                continue
+            person = person_name(description)
+            if person:
+                results[i] = Categorization(PERSONAL_CATEGORY, person, "person", None)
                 continue
             needs_model.append(i)
 

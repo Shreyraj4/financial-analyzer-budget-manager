@@ -176,7 +176,7 @@ async function viewTransactions(root) {
 
   const txRows = (list, withLabel) => list.map((t) => `<tr><td>${fmtDate(t.transaction_date)}</td><td>${esc(t.description)}</td>
       <td class="num">${t.transaction_type === "credit" ? "+" : ""}${inr(t.amount)}</td>
-      <td>${withLabel ? catInput(t.id) + ` <button class="btn" data-label="${t.id}">Save</button>` : esc(t.category || "–")}</td></tr>`).join("");
+      <td>${withLabel ? catInput(t.id) + ` <button class="btn" data-label="${t.id}">Save</button>` : esc(t.category || "–")}${t.subcategory ? ` <span class="muted">· ${esc(t.subcategory)}</span>` : ""}</td></tr>`).join("");
   const table = (rows, last) => `<div class="table-wrap"><table><thead><tr><th>Date</th><th>Description</th><th class="num">Amount</th><th>${last}</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 
   const loadReview = async () => {
@@ -246,7 +246,7 @@ function renderPreview(box, p, categories) {
     ${p.rows.map((r, i) => `<tr ${r.valid ? "" : 'style="opacity:.55"'}>
       <td>${r.transaction_date ? fmtDate(r.transaction_date) : "–"}</td><td>${esc(r.description)}</td>
       <td class="num">${r.amount == null ? "–" : inr(r.amount)}</td>
-      <td>${r.valid ? (r.category ? `${esc(r.category)} <span class="muted small">${r.confidence != null ? pct(r.confidence) : esc(r.category_source || "")}</span>`
+      <td>${r.valid ? (r.category ? `${esc(r.category)}${r.subcategory ? ` <span class="muted">· ${esc(r.subcategory)}</span>` : ""} <span class="muted small">${r.confidence != null ? pct(r.confidence) : esc(r.category_source || "")}</span>`
           : `<span class="badge sev-watch" data-icon="?">unsure${r.suggested_category ? ": " + esc(r.suggested_category) : ""}</span>`) : `<span class="error small">${esc(r.errors.join("; "))}</span>`}</td>
       <td>${r.valid ? `<select data-i="${i}">${opts("")}</select>` : ""}</td></tr>`).join("")}
     </tbody></table></div>

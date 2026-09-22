@@ -168,7 +168,16 @@ function drawRecChart(recs, canvas) {
 async function viewTransactions(root) {
   root.innerHTML = `<div class="card" id="review-card"><h2>Needs your label</h2><div id="review" class="muted">Loading…</div></div>
     <div class="card"><h2>Recent transactions</h2><div id="list" class="muted">Loading…</div>
-      <p><button class="btn secondary hidden" id="more">Load more</button></p></div>`;
+      <p><button class="btn secondary hidden" id="more">Load more</button></p></div>
+    <div class="card"><h2>Remove an upload</h2>
+      <p class="muted small">Deletes your own transactions in a date range, e.g. to undo a test upload. This does not
+      change any report you already generated; generate a new one afterwards to reflect the change.</p>
+      <form id="delform" class="form-grid">
+        <label>From<input name="start_date" type="date" required></label>
+        <label>To<input name="end_date" type="date" required></label>
+        <label>Only from<select name="source"><option value="">any upload</option><option value="csv_upload">CSV uploads</option><option value="pdf_upload">PDF uploads</option></select></label>
+        <div><button class="btn secondary" type="submit" id="delbtn">Delete</button></div>
+      </form><p id="delmsg" class="small"></p></div>`;
   let categories = [];
   try { categories = await api("/transactions/categories"); } catch { /* labeling just gets a free-text box */ }
   const catInput = (id) => `<input list="cats" data-cat="${id}" placeholder="Category" style="width:11rem">`;
@@ -214,6 +223,29 @@ async function viewTransactions(root) {
   const reloadList = () => loadPage(true);
   more.onclick = () => loadPage(false);
   loadReview(); loadPage(true);
+
+  const delForm = root.querySelector("#delform"), delMsg = root.querySelector("#delmsg");
+  delForm.onsubmit = async (ev) => {
+    ev.preventDefault();
+    const f = Object.fromEntries(new FormData(ev.target));
+    delMsg.textContent = "";
+    delMsg.className = "small";
+    let count;
+    try {
+      const q = new URLSearchParams({ start_date: f.start_date, end_date: f.end_date });
+      count = await api(`/transactions/count?${q}`);
+    } catch (e) { delMsg.className = "small error"; delMsg.textContent = e.message; return; }
+    if (!count) { delMsg.textContent = "No transactions in that range."; return; }
+    if (!confirm(`Delete ${count} transaction(s) from ${f.start_date} to ${f.end_date}${f.source ? ` (${f.source.replace("_", " ")} only)` : ""}? This cannot be undone.`)) return;
+    const btn = root.querySelector("#delbtn"); btn.disabled = true;
+    try {
+      const res = await api("/transactions", { method: "DELETE", body: { start_date: f.start_date, end_date: f.end_date, source: f.source || null } });
+      delMsg.textContent = `Deleted ${res.deleted_count} transaction(s).`;
+      ev.target.reset(); reloadList(); loadReview();
+      toast(`Deleted ${res.deleted_count} transaction(s)`);
+    } catch (e) { delMsg.className = "small error"; delMsg.textContent = e.message; }
+    btn.disabled = false;
+  };
 }
 
 /* ------------------------------------------------------------------ Upload */
@@ -259,7 +291,7 @@ function renderPreview(box, p, categories) {
       const chosen = box.querySelector(`select[data-i="${i}"]`).value;
       payload.push({
         transaction_date: r.transaction_date, description: r.description, merchant: r.merchant,
-        amount: r.amount, transaction_type: r.transaction_type,
+        amount: r.amount, transaction_type: r.transaction_type, source: p.source,
         ...(chosen ? { category: chosen } : {}),
       });
     });

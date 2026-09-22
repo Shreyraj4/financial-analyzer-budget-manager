@@ -1,5 +1,7 @@
+from datetime import date
+
 from fastapi import APIRouter, Depends, HTTPException, Query, UploadFile, status
-from sqlalchemy import or_, select
+from sqlalchemy import delete as sa_delete, func, or_, select
 from sqlalchemy.orm import Session
 
 from app.api.deps import get_current_user
@@ -11,6 +13,8 @@ from app.models import CategoryRule, Transaction, User
 from app.preprocessing.text import extract_merchant
 from app.services.categorization import build_categorizer, get_model
 from app.schemas.transaction import (
+    DeleteRangeRequest,
+    DeleteRangeResponse,
     ImportRequest,
     CategoryUpdateRequest,
     CategoryUpdateResponse,
@@ -76,6 +80,7 @@ async def upload(
 
     return UploadPreviewResponse(
         filename=file.filename,
+        source="pdf_upload" if file_kind == "pdf" else "csv_upload",
         total_rows=len(preview_rows),
         valid_count=valid_count,
         error_count=len(preview_rows) - valid_count,
@@ -95,6 +100,43 @@ def import_csv(
         imported_count=result.imported_count,
         duplicate_count=result.duplicate_count,
     )
+
+
+@router.delete("", response_model=DeleteRangeResponse)
+def delete_transactions(
+    body: DeleteRangeRequest,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> DeleteRangeResponse:
+    """Removes this user's own transactions in a date range (inclusive), e.g. to undo one upload.
+    Does not touch other users' data, budgets, or previously generated reports (those keep the
+    numbers they reported at the time; generate a new report to reflect the change)."""
+    conditions = [
+        Transaction.user_id == current_user.id,
+        Transaction.transaction_date >= body.start_date,
+        Transaction.transaction_date <= body.end_date,
+    ]
+    if body.source:
+        conditions.append(Transaction.source == body.source)
+    deleted_count = db.execute(sa_delete(Transaction).where(*conditions)).rowcount
+    db.commit()
+    return DeleteRangeResponse(deleted_count=deleted_count)
+
+
+@router.get("/count", response_model=int)
+def count_transactions(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+    start_date: date | None = None,
+    end_date: date | None = None,
+) -> int:
+    """How many of this user's transactions fall in a date range; used to preview a delete before it runs."""
+    stmt = select(func.count()).select_from(Transaction).where(Transaction.user_id == current_user.id)
+    if start_date:
+        stmt = stmt.where(Transaction.transaction_date >= start_date)
+    if end_date:
+        stmt = stmt.where(Transaction.transaction_date <= end_date)
+    return db.scalar(stmt) or 0
 
 
 @router.get("", response_model=list[TransactionResponse])

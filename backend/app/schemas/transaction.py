@@ -1,7 +1,7 @@
 from datetime import date, datetime
 from decimal import Decimal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 
 class TransactionPreviewRow(BaseModel):
@@ -23,6 +23,7 @@ class TransactionPreviewRow(BaseModel):
 
 class UploadPreviewResponse(BaseModel):
     filename: str
+    source: str  # "csv_upload" | "pdf_upload"; carried through to /import so a delete can target just this upload
     total_rows: int
     valid_count: int
     error_count: int
@@ -50,6 +51,22 @@ class ImportResponse(BaseModel):
     submitted_count: int
     imported_count: int
     duplicate_count: int
+
+
+class DeleteRangeRequest(BaseModel):
+    start_date: date
+    end_date: date
+    source: str | None = None  # restrict to e.g. "csv_upload" / "pdf_upload"; omit to match any source
+
+    @model_validator(mode="after")
+    def end_after_start(self) -> "DeleteRangeRequest":
+        if self.end_date < self.start_date:
+            raise ValueError("end_date must be on or after start_date")
+        return self
+
+
+class DeleteRangeResponse(BaseModel):
+    deleted_count: int
 
 
 class TransactionResponse(BaseModel):
